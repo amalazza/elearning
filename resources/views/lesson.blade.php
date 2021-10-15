@@ -1,6 +1,8 @@
 @extends('layouts.home')
 
 @section('sidebar')
+<section class="py-5">
+    <div class="container">
     <p class="lead">{{ $lesson->course->title }}</p>
 
     <div class="list-group">
@@ -9,11 +11,19 @@
                 @if ($list_lesson->id == $lesson->id) style="font-weight: bold" @endif>{{ $loop->iteration }}. {{ $list_lesson->title }}</a>
         @endforeach
     </div>
+    </div>
+</section>
 @endsection
 
 @section('main')
+<section class="py-5">
+    <div class="container">
 
-    <h2 style="margin: 10px;">{{ $lesson->title }}</h2>
+    <div class="text-left mb-5">
+        <h1 class="fw-bolder">{{ $lesson->title }}</h1>
+        <hr/>
+    </div>
+    <!-- <h2 style="margin: 10px;">{{ $lesson->title }}</h2> -->
 
     <div class="list-group">
         <!-- @lang('global.lessons.fields.downloadable-files') -->
@@ -43,35 +53,59 @@
     
 
         @if ($test_exists)
-            <hr />
-            <h3 style="margin: 10px;">Test: {{ $lesson->test->title }}</h3>
-            @if (!is_null($test_result))
-                <div class="alert alert-info" style="margin: 10px;">Your test score: {{ $test_result->test_result }}</div>
-            @else
-            <form action="{{ route('lessons.test', [$lesson->slug]) }}" method="post" style="margin: 10px;">
-                {{ csrf_field() }}
-                @foreach ($lesson->test->questions as $question)
-                    <b>{{ $loop->iteration }}. {{ $question->question }}</b>
-                    <br />
-                    @foreach ($question->options as $option)
-                        <input type="radio" name="questions[{{ $question->id }}]" value="{{ $option->id }}" /> {{ $option->option_text }}<br />
-                    @endforeach
-                    <br />
-                @endforeach
-                <input type="submit" value=" Submit results " />
-            </form>
-            @endif
-            <hr />
+        <hr />
+            <h2 class="fw-bolder mb-3">Test</h2>
+            <div class="accordion mb-5" id="accordionExample">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        {{ $lesson->test->title }}
+                        </button>
+                    </h3>
+                    @if (!is_null($test_result))
+                    <div class="accordion-collapse collapse" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Your test score: {{ $test_result->test_result }}
+                            </p>
+                        </div>
+                    </div>
+                    @else
+                    <div class="accordion-collapse collapse" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <form action="{{ route('lessons.test', [$lesson->slug]) }}" method="post" style="margin: 10px;">
+                                {{ csrf_field() }}
+                                @foreach ($lesson->test->questions as $question)
+                                    <b>{{ $loop->iteration }}. {{ $question->question }}</b>
+                                    <br />
+                                    @foreach ($question->options as $option)
+                                        <input type="radio" name="questions[{{ $question->id }}]" value="{{ $option->id }}" /> {{ $option->option_text }}<br />
+                                    @endforeach
+                                    <br />
+                                @endforeach
+                                <input type="submit" value=" Submit results " />
+                            </form>
+                        </div>
+                    </div>
+                    @endif
+                </div>
+            </div>  
+
         @endif
+
+
     @else
         Please <a href="{{ route('courses.show', [$lesson->course->slug]) }}">go back</a>, because you're not student in this course.
     @endif
-
+    <hr />
+    <center>
     @if ($previous_lesson)
         <p><a href="{{ route('lessons.show', [$previous_lesson->course_id, $previous_lesson->slug]) }}" style="margin: 10px;"><< {{ $previous_lesson->title }}</a></p>
     @endif
     @if ($next_lesson)
         <p><a href="{{ route('lessons.show', [$next_lesson->course_id, $next_lesson->slug]) }}" style="margin: 10px;">{{ $next_lesson->title }} >></a></p>
     @endif
-
+    </center>
+    </div>
+</section>
 @endsection

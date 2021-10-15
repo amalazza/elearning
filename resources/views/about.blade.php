@@ -121,6 +121,8 @@
                     </div>
                 </div>
             </section>
+            @endsection
+
             <!-- Team members section-->
             <!-- <section class="py-5 bg-light">
                 <div class="container px-5 my-5">

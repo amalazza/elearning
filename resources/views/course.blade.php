@@ -2,67 +2,44 @@
 
 @section('mylesson')
 
-    <h2>{{ $course->title }}</h2>
+<!-- Page Content-->
+<section class="py-2">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="fw-bolder">{{ $course->title }}</h1>
+            <p class="lead fw-normal text-muted mb-0">{{ $course->description }}</p>
+        </div>
+        <div class="row gx-5">
+            <div class="col-xl-12">
+                
+                @if (\Auth::check())
+                    @if ($course->students()->where('user_id', \Auth::id())->count() == 0)
+                    <p style="color: red; text-align: center;"> Sorry, you're not student in this course
+                    @endif
+                @else
+                @endif
 
-    <!-- @if ($purchased_course)
-        Rating: {{ $course->rating }} / 5
-        <br />
-        <b>Rate the course:</b>
-        <br />
-        <form action="{{ route('courses.rating', [$course->id]) }}" method="post">
-            {{ csrf_field() }}
-            <select name="rating">
-                <option value="1">1 - Awful</option>
-                <option value="2">2 - Not too good</option>
-                <option value="3">3 - Average</option>
-                <option value="4" selected>4 - Quite good</option>
-                <option value="5">5 - Awesome!</option>
-            </select>
-            <input type="submit" value="Rate" />
-        </form>
-        <hr />
-    @endif -->
+                @if ($course->students()->where('user_id', \Auth::id())->count() == 0)
 
-    <p>{{ $course->description }}</p>
-
-    <p>
-        @if (\Auth::check())
-            @if ($course->students()->where('user_id', \Auth::id())->count() == 0)
-            <!-- <form action="{{ route('courses.payment') }}" method="POST">
-                <input type="hidden" name="course_id" value="{{ $course->id }}" />
-                <input type="hidden" name="amount" value="{{ $course->price * 100 }}" />
-                <script
-                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="{{ env('PUB_STRIPE_API_KEY') }}"
-                    data-amount="{{ $course->price * 100 }}"
-                    data-currency="usd"
-                    data-name="Quick LMS"
-                    data-label="Buy course (${{ $course->price }})"
-                    data-description="Course: {{ $course->title }}"
-                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-                    data-locale="auto"
-                    data-zip-code="false">
-                </script>
-                {{ csrf_field() }}
-            </form> -->
-            <p style="color: red;"> Sorry, you're not student in this course
-            @endif
-        @else
-            <!-- <a href="{{ route('auth.register') }}?redirect_url={{ route('courses.show', [$course->slug]) }}"
-               class="btn btn-primary">Buy course (${{ $course->price }})</a> -->
-        @endif
-    </p>
-
-@if ($course->students()->where('user_id', \Auth::id())->count() == 0)
-
-@else
-    @foreach ($course->publishedLessons as $lesson)
-        <!-- @if ($lesson->free_lesson)(FREE!)@endif {{ $loop->iteration }}. -->
-        @if ($lesson->free_lesson)@endif {{ $loop->iteration }}.
-        <a href="{{ route('lessons.show', [$lesson->course_id, $lesson->slug]) }}">{{ $lesson->title }}</a>
-        <p>{{ $lesson->short_text }}</p>
-        <hr />
-    @endforeach
-@endif
-
+                @else
+                    @foreach ($course->publishedLessons as $lesson)
+                        <div class="accordion mb-2">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" >
+                                    <a href="{{ route('lessons.show', [$lesson->course_id, $lesson->slug]) }}" class="accordion-button" style="text-decoration: none;"> @if ($lesson->free_lesson)@endif {{ $loop->iteration }}. {{ $lesson->title }}</a>
+                                </h3>
+                                <div class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <p>{{ $lesson->short_text }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    @endforeach
+                @endif
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
