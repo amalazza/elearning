@@ -30,8 +30,8 @@
                             <div class="d-flex align-items-center">
                                 <!-- <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." /> -->
                                 <div class="small">
-                                    <!-- <div class="fw-bold">Kelly Rowan</div> -->
-                                    <div class="text-muted">Students: {{ $course->students()->count() }}</div>
+                                    <div class="fw-bold">Teacher: {{ $course->teachers()->pluck('name')->first() }}</div>
+                                    <div class="text-muted right">All Students: {{ $course->students()->count() }}</div>
                                 </div>
                             </div>
                         </div>
@@ -71,8 +71,8 @@
                             <div class="d-flex align-items-center">
                                 <!-- <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." /> -->
                                 <div class="small">
-                                    <!-- <div class="fw-bold">Kelly Rowan</div> -->
-                                    <div class="text-muted">Students: {{ $course->students()->count() }}</div>
+                                    <div class="fw-bold">Teacher: {{ $course->teachers()->pluck('name')->first() }}</div>
+                                    <div class="text-muted right">All Students: {{ $course->students()->count() }}</div>
                                 </div>
                             </div>
                         </div>

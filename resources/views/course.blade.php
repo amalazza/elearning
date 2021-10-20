@@ -5,10 +5,12 @@
 <!-- Page Content-->
 <section class="py-2">
     <div class="container">
-        <div class="text-center mb-5">
+        <div class="text-center mb-4">
             <h1 class="fw-bolder">{{ $course->title }}</h1>
-            <p class="lead fw-normal text-muted mb-0">{{ $course->description }}</p>
+            <p class="lead fw-normal text-muted mb-3">{{ $course->description }}</p>
+            <div class="badge bg-secondary text-decoration-none link-light">Teacher: {{ $course->teachers()->pluck('name')->first() }}</div>
         </div>
+    </div>
         <div class="row gx-5">
             <div class="col-xl-12">
                 

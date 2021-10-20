@@ -2,16 +2,30 @@
 
 @section('sidebar')
 <section class="py-5">
+    <!-- LIST LESSON -->
     <div class="container">
-    <p class="lead">{{ $lesson->course->title }}</p>
+        <p class="lead">{{ $lesson->course->title }}</p>
 
-    <div class="list-group">
-        @foreach ($lesson->course->publishedLessons as $list_lesson)
-            <a href="{{ route('lessons.show', [$list_lesson->course_id, $list_lesson->slug]) }}" class="list-group-item"
-                @if ($list_lesson->id == $lesson->id) style="font-weight: bold" @endif>{{ $loop->iteration }}. {{ $list_lesson->title }}</a>
-        @endforeach
+        <div class="list-group">
+            @foreach ($lesson->course->publishedLessons as $list_lesson)
+                <a href="{{ route('lessons.show', [$list_lesson->course_id, $list_lesson->slug]) }}" class="list-group-item"
+                    @if ($list_lesson->id == $lesson->id) style="font-weight: bold" @endif>{{ $loop->iteration }}. {{ $list_lesson->title }}</a>
+            @endforeach
+        </div>
     </div>
-    </div>
+    <br>
+    <!-- LIST TEST -->
+    @if ($test_exists)
+        <div class="container">
+            <p class="lead">Test</p>
+
+            <div class="list-group">
+                <a href="#accordionExample" class="list-group-item">
+                {{ $lesson->test->title }}
+                </a>
+            </div>
+        </div>
+    @endif
 </section>
 @endsection
 
@@ -19,11 +33,13 @@
 <section class="py-5">
     <div class="container">
 
-    <div class="text-left mb-5">
-        <h1 class="fw-bolder">{{ $lesson->title }}</h1>
+    <div class="text-left">
+        <h1 class="fw-bolder mb-1">{{ $lesson->title }}</h1>
+        <div class="text-muted fst-italic mb-2">{{ $lesson->updated_at }}</div>
         <hr/>
     </div>
-    <!-- <h2 style="margin: 10px;">{{ $lesson->title }}</h2> -->
+
+    
 
     <div class="list-group">
         <!-- @lang('global.lessons.fields.downloadable-files') -->
