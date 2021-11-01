@@ -1,8 +1,8 @@
 @inject('request', 'Illuminate\Http\Request')
 <!-- Left side column. contains the sidebar -->
-<aside class="main-sidebar">
+<aside class="main-sidebar" >
     <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
+    <section class="sidebar" style="">
         <ul class="sidebar-menu">
 
             <li class="{{ $request->segment(1) == 'home' ? 'active' : '' }}">
@@ -23,18 +23,17 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                
-                <!-- @can('permission_access')
-                <li class="{{ $request->segment(2) == 'permissions' ? 'active active-sub' : '' }}">
+                    <!-- @can('permission_access')
+                    <li class="{{ $request->segment(2) == 'permissions' ? 'active active-sub' : '' }}">
                         <a href="{{ route('admin.permissions.index') }}">
                             <span class="title">
                                 @lang('global.permissions.title')
                             </span>
                         </a>
                     </li>
-                @endcan -->
-                @can('role_access')
-                <li class="{{ $request->segment(2) == 'roles' ? 'active active-sub' : '' }}">
+                    @endcan -->
+                    @can('role_access')
+                    <li class="{{ $request->segment(2) == 'roles' ? 'active active-sub' : '' }}">
                         <a href="{{ route('admin.roles.index') }}">
                             <!-- <i class="fa fa-briefcase"></i> -->
                             <span class="title">
@@ -42,9 +41,9 @@
                             </span>
                         </a>
                     </li>
-                @endcan
-                @can('user_access')
-                <li class="{{ $request->segment(2) == 'users' ? 'active active-sub' : '' }}">
+                    @endcan
+                    @can('user_access')
+                    <li class="{{ $request->segment(2) == 'users' ? 'active active-sub' : '' }}">
                         <a href="{{ route('admin.users.index') }}">
                             <!-- <i class="fa fa-user"></i> -->
                             <span class="title">
@@ -52,7 +51,7 @@
                             </span>
                         </a>
                     </li>
-                @endcan
+                    @endcan
                 </ul>
             </li>
             @endcan
@@ -85,41 +84,36 @@
                 </a>
                 <ul class="treeview-menu">
 
-            @can('test_access')
-            <li class="{{ $request->segment(2) == 'tests' ? 'active' : '' }}">
-                <a href="{{ route('admin.tests.index') }}">
-                    <!-- <i class="fa fa-gears"></i> -->
-                    <span class="title">@lang('global.tests.title')</span>
-                </a>
+                    @can('test_access')
+                    <li class="{{ $request->segment(2) == 'tests' ? 'active' : '' }}">
+                        <a href="{{ route('admin.tests.index') }}">
+                            <!-- <i class="fa fa-gears"></i> -->
+                            <span class="title">@lang('global.tests.title')</span>
+                        </a>
+                    </li>
+                    @endcan
+
+                    @can('question_access')
+                    <li class="{{ $request->segment(2) == 'questions' ? 'active' : '' }}">
+                        <a href="{{ route('admin.questions.index') }}">
+                            <!-- <i class="fa fa-question"></i> -->
+                            <span class="title">@lang('global.questions.title')</span>
+                        </a>
+                    </li>
+                    @endcan
+                    
+                    @can('questions_option_access')
+                    <li class="{{ $request->segment(2) == 'questions_options' ? 'active' : '' }}">
+                        <a href="{{ route('admin.questions_options.index') }}">
+                            <!-- <i class="fa fa-gears"></i> -->
+                            <span class="title">@lang('global.questions-options.title')</span>
+                        </a>
+                    </li>
+                    @endcan
+
+                </ul>
             </li>
             @endcan
-
-            @can('question_access')
-            <li class="{{ $request->segment(2) == 'questions' ? 'active' : '' }}">
-                <a href="{{ route('admin.questions.index') }}">
-                    <!-- <i class="fa fa-question"></i> -->
-                    <span class="title">@lang('global.questions.title')</span>
-                </a>
-            </li>
-            @endcan
-            
-            @can('questions_option_access')
-            <li class="{{ $request->segment(2) == 'questions_options' ? 'active' : '' }}">
-                <a href="{{ route('admin.questions_options.index') }}">
-                    <!-- <i class="fa fa-gears"></i> -->
-                    <span class="title">@lang('global.questions-options.title')</span>
-                </a>
-            </li>
-            @endcan
-
-            </ul>
-            </li>
-            @endcan
-            
-
-            
-
-            
 
             <li class="{{ $request->segment(1) == 'change_password' ? 'active' : '' }}">
                 <a href="{{ route('auth.change_password') }}">

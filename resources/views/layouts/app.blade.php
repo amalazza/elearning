@@ -6,7 +6,7 @@
 </head>
 
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini" style="background-color: #222d32;">
 
 <div id="wrapper">
 
@@ -53,6 +53,7 @@
 <button type="submit">Logout</button>
 {!! Form::close() !!}
 
+@include('partials.footer')
 @include('partials.javascripts')
 </body>
 </html>
