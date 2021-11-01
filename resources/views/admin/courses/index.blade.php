@@ -66,7 +66,10 @@
                                 @endif
                                 <td>{{ $course->title }}</td>
                                 <td>{{ $course->slug }}</td>
-                                <td>{!! $course->description !!}</td>
+                                <td>
+                                    <!-- {!! $course->description !!} -->
+                                    {{ substr($course->description, 0,  150) }}...
+                                </td>
                                 <!-- <td>{{ $course->price }}</td> -->
                                 <td>@if($course->course_image)<a href="{{ asset('uploads/' . $course->course_image) }}" target="_blank"><img src="{{ asset('uploads/thumb/' . $course->course_image) }}"/></a>@endif</td>
                                 <td>{{ $course->start_date }}</td>

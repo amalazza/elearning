@@ -10,7 +10,7 @@
 
         <div class="panel-body">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <table class="table table-bordered table-striped">
                         <tr>
                             <th>@lang('global.roles.fields.title')</th>

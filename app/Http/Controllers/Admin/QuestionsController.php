@@ -133,7 +133,8 @@ class QuestionsController extends Controller
         if (! Gate::allows('question_view')) {
             return abort(401);
         }
-        $questions_options = \App\QuestionsOption::where('question_id', $id)->get();$tests = \App\Test::whereHas('questions',
+        $questions_options = \App\QuestionsOption::where('question_id', $id)->get();
+        $tests = \App\Test::whereHas('questions',
                     function ($query) use ($id) {
                         $query->where('id', $id);
                     })->get();

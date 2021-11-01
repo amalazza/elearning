@@ -127,7 +127,9 @@ class CoursesController extends Controller
         if (! Gate::allows('course_view')) {
             return abort(401);
         }
-        $teachers = \App\User::get()->pluck('name', 'id');$lessons = \App\Lesson::where('course_id', $id)->get();$tests = \App\Test::where('course_id', $id)->get();
+        $teachers = \App\User::get()->pluck('name', 'id');
+        $lessons = \App\Lesson::where('course_id', $id)->get();
+        $tests = \App\Test::where('course_id', $id)->get();
 
         $course = Course::findOrFail($id);
 

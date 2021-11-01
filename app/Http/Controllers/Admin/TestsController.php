@@ -122,8 +122,9 @@ class TestsController extends Controller
             return abort(401);
         }
         $test = Test::findOrFail($id);
+        $testresult = \App\TestsResult::where('test_id', $id)->get();
 
-        return view('admin.tests.show', compact('test'));
+        return view('admin.tests.show', compact('test', 'testresult'));
     }
 
 

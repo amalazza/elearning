@@ -44,6 +44,40 @@
                 </div>
             </div>
 
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#testresult" aria-controls="testresult" role="tab" data-toggle="tab">Test Result</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="testresult">
+                    <table class="table table-bordered table-striped {{ count($testresult) > 0 ? 'datatable' : '' }}">
+                        <thead>
+                            <tr>
+                                <th>Test</th>
+                                <th>Student</th>
+                                <th>Test Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (count($testresult) > 0)
+                                @foreach ($testresult as $testresult)
+                                    <tr data-entry-id="{{ $testresult->id }}">
+                                        <td>{{ $testresult->test->title or '' }}</td>
+                                        <td>{{ $testresult->user->name or '' }}</td>
+                                        <td>{{ $testresult->test_result }}</td>
+                                    </tr>
+                                @endforeach
+                            @else
+                                <tr>
+                                    <td colspan="7">@lang('global.app_no_entries_in_table')</td>
+                                </tr>
+                            @endif
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
             <p>&nbsp;</p>
 
             <a href="{{ route('admin.tests.index') }}" class="btn btn-default">@lang('global.app_back_to_list')</a>
