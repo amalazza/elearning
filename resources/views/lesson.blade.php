@@ -20,12 +20,23 @@
             <p class="lead">Test</p>
 
             <div class="list-group">
-                <a href="#accordionExample" class="list-group-item">
+                <a href="#test" class="list-group-item">
                 {{ $lesson->test->title }}
                 </a>
             </div>
         </div>
     @endif
+    <br>
+    <!-- FORUM -->
+    <div class="container">
+        <p class="lead">Forum</p>
+
+        <div class="list-group">
+            <a href="#forum" class="list-group-item">
+            Diskusi
+            </a>
+        </div>
+    </div>
 </section>
 @endsection
 
@@ -70,8 +81,8 @@
 
         @if ($test_exists)
         <hr />
-            <h2 class="fw-bolder mb-3">Test</h2>
-            <div class="accordion mb-5" id="accordionExample">
+            <h2 class="fw-bolder mb-3"  id="test">Test</h2>
+            <div class="accordion mb-5">
                 <div class="accordion-item">
                     <h3 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -108,6 +119,28 @@
             </div>  
 
         @endif
+
+        <style>
+            .display-comment .display-comment {
+                margin-left: 40px
+            }
+        </style>
+        <hr />
+            <h2 class="fw-bolder mb-3"  id="forum">Forum</h2>
+            @include('partials._comment_replies', ['comments' => $lesson->comments, 'lesson_id' => $lesson->id])
+            <hr />
+            <h4>Add comment</h4>
+            <form method="post" action="{{ route('comment.add') }}">
+                <!-- @csrf -->
+                {{ csrf_field() }}
+                <div class="form-group">
+                    <input type="text" name="comment_body" class="form-control" />
+                    <input type="hidden" name="lesson_id" value="{{ $lesson->id }}" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-warning" value="Add Comment" />
+                </div>
+            </form>
 
 
     @else

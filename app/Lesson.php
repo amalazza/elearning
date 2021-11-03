@@ -59,5 +59,10 @@ class Lesson extends Model implements HasMedia
     {
         return $this->belongsToMany('App\User', 'lesson_student')->withTimestamps();
     }
+
+    public function comments()
+    {
+        return $this->morphMany(Comment::class, 'commentable')->whereNull('parent_id');
+    }
     
 }

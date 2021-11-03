@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 11, 2021 at 05:11 PM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 7.3.2
+-- Generation Time: Nov 03, 2021 at 09:33 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -110,6 +110,31 @@ INSERT INTO `chatter_post` (`id`, `chatter_discussion_id`, `user_id`, `body`, `c
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `comments`
+--
+
+CREATE TABLE `comments` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `user_id` int(10) UNSIGNED NOT NULL,
+  `parent_id` int(10) UNSIGNED DEFAULT NULL,
+  `body` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `commentable_id` int(10) UNSIGNED NOT NULL,
+  `commentable_type` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `comments`
+--
+
+INSERT INTO `comments` (`id`, `user_id`, `parent_id`, `body`, `commentable_id`, `commentable_type`, `created_at`, `updated_at`) VALUES
+(1, 4, NULL, 'comment by my self', 51, 'App\\Lesson', '2021-11-03 13:26:05', '2021-11-03 13:26:05'),
+(2, 2, 1, 'oh yeah!', 51, 'App\\Lesson', '2021-11-03 13:28:17', '2021-11-03 13:28:17');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `courses`
 --
 
@@ -165,7 +190,8 @@ INSERT INTO `course_student` (`course_id`, `user_id`, `rating`, `created_at`, `u
 (6, 2, 0, '2021-08-21 13:18:23', '2021-08-21 13:18:23'),
 (9, 5, 0, '2021-08-23 22:16:19', '2021-08-23 22:16:19'),
 (10, 2, 0, '2021-08-23 22:23:51', '2021-08-23 22:23:51'),
-(10, 4, 0, '2021-08-23 22:23:51', '2021-08-23 22:23:51');
+(10, 4, 0, '2021-08-23 22:23:51', '2021-08-23 22:23:51'),
+(6, 4, 0, '2021-11-02 09:33:11', '2021-11-02 09:33:11');
 
 -- --------------------------------------------------------
 
@@ -312,7 +338,9 @@ INSERT INTO `lesson_student` (`lesson_id`, `user_id`, `created_at`, `updated_at`
 (5, 2, '2021-08-23 05:24:51', '2021-08-23 05:24:51'),
 (55, 2, '2021-08-23 10:17:25', '2021-08-23 10:17:25'),
 (56, 5, '2021-08-23 22:21:02', '2021-08-23 22:21:02'),
-(57, 2, '2021-08-23 22:25:55', '2021-08-23 22:25:55');
+(57, 2, '2021-08-23 22:25:55', '2021-08-23 22:25:55'),
+(57, 4, '2021-11-02 09:24:58', '2021-11-02 09:24:58'),
+(51, 4, '2021-11-02 09:34:11', '2021-11-02 09:34:11');
 
 -- --------------------------------------------------------
 
@@ -386,7 +414,9 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (22, '2016_07_29_171118_create_chatter_post_table', 2),
 (23, '2016_07_29_171128_create_foreign_keys', 2),
 (24, '2016_08_02_183143_add_slug_field_for_discussions', 2),
-(25, '2016_08_03_121747_add_color_row_to_chatter_discussions', 2);
+(25, '2016_08_03_121747_add_color_row_to_chatter_discussions', 2),
+(26, '2021_11_03_183644_create_posts_comments_table', 3),
+(27, '2021_11_03_194208_create_comments_table', 4);
 
 -- --------------------------------------------------------
 
@@ -637,7 +667,8 @@ INSERT INTO `questions` (`id`, `question`, `question_image`, `score`, `created_a
 (51, 'apa itu cinta?', '1629474745-unnamed (5).jpg', 5, '2021-08-20 08:52:25', '2021-08-21 05:48:57', '2021-08-21 05:48:57'),
 (52, 'apa itu bahagia?', '', 5, '2021-08-20 08:53:44', '2021-08-21 05:48:57', '2021-08-21 05:48:57'),
 (53, 'Yang bener a', NULL, 5, '2021-08-21 06:01:23', '2021-08-21 06:01:23', NULL),
-(54, 'yang bener c', NULL, 5, '2021-08-21 06:01:53', '2021-08-21 06:01:53', NULL);
+(54, 'yang bener c', NULL, 5, '2021-08-21 06:01:53', '2021-08-21 06:01:53', NULL),
+(55, 'detak nafasmu?', NULL, 5, '2021-11-02 09:21:25', '2021-11-02 09:21:25', NULL);
 
 -- --------------------------------------------------------
 
@@ -875,7 +906,11 @@ INSERT INTO `questions_options` (`id`, `question_id`, `option_text`, `correct`, 
 (213, 54, 'a', 0, '2021-08-21 06:01:53', '2021-08-21 06:01:53', NULL),
 (214, 54, 'b', 0, '2021-08-21 06:01:53', '2021-08-21 06:01:53', NULL),
 (215, 54, 'c', 1, '2021-08-21 06:01:53', '2021-08-21 06:01:53', NULL),
-(216, 54, 'd', 0, '2021-08-21 06:01:53', '2021-08-21 06:01:53', NULL);
+(216, 54, 'd', 0, '2021-08-21 06:01:53', '2021-08-21 06:01:53', NULL),
+(217, 55, 'syahdu bener', 1, '2021-11-02 09:21:25', '2021-11-02 09:21:25', NULL),
+(218, 55, 'buah cintaku', 0, '2021-11-02 09:21:25', '2021-11-02 09:21:25', NULL),
+(219, 55, 'sekuntum rindu', 0, '2021-11-02 09:21:25', '2021-11-02 09:21:25', NULL),
+(220, 55, 'cintaku', 0, '2021-11-02 09:21:25', '2021-11-02 09:21:25', NULL);
 
 -- --------------------------------------------------------
 
@@ -946,7 +981,8 @@ INSERT INTO `question_test` (`question_id`, `test_id`) VALUES
 (51, 51),
 (52, 51),
 (53, 52),
-(54, 52);
+(54, 52),
+(55, 53);
 
 -- --------------------------------------------------------
 
@@ -1066,7 +1102,8 @@ INSERT INTO `tests` (`id`, `course_id`, `lesson_id`, `title`, `description`, `pu
 (49, NULL, 49, 'Quas impedit delectus saepe ut fugiat.', NULL, 1, '2021-08-20 08:41:45', '2021-08-21 05:50:14', '2021-08-21 05:50:14'),
 (50, NULL, 50, 'A accusamus fuga et quia.', NULL, 1, '2021-08-20 08:41:45', '2021-08-21 05:50:14', '2021-08-21 05:50:14'),
 (51, 4, 1, 'Mala', 'kmksmkmekdmekmdekd ednednededm', 1, '2021-08-20 08:46:04', '2021-08-21 05:50:14', '2021-08-21 05:50:14'),
-(52, 6, 51, 'Kuis 1', 'Kuis pertama', 1, '2021-08-21 06:00:15', '2021-08-21 06:00:15', NULL);
+(52, 6, 51, 'Kuis 1', 'Kuis pertama', 1, '2021-08-21 06:00:15', '2021-08-21 06:00:15', NULL),
+(53, 9, 56, 'Test Regresi Linier', 'kjdneijdnede iwdnewndiednewidni6789o', 1, '2021-11-02 09:20:05', '2021-11-02 09:20:05', NULL);
 
 -- --------------------------------------------------------
 
@@ -1090,7 +1127,8 @@ CREATE TABLE `tests_results` (
 INSERT INTO `tests_results` (`id`, `test_id`, `user_id`, `test_result`, `created_at`, `updated_at`) VALUES
 (1, 36, NULL, 0, '2021-08-20 08:56:20', '2021-08-20 08:56:20'),
 (2, 35, NULL, 1, '2021-08-20 08:56:41', '2021-08-20 08:56:41'),
-(3, 52, NULL, 10, '2021-08-23 03:32:20', '2021-08-23 03:32:20');
+(4, 52, 2, 5, '2021-10-29 04:40:59', '2021-10-29 04:40:59'),
+(5, 52, 4, 10, '2021-11-02 09:34:33', '2021-11-02 09:34:33');
 
 -- --------------------------------------------------------
 
@@ -1117,8 +1155,10 @@ INSERT INTO `tests_results_answers` (`id`, `tests_result_id`, `question_id`, `op
 (2, 2, 2, 6, 1, '2021-08-20 08:56:42', '2021-08-20 08:56:42'),
 (3, 2, 17, 66, 0, '2021-08-20 08:56:42', '2021-08-20 08:56:42'),
 (4, 2, 30, 119, 0, '2021-08-20 08:56:42', '2021-08-20 08:56:42'),
-(5, 3, 53, 209, 1, '2021-08-23 03:32:20', '2021-08-23 03:32:20'),
-(6, 3, 54, 215, 1, '2021-08-23 03:32:20', '2021-08-23 03:32:20');
+(7, 4, 53, 210, 0, '2021-10-29 04:40:59', '2021-10-29 04:40:59'),
+(8, 4, 54, 215, 1, '2021-10-29 04:40:59', '2021-10-29 04:40:59'),
+(9, 5, 53, 209, 1, '2021-11-02 09:34:33', '2021-11-02 09:34:33'),
+(10, 5, 54, 215, 1, '2021-11-02 09:34:33', '2021-11-02 09:34:33');
 
 -- --------------------------------------------------------
 
@@ -1141,11 +1181,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'admin@admin.com', '$2y$10$l4MghrLnKXTRUDlR07XQeesKHRIaAe7WzDf90g751BEf70AwnJ5m.', '1mD5grRMqmmKvAlduVaScJWnSRUbJ5WzB9vV13xoqSXahuCIuFGPxabNNHBl', '2021-08-20 08:41:24', '2021-08-20 08:41:24'),
-(2, 'susan', 'susan@gmail.com', '$2y$10$M.Q6I9DkFfurvz574Azxy.bxokfr1TfDsdbPan3lujGvX7VkqI5la', '21kI8Oo5CoIWRrJAVwougI4vEl6idhYPWBiG83d7muFFZnYL1dWa8qaiYmOQ', '2021-08-21 05:36:35', '2021-08-23 21:35:23'),
-(3, 'anggi', 'anggi@gmail.com', '$2y$10$e1NyFY.PwXJvpGXosSpRY.NtSodgYym3Iwv/a4UVX1zN5LF9fYxC.', 'C8xx8ujSJfJZi3Y3lq2WtByIaov7a58YkwB9CHCRKoH4hmaYX9RwArfTLvu4', '2021-08-21 05:36:59', '2021-08-21 05:36:59'),
-(4, 'gdragon', 'gdragon@gmail.com', '$2y$10$hXNMEJgAj5548qtH4CwCReYsli.ze9a606zu.C2E0iGQO.2BhlMgm', NULL, '2021-08-23 04:21:14', '2021-08-23 04:21:14'),
-(5, 'eriya', 'eriya@gmail.com', '$2y$10$g0ZFsp/2uWNNa.jUYA0XTecZDp9onkw9Gnjo.3U2aFnI1V6ZnokEm', 'bm5ngVlOr4EMrxbBcrZzBMZcclGIBM8MgmNUXvFP06feo3vTfeRRwhgt4asM', '2021-08-23 21:29:50', '2021-08-23 21:38:07');
+(1, 'Admin', 'admin@admin.com', '$2y$10$l4MghrLnKXTRUDlR07XQeesKHRIaAe7WzDf90g751BEf70AwnJ5m.', 'pp11QOLxSlY6i3kxDBdg0xjtp1GjtRACGzRj47XijcMlUMgYyI2IPjdRFREQ', '2021-08-20 08:41:24', '2021-08-20 08:41:24'),
+(2, 'susan', 'susan@gmail.com', '$2y$10$LGTk7TEOfM3j97LrDjAWY.W/8evMGVpRK78HJJvAZ7fxG.2Vd.IGy', 'kdHnX1w8EW0tBZdhaMpArL7ZK43C53DRhw01z5rYTJJ6rJ5raGK31TFB4jTK', '2021-08-21 05:36:35', '2021-11-03 13:27:26'),
+(3, 'anggi', 'anggi@gmail.com', '$2y$10$xQ7qeEzcCUcJfvyoaGhTYuLcXz8UxdBRiYARmlYyjy3OqdL7B3V4a', 'AtElil4nWpD3gthAFbDtzoQUplz0JY8P1ay8vUO5ctHxbA5QJN01EHK1VURD', '2021-08-21 05:36:59', '2021-11-02 09:23:34'),
+(4, 'gdragon', 'gdragon@gmail.com', '$2y$10$j.bFYsFgAIkOZEqEcCvVbe68qqEGx9MiBcIgglurCVkA/Y/vKDASm', 'sb8VA1TXgJc2nA0CqZY9LFlyTuYAKpFLCLyzu4WrIRP2r9c4nQywoCnna0Yb', '2021-08-23 04:21:14', '2021-11-02 09:23:57'),
+(5, 'eriya', 'eriya@gmail.com', '$2y$10$g0ZFsp/2uWNNa.jUYA0XTecZDp9onkw9Gnjo.3U2aFnI1V6ZnokEm', 'DRTPjwf77I0o3yLUhiBUYE4bxCjw4n2AKLXHJ2aY0MB1tJvoZIMQyzHSnDkw', '2021-08-23 21:29:50', '2021-08-23 21:38:07');
 
 --
 -- Indexes for dumped tables
@@ -1173,6 +1213,12 @@ ALTER TABLE `chatter_post`
   ADD PRIMARY KEY (`id`),
   ADD KEY `chatter_post_chatter_discussion_id_foreign` (`chatter_discussion_id`),
   ADD KEY `chatter_post_user_id_foreign` (`user_id`);
+
+--
+-- Indexes for table `comments`
+--
+ALTER TABLE `comments`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `courses`
@@ -1332,6 +1378,12 @@ ALTER TABLE `chatter_post`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
+-- AUTO_INCREMENT for table `comments`
+--
+ALTER TABLE `comments`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `courses`
 --
 ALTER TABLE `courses`
@@ -1353,7 +1405,7 @@ ALTER TABLE `media`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `permissions`
@@ -1365,13 +1417,13 @@ ALTER TABLE `permissions`
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `questions_options`
 --
 ALTER TABLE `questions_options`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=217;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=221;
 
 --
 -- AUTO_INCREMENT for table `roles`
@@ -1383,19 +1435,19 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `tests`
 --
 ALTER TABLE `tests`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT for table `tests_results`
 --
 ALTER TABLE `tests_results`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tests_results_answers`
 --
 ALTER TABLE `tests_results_answers`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `users`
