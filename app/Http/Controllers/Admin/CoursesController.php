@@ -88,10 +88,11 @@ class CoursesController extends Controller
             return abort(401);
         }
         $teachers = \App\User::whereHas('role', function ($q) { $q->where('role_id', 2); } )->get()->pluck('name', 'id');
+        $students = \App\User::whereHas('role', function ($q) { $q->where('role_id', 3); } )->get()->pluck('name', 'id');
 
         $course = Course::findOrFail($id);
 
-        return view('admin.courses.edit', compact('course', 'teachers'));
+        return view('admin.courses.edit', compact('course', 'teachers', 'students'));
     }
 
     /**
@@ -111,6 +112,8 @@ class CoursesController extends Controller
         $course->update($request->all());
         $teachers = \Auth::user()->isAdmin() ? array_filter((array)$request->input('teachers')) : [\Auth::user()->id];
         $course->teachers()->sync($teachers);
+        $students = \Auth::user()->isAdmin() ? array_filter((array)$request->input('students')) : [\Auth::user()->id];
+        $course->students()->sync($students);
 
         return redirect()->route('admin.courses.index');
     }

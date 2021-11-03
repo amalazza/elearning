@@ -28,6 +28,18 @@
             @endif
             <div class="row">
                 <div class="col-xs-12 form-group">
+                    {!! Form::label('students', 'Students', ['class' => 'control-label']) !!}
+                    {!! Form::select('students[]', $students, old('students') ? old('students') : $course->students->pluck('id')->toArray(), ['class' => 'form-control select2', 'multiple' => 'multiple']) !!}
+                    <p class="help-block"></p>
+                    @if($errors->has('students'))
+                        <p class="help-block">
+                            {{ $errors->first('students') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
                     {!! Form::label('title', 'Title*', ['class' => 'control-label']) !!}
                     {!! Form::text('title', old('title'), ['class' => 'form-control', 'placeholder' => '', 'required' => '']) !!}
                     <p class="help-block"></p>
