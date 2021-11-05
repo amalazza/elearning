@@ -127,20 +127,27 @@
         </style>
         <hr />
             <h2 class="fw-bolder mb-3"  id="forum">Forum</h2>
-            @include('partials._comment_replies', ['comments' => $lesson->comments, 'lesson_id' => $lesson->id])
-            <hr />
-            <h4>Add comment</h4>
-            <form method="post" action="{{ route('comment.add') }}">
-                <!-- @csrf -->
-                {{ csrf_field() }}
-                <div class="form-group">
-                    <input type="text" name="comment_body" class="form-control" />
-                    <input type="hidden" name="lesson_id" value="{{ $lesson->id }}" />
+            <div class="card bg-light">
+                <div class="card-body">
+                    <!-- Comment form-->
+                    <form method="post" action="{{ route('comment.add') }}" class="mb-2">
+                        <!-- @csrf -->
+                        {{ csrf_field() }}
+                        <div class="form-group mb-1">
+                            <textarea class="form-control" name="comment_body" rows="3" placeholder="Add discussion"></textarea>
+                            <input type="hidden" name="lesson_id" value="{{ $lesson->id }}" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="Add Discussion" style="float: right;"/>
+                        </div>
+                    </form>
+                    <!-- Comment with nested comments-->
+                    <div class="card-body">
+                        @include('partials._comment_replies', ['comments' => $lesson->comments, 'lesson_id' => $lesson->id])
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-warning" value="Add Comment" />
-                </div>
-            </form>
+            </div>
+
 
 
     @else
