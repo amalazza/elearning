@@ -41,6 +41,21 @@ class HomeController extends Controller
         return view('about', compact('courses', 'purchased_courses'));
     }
 
+    public function intruction()
+    {
+        $purchased_courses = NULL;
+        if (\Auth::check()) {
+            $purchased_courses = Course::whereHas('students', function($query) {
+                $query->where('id', \Auth::id());
+            })
+            ->with('lessons')
+            ->orderBy('id', 'desc')
+            ->get();
+        }
+        $courses = Course::where('published', 1)->orderBy('id', 'desc')->get();
+        return view('intruction', compact('courses', 'purchased_courses'));
+    }
+
     public function courses()
     {
         $purchased_courses = NULL;
