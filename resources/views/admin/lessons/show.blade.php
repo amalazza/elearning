@@ -56,6 +56,10 @@
                             <th>@lang('global.lessons.fields.published')</th>
                             <td>{{ Form::checkbox("published", 1, $lesson->published == 1 ? true : false, ["disabled"]) }}</td>
                         </tr>
+                        <tr>
+                            <th>Activate Forum</th>
+                            <td>{{ Form::checkbox("is_forum_active", 1, $lesson->is_forum_active == 1 ? true : false, ["disabled"]) }}</td>
+                        </tr>
                     </table>
                 </div>
             </div><!-- Nav tabs -->

@@ -146,6 +146,19 @@
                     @endif
                 </div>
             </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('is_forum_active', 'Activate Forum', ['class' => 'control-label']) !!}
+                    {!! Form::hidden('is_forum_active', 0) !!}
+                    {!! Form::checkbox('is_forum_active', 1, old('is_forum_active'), []) !!}
+                    <p class="help-block"></p>
+                    @if($errors->has('is_forum_active'))
+                        <p class="help-block">
+                            {{ $errors->first('is_forum_active') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
             
         </div>
     </div>
