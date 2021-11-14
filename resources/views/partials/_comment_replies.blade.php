@@ -4,11 +4,10 @@
     
     <div class="fw-bold"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /> {{ $comment->user->name }}</div>
 </div>
-<div class="ms-3 display-comment">
-    
-    <p style="margin-bottom: 5px;">{{ $comment->body }}</p>
+<div class="ms-3 display-comment" style="margin-top: -10px;">
+    <p style="margin-bottom: 5px; margin-left: 40px;">{{ $comment->body }}</p>
     <a href="" id="reply"></a>
-    <form method="post" action="{{ route('reply.add') }}" class="mb-2">
+    <form method="post" action="{{ route('reply.add') }}" class="mb-2" style="margin-left: 40px;">
         {{ csrf_field() }}
         <div class="form-group mb-1">
             <!-- <input type="text" name="comment_body" class="form-control" /> -->
