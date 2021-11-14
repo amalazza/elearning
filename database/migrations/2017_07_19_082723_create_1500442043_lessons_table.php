@@ -25,6 +25,7 @@ class Create1500442043LessonsTable extends Migration
                 $table->integer('position')->nullable()->unsigned();
                 $table->tinyInteger('free_lesson')->nullable()->default(0);
                 $table->tinyInteger('published')->nullable()->default(0);
+                $table->tinyInteger('is_forum_active')->nullable()->default(0);
                 
                 $table->timestamps();
                 $table->softDeletes();

@@ -28,15 +28,17 @@
     @endif
     <br>
     <!-- FORUM -->
-    <div class="container">
-        <p class="lead">Forum</p>
+    @if ($lesson->is_forum_active == 1)
+        <div class="container">
+            <p class="lead">Forum</p>
 
-        <div class="list-group">
-            <a href="#forum" class="list-group-item">
-            Diskusi
-            </a>
+            <div class="list-group">
+                <a href="#forum" class="list-group-item">
+                Diskusi
+                </a>
+            </div>
         </div>
-    </div>
+    @endif
 </section>
 @endsection
 
@@ -125,6 +127,8 @@
                 margin-left: 40px
             }
         </style>
+
+        @if ($lesson->is_forum_active == 1)
         <hr />
             <h2 class="fw-bolder mb-3"  id="forum">Forum</h2>
             <div class="card bg-light">
@@ -147,6 +151,7 @@
                     </div>
                 </div>
             </div>
+        @endif
 
 
 

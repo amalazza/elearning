@@ -22,5 +22,6 @@ $factory->define(App\Lesson::class, function (Faker\Generator $faker) {
         'position' => rand(1, 10),
         'free_lesson' => rand(0, 1),
         'published' => rand(0, 1),
+        'is_forum_active' => rand(0, 1),
     ];
 });
