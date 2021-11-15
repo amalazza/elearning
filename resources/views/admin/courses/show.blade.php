@@ -21,6 +21,14 @@
                             </td>
                         </tr>
                         <tr>
+                            <th>Students</th>
+                            <td>
+                                @foreach ($course->students as $singleStudents)
+                                    <span class="label label-info label-many">{{ $singleStudents->name }}</span>
+                                @endforeach
+                            </td>
+                        </tr>
+                        <tr>
                             <th>@lang('global.courses.fields.title')</th>
                             <td>{{ $course->title }}</td>
                         </tr>

@@ -131,12 +131,13 @@ class CoursesController extends Controller
             return abort(401);
         }
         $teachers = \App\User::get()->pluck('name', 'id');
+        $students = \App\User::whereHas('role', function ($q) { $q->where('role_id', 3); } )->get()->pluck('name', 'id');
         $lessons = \App\Lesson::where('course_id', $id)->get();
         $tests = \App\Test::where('course_id', $id)->get();
 
         $course = Course::findOrFail($id);
 
-        return view('admin.courses.show', compact('course', 'lessons', 'tests'));
+        return view('admin.courses.show', compact('course', 'lessons', 'tests', 'students'));
     }
 
 
