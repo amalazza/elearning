@@ -54,8 +54,11 @@
                     <table class="table table-bordered table-striped {{ count($testresult) > 0 ? 'datatable' : '' }}">
                         <thead>
                             <tr>
-                                <th>Test</th>
                                 <th>Student</th>
+                                <th>@lang('global.questions-options.fields.question')</th>
+                                <th>@lang('global.questions-options.fields.option-text')</th>
+                                <th>Answer</th>
+                                <th>@lang('global.questions-options.fields.correct')</th>
                                 <th>Test Result</th>
                             </tr>
                         </thead>
@@ -63,8 +66,33 @@
                             @if (count($testresult) > 0)
                                 @foreach ($testresult as $testresult)
                                     <tr data-entry-id="{{ $testresult->id }}">
-                                        <td>{{ $testresult->test->title or '' }}</td>
                                         <td>{{ $testresult->user->name or '' }}</td>
+                                        <td>
+                                            @foreach ($test->questions as $singleQuestions)
+                                                <span class="label label-info label-many">
+                                                {{ $loop->iteration }}. {{ $singleQuestions->question }} <br>
+                                                </span>
+                                            @endforeach
+                                        </td>
+                                        <td>
+                                            @foreach ($test->questions as $singleQuestions)
+                                                <span class="label label-info label-many">
+                                                {{ $loop->iteration }}. {{ $singleQuestions->options->pluck('option_text') }} <br>
+                                                </span>
+                                            @endforeach
+                                        </td>
+                                        <td>
+                                            @foreach ($testresult->answers as $singleOptions)
+                                                <span class="label label-info label-many">
+                                                    {{ $loop->iteration }}. {{ $singleOptions->option->option_text }} <br>
+                                                </span>
+                                            @endforeach
+                                        </td>
+                                        <td>
+                                            @foreach ($testresult->answers as $singleOptions)
+                                            {{ $loop->iteration }}. {{ Form::checkbox("correct", 1, $singleOptions->option->correct == 1 ? true : false, ["disabled"]) }} <br>
+                                            @endforeach
+                                        </td>
                                         <td>{{ $testresult->test_result }}</td>
                                     </tr>
                                 @endforeach

@@ -21,7 +21,7 @@ class TestsResultsAnswer extends Model
 
     public function option()
     {
-        return $this->belongsTo(\App\QuestionsOption::class, 'option_id ');
+        return $this->belongsTo(\App\QuestionsOption::class);
     }
 
 }

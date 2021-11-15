@@ -123,8 +123,9 @@ class TestsController extends Controller
         }
         $test = Test::findOrFail($id);
         $testresult = \App\TestsResult::where('test_id', $id)->get();
+        $questions_options = \App\QuestionsOption::all();
 
-        return view('admin.tests.show', compact('test', 'testresult'));
+        return view('admin.tests.show', compact('test', 'testresult', 'questions_options'));
     }
 
 
