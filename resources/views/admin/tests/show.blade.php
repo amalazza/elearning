@@ -55,8 +55,7 @@
                         <thead>
                             <tr>
                                 <th>Student</th>
-                                <th>@lang('global.questions-options.fields.question')</th>
-                                <th>@lang('global.questions-options.fields.option-text')</th>
+                                <th>@lang('global.questions-options.fields.question') & @lang('global.questions-options.fields.option-text')</th>
                                 <th>Answer</th>
                                 <th>@lang('global.questions-options.fields.correct')</th>
                                 <th>Test Result</th>
@@ -70,15 +69,10 @@
                                         <td>
                                             @foreach ($test->questions as $singleQuestions)
                                                 <span class="label label-info label-many">
-                                                {{ $loop->iteration }}. {{ $singleQuestions->question }} <br>
+                                                {{ $loop->iteration }}. {{ $singleQuestions->question }} 
                                                 </span>
-                                            @endforeach
-                                        </td>
-                                        <td>
-                                            @foreach ($test->questions as $singleQuestions)
-                                                <span class="label label-info label-many">
-                                                {{ $loop->iteration }}. {{ $singleQuestions->options->pluck('option_text') }} <br>
-                                                </span>
+                                                {!! Form::select($singleQuestions->options->pluck('option_text'), $singleQuestions->options->pluck('option_text'), null, ['class' => 'form-control', 'multiple' => 'multiple', 'selected disabled']) !!}
+                                                
                                             @endforeach
                                         </td>
                                         <td>
