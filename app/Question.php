@@ -33,6 +33,11 @@ class Question extends Model
         return $this->hasMany('App\QuestionsOption');
     }
 
+    public function correct_answer() 
+    {
+        return $this->options()->where('correct','=', 1);
+    }
+
     public function tests()
     {
         return $this->belongsToMany(Test::class, 'question_test');

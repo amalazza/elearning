@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Lesson;
 use App\Question;
 use App\QuestionsOption;
+use App\Test;
 use App\TestsResult;
 use Illuminate\Http\Request;
 
@@ -29,6 +30,12 @@ class LessonsController extends Controller
                 $lesson->students()->attach(\Auth::id());
             }
         }
+
+        $test = NULL;
+        if ($lesson->test) {
+            $test = Test::findOrFail($lesson->test->id);
+        }
+        
 
         $test_result = NULL;
         if ($lesson->test) {
@@ -73,7 +80,7 @@ class LessonsController extends Controller
         // $oreader->load(__DIR__ . '/sample.pptx');
 
 
-        return view('lesson', compact('lesson', 'previous_lesson', 'next_lesson', 'test_result',
+        return view('lesson', compact('lesson', 'previous_lesson', 'next_lesson', 'test', 'test_result',
             'purchased_course', 'test_exists', 'oreader'));
     }
 

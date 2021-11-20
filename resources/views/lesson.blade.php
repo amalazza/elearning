@@ -97,6 +97,51 @@
                             <p>
                                 Your test score: {{ $test_result->test_result }}
                             </p>
+                            <hr>
+                            <p>
+                                Review test:
+                                <br>        
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active">
+                                        <table class="table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>@lang('global.questions-options.fields.question') & @lang('global.questions-options.fields.option-text')</th>
+                                                    <th>Answer</th>
+                                                    <th>@lang('global.questions-options.fields.correct')</th>
+                                                    <th>Test Result</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        @foreach ($test->questions as $singleQuestions)
+                                                            {{ $loop->iteration }}. {{ $singleQuestions->question }} 
+                                                            {!! Form::select($singleQuestions->options->pluck('option_text'), $singleQuestions->options->pluck('option_text'), null, ['class' => 'form-control', 'multiple' => 'multiple', 'selected disabled']) !!}
+                                                        @endforeach
+                                                    </td>
+                                                    <td>
+                                                        @foreach ($test_result->answers as $singleOptions)
+                                                                {{ $loop->iteration }}. {{ $singleOptions->option->option_text }} <br>
+                                                        @endforeach
+                                                    </td>
+                                                    <td>
+                                                        @foreach ($test->questions as $singleOptions)
+                                                        {{ $loop->iteration }}. {{ $singleOptions->correct_answer()->pluck('option_text')->first() }} <br>
+                                                        @endforeach
+                                                    </td>
+                                                    <td>
+                                                        @foreach ($test_result->answers as $singleOptions)
+                                                        {{ $loop->iteration }}. {{ Form::checkbox("correct", 1, $singleOptions->option->correct == 1 ? true : false, ["disabled"]) }} <br>
+                                                        @endforeach
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </p>
                         </div>
                     </div>
                     @else

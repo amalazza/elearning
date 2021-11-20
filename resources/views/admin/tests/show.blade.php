@@ -59,6 +59,7 @@
                                 <th>Answer</th>
                                 <th>@lang('global.questions-options.fields.correct')</th>
                                 <th>Test Result</th>
+                                <th>Test Score</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -68,18 +69,18 @@
                                         <td>{{ $testresult->user->name or '' }}</td>
                                         <td>
                                             @foreach ($test->questions as $singleQuestions)
-                                                <span class="label label-info label-many">
                                                 {{ $loop->iteration }}. {{ $singleQuestions->question }} 
-                                                </span>
                                                 {!! Form::select($singleQuestions->options->pluck('option_text'), $singleQuestions->options->pluck('option_text'), null, ['class' => 'form-control', 'multiple' => 'multiple', 'selected disabled']) !!}
-                                                
                                             @endforeach
                                         </td>
                                         <td>
                                             @foreach ($testresult->answers as $singleOptions)
-                                                <span class="label label-info label-many">
                                                     {{ $loop->iteration }}. {{ $singleOptions->option->option_text }} <br>
-                                                </span>
+                                            @endforeach
+                                        </td>
+                                        <td>
+                                            @foreach ($test->questions as $singleOptions)
+                                            {{ $loop->iteration }}. {{ $singleOptions->correct_answer()->pluck('option_text')->first() }} <br>
                                             @endforeach
                                         </td>
                                         <td>
