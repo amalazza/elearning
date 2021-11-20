@@ -128,21 +128,20 @@
                     font-size: 1.5rem;
                 }
             </style>
-            <section class="py-5">
+            <section class="py-5" id="scroll-target">
                 <div class="container px-5">
                     <!-- Contact cards-->
-                    <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
-                        <div class="col">
-                            <!-- <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-question-circle"></i></div> -->
-                            <div class="h3">Contact us &nbsp;:</div>
-                            <!-- <p class="text-muted mb-0">Browse FAQ's and support articles to find solutions.</p> -->
-                        </div>
-                        <div class="col">
+                    <div class="row gx-5 row-cols-1 row-cols-lg-1 py-5">
+                        <div class="text-center mb-5">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-geo-alt"></i></div>
-                            <div class="h5">Address</div>
-                            <p class="text-muted mb-0">Jl Cempaka Putih Tengah VI No.2 Jakarta Pusat 10510</p>
+                            <h1 class="fw-bolder">Address</h1>
+                            <p class="lead fw-normal text-muted mb-0">                            
+                                Jl. Rawamangun Muka Raya No.11, RT.11/RW.14, Rawamangun, Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13220
+                            </p>
                         </div>
-                        <div class="col">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.09582526792!2d106.8791516!3d-6.1943826!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2412a91a0f6a01c8!2sUniversitas%20Negeri%20Jakarta!5e0!3m2!1sid!2sid!4v1637415945682!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                        <!-- <div class="col">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
                             <div class="h5 mb-2">Email</div>
                             <p class="text-muted mb-0">infosmkn39jkt@gmail.com</p>
@@ -151,7 +150,7 @@
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-telephone"></i></div>
                             <div class="h5">Telephone/Fax</div>
                             <p class="text-muted mb-0">021-4246845</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
