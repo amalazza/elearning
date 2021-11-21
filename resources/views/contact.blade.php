@@ -12,6 +12,11 @@
                         <h1 class="fw-bolder">Get in touch</h1>
                         <p class="lead fw-normal text-muted mb-0">We'd love to hear from you</p>
                     </div>
+                    @if(session()->has('message'))
+                    <div class="alert alert-success alert-dismissible">
+                        <strong>Success!</strong> {{ session('message') }}
+                    </div>
+                    @endif
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-6">
                             <!-- * * * * * * * * * * * * * * *-->
@@ -21,51 +26,35 @@
                             <!-- To make this form functional, sign up at-->
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
-                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <form id="contactForm" method="post" action="{{ route('contact.store') }}">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                 <!-- Name input-->
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required/>
                                     <label for="name">Full name</label>
                                     <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                                 </div>
                                 <!-- Email address input-->
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                    <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required/>
                                     <label for="email">Email address</label>
                                     <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                     <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                                 </div>
                                 <!-- Phone number input-->
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="subject" type="text" placeholder="Enter the subject..." data-sb-validations="required" />
+                                    <input class="form-control" id="subject" name="subject" type="text" placeholder="Enter the subject..." required/>
                                     <label for="subject">Subject</label>
                                     <div class="invalid-feedback" data-sb-feedback="subject:required">A subject is required.</div>
                                 </div>
                                 <!-- Message input-->
                                 <div class="form-floating mb-3">
-                                    <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                    <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
                                     <label for="message">Message</label>
                                     <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                 </div>
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        To activate this form, sign up at
-                                        <br />
-                                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                    </div>
-                                </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                 <!-- Submit Button-->
-                                <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                                <div class="d-grid"><button type="submit" class="btn btn-primary btn-lg" id="submitButton">Submit</button></div>
                             </form>
                         </div>
                     </div>
@@ -110,4 +99,7 @@
                 </div>
             </section>
             @endsection
+            <script>
+                setInterval(function(){ $(".alert").fadeOut(); }, 3000);
+                </script>
 

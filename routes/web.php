@@ -4,6 +4,10 @@ Route::get('/about', 'HomeController@about');
 Route::get('/intruction', 'HomeController@intruction');
 Route::get('/courses', 'HomeController@courses');
 Route::get('/contact', 'HomeController@contact');
+
+Route::get('contact', ['uses' => 'ContactController@create', 'as' => 'contact.create']);
+Route::post('contact', ['uses' => 'ContactController@store', 'as' => 'contact.store']);
+
 Route::get('course/{slug}', ['uses' => 'CoursesController@show', 'as' => 'courses.show']);
 Route::post('course/payment', ['uses' => 'CoursesController@payment', 'as' => 'courses.payment']);
 Route::post('course/{course_id}/rating', ['uses' => 'CoursesController@rating', 'as' => 'courses.rating']);
