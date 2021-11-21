@@ -6,7 +6,7 @@
 
     @if (!is_null($purchased_courses))
         <!-- <h3 style="margin-bottom: 10px;">My courses</h3> -->
-        <div class="text-center mb-5" style="margin-top: 15px;">
+        <div class="text-center mb-5" style="margin-top: 20px;">
             <h1 class="fw-bolder">My courses</h1>
             <!-- <p class="lead fw-normal text-muted mb-0">How can we help you?</p> -->
         </div>
@@ -45,7 +45,7 @@
     @endif
 
     <!-- <h3 style="margin-bottom: 10px;">All courses</h3> -->
-    <div class="text-center mb-5" style="margin-top: 15px;">
+    <div class="text-center mb-5" style="margin-top: 20px;">
             <h1 class="fw-bolder">All courses</h1>
             <!-- <p class="lead fw-normal text-muted mb-0">How can we help you?</p> -->
     </div>

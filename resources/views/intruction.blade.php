@@ -16,8 +16,8 @@
                                         <li>Pilih menu home untuk melihat penjelasan singkat mengenai website ini dan profil singkat mengenai penulis dan pembimbing</li>
                                         <li>Pilih menu about untuk melihat sejarah dan jurusan teknik audio video dan SMKN 39 Jakarta</li>
                                         <li>Pilih menu courses untuk melihat standar kompetensi dan indikator, didalam menu rps terdapat materi-materi Perencanaan dan Instalasi Sistem Audio Video (PSA)</li>
-                                        <li>Pilih menu evalution pada lesson untuk mengerjakan soal dari seluruh materi pembelajaran</li>
-                                        <li>Pilih menu forum pada lesson untuk berdiskusi jika ada keluhan mengenai materi yang kurang dipahami dengan guru dan murid lainnya</li>
+                                        <li>Pilih menu evalution pada materi untuk mengerjakan soal dari seluruh materi pembelajaran</li>
+                                        <li>Pilih menu forum pada materi untuk berdiskusi jika ada keluhan mengenai materi yang kurang dipahami dengan guru dan murid lainnya</li>
                                         <li>Pilih menu contact untuk memberi saran dan masukan terhadap website ini</li>
                                     </ol>
                                 </p>

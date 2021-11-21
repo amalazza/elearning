@@ -116,5 +116,5 @@ return [
 	'app_back_to_list' => 'Back to list',
 	'app_dashboard' => 'Dashboard',
 	'app_delete' => 'Delete',
-	'global_title' => 'e-learning',
+	'global_title' => 'Website Pembelajaran SMKN 39 Jakarta',
 ];

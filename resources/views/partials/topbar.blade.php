@@ -4,7 +4,7 @@
        style="font-size: 16px;">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini">
-           @lang('global.global_title')</span>
+        <img src="{{ asset('uploads/img/logo-smk.png') }}" class="img-fluid" style="width: 30px; height: 30px;"/></span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg">
            @lang('global.global_title')</span>

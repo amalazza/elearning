@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>{{ $page_title or 'E-Learning' }}</title>
+        <title>{{ $page_title or 'Website Pembelajaran SMKN 39 Jakarta' }}</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -24,7 +24,7 @@
 <body style="padding-top: 50px;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">@lang('global.global_title')</a>
+            <a class="navbar-brand" href="/"><img src="{{ asset('uploads/img/logo-smk.png') }}" class="img-fluid" style="width: 50px; height: 50px;"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
