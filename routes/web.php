@@ -67,6 +67,9 @@ Route::group(['middleware' => ['admin'], 'prefix' => 'admin', 'as' => 'admin.'],
     Route::post('/spatie/media/upload', 'Admin\SpatieMediaController@create')->name('media.upload');
     Route::post('/spatie/media/remove', 'Admin\SpatieMediaController@destroy')->name('media.remove');
 
+    Route::resource('contact', 'Admin\ContactController');
+    Route::post('contact_mass_destroy', ['uses' => 'Admin\ContactController@massDestroy', 'as' => 'contact.mass_destroy']);
+
 });
 
 Route::post('/comment/store', 'CommentController@store')->name('comment.add');
