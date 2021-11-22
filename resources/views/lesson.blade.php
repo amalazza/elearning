@@ -51,33 +51,19 @@
         <div class="text-muted fst-italic mb-2">{{ $lesson->updated_at }}</div>
         <hr/>
     </div>
-
-    
-
-    <div class="list-group">
-        <!-- @lang('global.lessons.fields.downloadable-files') -->
-        @foreach($lesson->getMedia('downloadable_files') as $media)
-        <p class="form-group" style="margin: 10px;">
-            <!-- <a href="{{ asset('uploads/1/a.ppt') }}" target="_blank">aaa{{ $media->name }} ({{ $media->size }} KB)</a> -->
-            <!-- <iframe
-                src="{{ asset('uploads/1/a.pdf') }}"
-                frameBorder="0"
-                scrolling="auto"
-                height="100%"
-                width="100%">
-            </iframe> -->
-            <embed type="application/pdf" src="{{$media->getUrl()}}" width="100%" height="500px"></embed>
-            <!-- <object data="{{ asset('uploads/1/a.pdf') }}" width="600" height="400"></object>     -->
-        </p>
-        @endforeach
-    </div>
-
-                    
+        
 
     @if ($purchased_course || $lesson->free_lesson == 1)
       
     <div class="list-group" style="margin: 10px;">        
         {!! $lesson->full_text !!}
+    </div>
+    <div class="list-group">
+        @foreach($lesson->getMedia('downloadable_files') as $media)
+        <p class="form-group" style="margin: 10px;">
+            <embed type="application/pdf" src="{{$media->getUrl()}}" width="100%" height="500"></embed>
+        </p>
+        @endforeach
     </div>
     
 
@@ -151,6 +137,8 @@
                                 {{ csrf_field() }}
                                 @foreach ($lesson->test->questions as $question)
                                     <b>{{ $loop->iteration }}. {{ $question->question }}</b>
+                                    <br />
+                                    <td>@if($question->question_image)<a href="{{ asset('uploads/' . $question->question_image) }}" target="_blank"><img src="{{ asset('uploads/' . $question->question_image) }}"/></a>@endif</td>
                                     <br />
                                     @foreach ($question->options as $option)
                                         <input type="radio" name="questions[{{ $question->id }}]" value="{{ $option->id }}" /> {{ $option->option_text }}<br />

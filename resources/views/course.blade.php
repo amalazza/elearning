@@ -3,7 +3,7 @@
 @section('mylesson')
 
 <!-- Page Content-->
-<section class="py-2">
+<section class="py-4">
     <div class="container">
         <div class="text-center mb-4">
             <h1 class="fw-bolder">{{ $course->title }}</h1>

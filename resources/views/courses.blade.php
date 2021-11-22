@@ -17,7 +17,11 @@
         @foreach($purchased_courses as $course)
             <div class="col-sm-12 col-lg-4 col-md-4" style="margin-bottom: 20px;">
                 <div class="card h-100 shadow border-0">
+                    @if ($course->course_image && File::exists(public_path("uploads/".$course->course_image)))
                     <img class="card-img-top" src=" {{ asset('uploads/' . $course->course_image) }}" alt="..."  style="width: 100%; height: 200px;"/>
+                    @else 
+                    <img class="card-img-top" src=" {{ asset('uploads/no-image.png') }}" alt="..."  style="width: 100%; height: 200px;"/>
+                    @endif
                     <div class="card-body p-4 caption" style="margin-bottom: 15px;">
                         <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
                         <a class="text-decoration-none link-dark stretched-link" href="{{ route('courses.show', [$course->slug]) }}"><h5 class="card-title mb-3">{{ $course->title }}</h5></a>
@@ -54,10 +58,10 @@
         @foreach($courses as $course)
             <div class="col-sm-12 col-lg-4 col-md-4" style="margin-bottom: 20px;">
                 <div class="card h-100 shadow border-0">
-                    @if (empty($course->course_image))
-                        <img src="http://placehold.it/320x150" alt=""class="card-img-top" style="width: 100%; height: 200px;">
-                    @else
-                        <img class="card-img-top" src=" {{ asset('uploads/' . $course->course_image) }}" alt="..."  style="width: 100%; height: 200px;"/>
+                    @if ($course->course_image && File::exists(public_path("uploads/".$course->course_image)))
+                    <img class="card-img-top" src=" {{ asset('uploads/' . $course->course_image) }}" alt="..."  style="width: 100%; height: 200px;"/>
+                    @else 
+                    <img class="card-img-top" src=" {{ asset('uploads/no-image.png') }}" alt="..."  style="width: 100%; height: 200px;"/>
                     @endif
                     <div class="card-body p-4 caption" style="margin-bottom: 15px;">
                         <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
