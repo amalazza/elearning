@@ -17,7 +17,7 @@ class Create1500442169QuestionsTable extends Migration
                 $table->increments('id');
                 $table->text('question');
                 $table->string('question_image')->nullable();
-                $table->integer('score')->nullable();
+                $table->float('score')->nullable();
                 
                 $table->timestamps();
                 $table->softDeletes();

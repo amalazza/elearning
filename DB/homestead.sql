@@ -453,7 +453,7 @@ CREATE TABLE `questions` (
   `id` int(10) UNSIGNED NOT NULL,
   `question` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `question_image` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `score` int(11) DEFAULT NULL,
+  `score` double(8,2) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL
