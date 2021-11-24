@@ -70,7 +70,7 @@
                                         <td>
                                             @foreach ($test->questions as $singleQuestions)
                                                 {{ $loop->iteration }}. {{ $singleQuestions->question }} 
-                                                {!! Form::select($singleQuestions->options->pluck('option_text'), $singleQuestions->options->pluck('option_text'), null, ['class' => 'form-control', 'multiple' => 'multiple', 'selected disabled']) !!}
+                                                {!! Form::select($singleQuestions->options->pluck('option_text'), $singleQuestions->options->pluck('option_text'), null, ['style' => 'height: 110px; overflow: auto;', 'class' => 'form-control', 'multiple' => 'multiple', 'selected disabled']) !!}
                                             @endforeach
                                         </td>
                                         <td>

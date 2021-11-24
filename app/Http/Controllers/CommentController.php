@@ -32,4 +32,39 @@ class CommentController extends Controller
         return back();
 
     }
+
+    public function edit( $id)
+    {
+       
+       
+        $comment=Comment::findOrFail($id);
+   
+        return view('comment.edit', compact('comment'));
+        
+    }
+
+    public function update( Request $request, Comment $comment)
+    {   
+        
+     
+        $comment=Comment::findOrFail($comment->id);
+        $comment->body = $request->body;
+
+      
+
+        $comment->save();
+
+        
+        return back()->with(['status' => 'success', 'message' => 'Comment updated successfully.']);
+    
+    }
+    public function delete($id)
+    {   
+        $comment = Comment::findOrFail($id);
+        $comment->delete();
+       
+        return back()->with(['status' => 'success', 'message' => 'Comment deleted successfully.']);
+    
+    }
+
 }

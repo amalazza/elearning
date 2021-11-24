@@ -62,94 +62,120 @@
                         </tr>
                     </table>
                 </div>
-            </div><!-- Nav tabs -->
-<ul class="nav nav-tabs" role="tablist">
-    
-<li role="presentation" class="active"><a href="#tests" aria-controls="tests" role="tab" data-toggle="tab">Tests</a></li>
-</ul>
+            </div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#tests" aria-controls="tests" role="tab" data-toggle="tab">Tests</a></li>
+                <li role="presentation" class=""><a href="#forums" aria-controls="forums" role="tab" data-toggle="tab">Forums</a></li>
+            </ul>
 
-<!-- Tab panes -->
-<div class="tab-content">
-    
-<div role="tabpanel" class="tab-pane active" id="tests">
-<table class="table table-bordered table-striped {{ count($tests) > 0 ? 'datatable' : '' }}">
-    <thead>
-        <tr>
-            <th>@lang('global.tests.fields.course')</th>
-                        <th>@lang('global.tests.fields.lesson')</th>
-                        <th>@lang('global.tests.fields.title')</th>
-                        <th>@lang('global.tests.fields.description')</th>
-                        <th>@lang('global.tests.fields.questions')</th>
-                        <th>@lang('global.tests.fields.published')</th>
-                        @if( request('show_deleted') == 1 )
-                        <th>&nbsp;</th>
-                        @else
-                        <th>&nbsp;</th>
-                        @endif
-        </tr>
-    </thead>
-
-    <tbody>
-        @if (count($tests) > 0)
-            @foreach ($tests as $test)
-                <tr data-entry-id="{{ $test->id }}">
-                    <td>{{ $test->course->title or '' }}</td>
-                                <td>{{ $test->lesson->title or '' }}</td>
-                                <td>{{ $test->title }}</td>
-                                <td>{!! $test->description !!}</td>
-                                <td>
-                                    @foreach ($test->questions as $singleQuestions)
-                                        <span class="label label-info label-many">{{ $singleQuestions->question }}</span>
-                                    @endforeach
-                                </td>
-                                <td>{{ Form::checkbox("published", 1, $test->published == 1 ? true : false, ["disabled"]) }}</td>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="tests">
+                    <table class="table table-bordered table-striped {{ count($tests) > 0 ? 'datatable' : '' }}">
+                        <thead>
+                            <tr>
+                                <th>@lang('global.tests.fields.course')</th>
+                                <th>@lang('global.tests.fields.lesson')</th>
+                                <th>@lang('global.tests.fields.title')</th>
+                                <th>@lang('global.tests.fields.description')</th>
+                                <th>@lang('global.tests.fields.questions')</th>
+                                <th>@lang('global.tests.fields.published')</th>
                                 @if( request('show_deleted') == 1 )
-                                <td>
-                                    {!! Form::open(array(
-                                        'style' => 'display: inline-block;',
-                                        'method' => 'POST',
-                                        'onsubmit' => "return confirm('".trans("global.app_are_you_sure")."');",
-                                        'route' => ['admin.tests.restore', $test->id])) !!}
-                                    {!! Form::submit(trans('global.app_restore'), array('class' => 'btn btn-xs btn-success')) !!}
-                                    {!! Form::close() !!}
-                                                                    {!! Form::open(array(
-                                        'style' => 'display: inline-block;',
-                                        'method' => 'DELETE',
-                                        'onsubmit' => "return confirm('".trans("global.app_are_you_sure")."');",
-                                        'route' => ['admin.tests.perma_del', $test->id])) !!}
-                                    {!! Form::submit(trans('global.app_permadel'), array('class' => 'btn btn-xs btn-danger')) !!}
-                                    {!! Form::close() !!}
-                                                                </td>
+                                <th>&nbsp;</th>
                                 @else
-                                <td>
-                                    @can('test_view')
-                                    <a href="{{ route('admin.tests.show',[$test->id]) }}" class="btn btn-xs btn-primary">@lang('global.app_view')</a>
-                                    @endcan
-                                    @can('test_edit')
-                                    <a href="{{ route('admin.tests.edit',[$test->id]) }}" class="btn btn-xs btn-info">@lang('global.app_edit')</a>
-                                    @endcan
-                                    @can('test_delete')
-{!! Form::open(array(
-                                        'style' => 'display: inline-block;',
-                                        'method' => 'DELETE',
-                                        'onsubmit' => "return confirm('".trans("global.app_are_you_sure")."');",
-                                        'route' => ['admin.tests.destroy', $test->id])) !!}
-                                    {!! Form::submit(trans('global.app_delete'), array('class' => 'btn btn-xs btn-danger')) !!}
-                                    {!! Form::close() !!}
-                                    @endcan
-                                </td>
+                                <th>&nbsp;</th>
                                 @endif
-                </tr>
-            @endforeach
-        @else
-            <tr>
-                <td colspan="10">@lang('global.app_no_entries_in_table')</td>
-            </tr>
-        @endif
-    </tbody>
-</table>
-</div>
-</div>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (count($tests) > 0)
+                                @foreach ($tests as $test)
+                                    <tr data-entry-id="{{ $test->id }}">
+                                        <td>{{ $test->course->title or '' }}</td>
+                                        <td>{{ $test->lesson->title or '' }}</td>
+                                        <td>{{ $test->title }}</td>
+                                        <td>{!! $test->description !!}</td>
+                                        <td>
+                                            @foreach ($test->questions as $singleQuestions)
+                                                <span class="label label-info label-many">{{ $singleQuestions->question }}</span>
+                                            @endforeach
+                                        </td>
+                                        <td>{{ Form::checkbox("published", 1, $test->published == 1 ? true : false, ["disabled"]) }}</td>
+                                        @if( request('show_deleted') == 1 )
+                                        <td>
+                                            {!! Form::open(array(
+                                                'style' => 'display: inline-block;',
+                                                'method' => 'POST',
+                                                'onsubmit' => "return confirm('".trans("global.app_are_you_sure")."');",
+                                                'route' => ['admin.tests.restore', $test->id])) !!}
+                                            {!! Form::submit(trans('global.app_restore'), array('class' => 'btn btn-xs btn-success')) !!}
+                                            {!! Form::close() !!}
+                                                                            {!! Form::open(array(
+                                                'style' => 'display: inline-block;',
+                                                'method' => 'DELETE',
+                                                'onsubmit' => "return confirm('".trans("global.app_are_you_sure")."');",
+                                                'route' => ['admin.tests.perma_del', $test->id])) !!}
+                                            {!! Form::submit(trans('global.app_permadel'), array('class' => 'btn btn-xs btn-danger')) !!}
+                                            {!! Form::close() !!}
+                                        </td>
+                                        @else
+                                        <td>
+                                            @can('test_view')
+                                            <a href="{{ route('admin.tests.show',[$test->id]) }}" class="btn btn-xs btn-primary">@lang('global.app_view')</a>
+                                            @endcan
+                                            @can('test_edit')
+                                            <a href="{{ route('admin.tests.edit',[$test->id]) }}" class="btn btn-xs btn-info">@lang('global.app_edit')</a>
+                                            @endcan
+                                            @can('test_delete')
+                                            {!! Form::open(array(
+                                                'style' => 'display: inline-block;',
+                                                'method' => 'DELETE',
+                                                'onsubmit' => "return confirm('".trans("global.app_are_you_sure")."');",
+                                                'route' => ['admin.tests.destroy', $test->id])) !!}
+                                            {!! Form::submit(trans('global.app_delete'), array('class' => 'btn btn-xs btn-danger')) !!}
+                                            {!! Form::close() !!}
+                                            @endcan
+                                        </td>
+                                        @endif
+                                    </tr>
+                                @endforeach
+                            @else
+                                <tr>
+                                    <td colspan="10">@lang('global.app_no_entries_in_table')</td>
+                                </tr>
+                            @endif
+                        </tbody>
+                    </table>
+                </div>
+                <style>
+                    .display-comment .display-comment {
+                        margin-left: 40px
+                    }
+                </style>
+                <div role="tabpanel" class="tab-pane" id="forums">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <!-- Comment form-->
+                            <form method="post" action="{{ route('comment.add') }}" class="mb-2">
+                                <!-- @csrf -->
+                                {{ csrf_field() }}
+                                <div class="form-group mb-1">
+                                    <textarea class="form-control" name="comment_body" rows="3" placeholder="Add discussion"></textarea>
+                                    <input type="hidden" name="lesson_id" value="{{ $lesson->id }}" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-primary" value="Add Discussion" style="float: right;"/>
+                                </div>
+                            </form>
+                            <!-- Comment with nested comments-->
+                            <div class="card-body">
+                                @include('partials._comment_replies', ['comments' => $lesson->comments, 'lesson_id' => $lesson->id])
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <p>&nbsp;</p>
 

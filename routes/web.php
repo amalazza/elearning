@@ -72,5 +72,9 @@ Route::group(['middleware' => ['admin'], 'prefix' => 'admin', 'as' => 'admin.'],
 
 });
 
-Route::post('/comment/store', 'CommentController@store')->name('comment.add');
+
+Route::post('/forum/store', 'CommentController@store')->name('comment.add');
 Route::post('/reply/store', 'CommentController@replyStore')->name('reply.add');
+Route::get('/forum/{id}/edit', 'CommentController@edit')->name('comment.edit');
+Route::put('/forum/{comment}/update', 'CommentController@update')->name('comment.update');
+Route::delete('/forum/{id}/delete', 'CommentController@delete')->name('comment.delete');
