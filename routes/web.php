@@ -78,3 +78,6 @@ Route::post('/reply/store', 'CommentController@replyStore')->name('reply.add');
 Route::get('/forum/{id}/edit', 'CommentController@edit')->name('comment.edit');
 Route::put('/forum/{comment}/update', 'CommentController@update')->name('comment.update');
 Route::delete('/forum/{id}/delete', 'CommentController@delete')->name('comment.delete');
+
+Route::get('users/{user}',  ['as' => 'users.edit', 'uses' => 'UserController@edit']);
+Route::patch('users/{user}/update',  ['as' => 'users.update', 'uses' => 'UserController@update']);

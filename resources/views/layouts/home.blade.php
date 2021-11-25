@@ -56,6 +56,7 @@
                                 {{ csrf_field() }}
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <li><a href="{{ route('users.edit',Auth::user()->id) }}" class="dropdown-item btn btn-primary">Profile</a></li>
                                 <li><input type="submit" value="Logout" class="dropdown-item btn btn-primary"></li>
                             </ul>
                         </li>
