@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Course;
+use App\Lesson;
 
 class HomeController extends Controller
 {
@@ -69,6 +70,21 @@ class HomeController extends Controller
         }
         $courses = Course::where('published', 1)->orderBy('id', 'desc')->get();
         return view('courses', compact('courses', 'purchased_courses'));
+    }
+
+    public function evaluation()
+    {
+        $purchased_courses = NULL;
+        if (\Auth::check()) {
+            $purchased_courses = Course::whereHas('students', function($query) {
+                $query->where('id', \Auth::id());
+            })
+            ->with('lessons')
+            ->orderBy('id', 'desc')
+            ->get();
+        }
+        $evaluation = Lesson::where('published', 1)->where('title', 'evaluation')->orderBy('id', 'desc')->get();
+        return view('evaluation', compact('evaluation', 'purchased_courses'));
     }
 
     public function contact()

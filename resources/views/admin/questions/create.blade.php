@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    @for ($question=1; $question<=4; $question++)
+    @for ($question=1; $question<=5; $question++)
     <div class="panel panel-default">
         <div class="panel-body">
             <div class="row">

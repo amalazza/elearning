@@ -15,7 +15,7 @@
                 }
             </style>
             <!-- Header-->
-            <header class="bg-dark py-5">
+            <header class="bg-dark py-5" style="background-color: #008f91 !important;">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -25,7 +25,7 @@
                                     Bahan pembelajaran berbasis website pada mata pelajaran perencanaan dan instalasi sistem audio video (PSA) kelas XI SMKN 39 Jakarta
                                 </p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="/courses">Get Started</a>
+                                    <a class="btn btn-outline-light btn-lg px-4" href="/courses">Get Started</a>
                                     <a class="btn btn-outline-light btn-lg px-4" href="/intruction">Learn More</a>
                                 </div>
                             </div>

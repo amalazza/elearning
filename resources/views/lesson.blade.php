@@ -138,7 +138,7 @@
                                 @foreach ($lesson->test->questions as $question)
                                     <b>{{ $loop->iteration }}. {{ $question->question }}</b>
                                     <br />
-                                    <td>@if($question->question_image)<a href="{{ asset('uploads/' . $question->question_image) }}" target="_blank"><img src="{{ asset('uploads/' . $question->question_image) }}"/></a>@endif</td>
+                                    <td>@if($question->question_image)<a href="{{ asset('uploads/' . $question->question_image) }}" target="_blank"><img src="{{ asset('uploads/' . $question->question_image) }}" style="width: 100px; height: 100px;"/></a>@endif</td>
                                     <br />
                                     @foreach ($question->options as $option)
                                         <input type="radio" name="questions[{{ $question->id }}]" value="{{ $option->id }}" /> {{ $option->option_text }}<br />

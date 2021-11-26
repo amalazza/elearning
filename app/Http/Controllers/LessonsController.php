@@ -55,7 +55,7 @@ class LessonsController extends Controller
 
         $purchased_course = $lesson->course->students()->where('user_id', \Auth::id())->count() > 0;
         $test_exists = FALSE;
-        if ($lesson->test && $lesson->test->questions->count() > 0) {
+        if ($lesson->test && $lesson->test->questions->count() > 0 && $lesson->test->published == 1) {
             $test_exists = TRUE;
         }
 

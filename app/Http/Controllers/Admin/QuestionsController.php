@@ -67,7 +67,7 @@ class QuestionsController extends Controller
         $question = Question::create($request->all());
         $question->tests()->sync(array_filter((array)$request->input('tests')));
 
-        for ($q=1; $q <= 4; $q++) {
+        for ($q=1; $q <= 5; $q++) {
             $option = $request->input('option_text_' . $q, '');
             if ($option != '') {
                 QuestionsOption::create([

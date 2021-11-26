@@ -3,6 +3,7 @@ Route::get('/', 'HomeController@index');
 Route::get('/about', 'HomeController@about');
 Route::get('/intruction', 'HomeController@intruction');
 Route::get('/courses', 'HomeController@courses');
+Route::get('/evaluation', 'HomeController@evaluation');
 Route::get('/contact', 'HomeController@contact');
 
 Route::get('contact', ['uses' => 'ContactController@create', 'as' => 'contact.create']);
