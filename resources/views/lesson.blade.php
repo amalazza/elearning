@@ -1,48 +1,7 @@
 @extends('layouts.home')
 
-@section('sidebar')
-<section class="py-5">
-    <!-- LIST LESSON -->
-    <div class="container">
-        <p class="lead">{{ $lesson->course->title }}</p>
 
-        <div class="list-group">
-            @foreach ($lesson->course->publishedLessons as $list_lesson)
-                <a href="{{ route('lessons.show', [$list_lesson->course_id, $list_lesson->slug]) }}" class="list-group-item"
-                    @if ($list_lesson->id == $lesson->id) style="font-weight: bold" @endif>{{ $loop->iteration }}. {{ $list_lesson->title }}</a>
-            @endforeach
-        </div>
-    </div>
-    <br>
-    <!-- LIST TEST -->
-    @if ($test_exists)
-        <div class="container">
-            <p class="lead">Test</p>
-
-            <div class="list-group">
-                <a href="#test" class="list-group-item">
-                {{ $lesson->test->title }}
-                </a>
-            </div>
-        </div>
-    @endif
-    <br>
-    <!-- FORUM -->
-    @if ($lesson->is_forum_active == 1)
-        <div class="container">
-            <p class="lead">Forum</p>
-
-            <div class="list-group">
-                <a href="#forum" class="list-group-item">
-                Diskusi
-                </a>
-            </div>
-        </div>
-    @endif
-</section>
-@endsection
-
-@section('main')
+@section('mylesson')
 <section class="py-5">
     <div class="container">
 
@@ -61,7 +20,8 @@
     <div class="list-group">
         @foreach($lesson->getMedia('downloadable_files') as $media)
         <p class="form-group" style="margin: 10px;">
-            <embed type="application/pdf" src="{{$media->getUrl()}}" width="100%" height="500"></embed>
+            <!-- <iframe src="{{$media->getUrl()}}" style="min-height:100vh;width:100%" frameborder="0"></iframe> -->
+            <embed type="application/pdf" src="{{$media->getUrl()}}" style="min-height:100vh;width:100%"></embed>
         </p>
         @endforeach
     </div>
