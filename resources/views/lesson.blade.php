@@ -135,7 +135,7 @@
                             <input type="hidden" name="lesson_id" value="{{ $lesson->id }}" />
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary" value="Add Discussion" style="float: right;"/>
+                            <input type="submit" class="btn btn-secondary" value="Add Discussion" style="float: right;"/>
                         </div>
                     </form>
                     <!-- Comment with nested comments-->

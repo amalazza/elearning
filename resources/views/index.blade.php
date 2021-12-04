@@ -15,7 +15,7 @@
                 }
             </style>
             <!-- Header-->
-            <header class="bg-dark py-5" style="background-color: #008f91 !important;">
+            <header class="bg-dark py-5">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -133,7 +133,7 @@
                     <!-- Contact cards-->
                     <div class="row gx-5 row-cols-1 row-cols-lg-1 py-5">
                         <div class="text-center mb-5">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-geo-alt"></i></div>
+                            <div class="feature bg-secondary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-geo-alt"></i></div>
                             <h1 class="fw-bolder">Address</h1>
                             <p class="lead fw-normal text-muted mb-0">                            
                                 Jl. Rawamangun Muka Raya No.11, RT.11/RW.14, Rawamangun, Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13220

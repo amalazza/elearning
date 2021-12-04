@@ -8,7 +8,7 @@
                     <!-- Contact form-->
                 <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
                     <div class="text-center mb-5">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                        <div class="feature bg-secondary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
                         <h1 class="fw-bolder">Get in touch</h1>
                         <p class="lead fw-normal text-muted mb-0">We'd love to hear from you</p>
                     </div>
@@ -54,7 +54,7 @@
                                     <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                 </div>
                                 <!-- Submit Button-->
-                                <div class="d-grid"><button type="submit" class="btn btn-primary btn-lg" id="submitButton">Submit</button></div>
+                                <div class="d-grid"><button type="submit" class="btn btn-secondary btn-lg" id="submitButton">Submit</button></div>
                             </form>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                     <!-- Contact cards-->
                     <div class="row gx-5 row-cols-1 row-cols-lg-1 py-5">
                         <div class="text-center mb-5">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-geo-alt"></i></div>
+                            <div class="feature bg-secondary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-geo-alt"></i></div>
                             <h1 class="fw-bolder">Address</h1>
                             <p class="lead fw-normal text-muted mb-0">                            
                                 Jl. Rawamangun Muka Raya No.11, RT.11/RW.14, Rawamangun, Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13220

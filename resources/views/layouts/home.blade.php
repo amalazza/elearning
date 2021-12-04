@@ -22,7 +22,7 @@
 
 </head>
 <body style="padding-top: 50px;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" style="background-color: #008f91 !important;">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
                 <img src="{{ asset('uploads/img/logo-smk.png') }}" class="img-fluid" style="width: 50px; height: 50px;"/>
@@ -74,7 +74,7 @@
                     {{ csrf_field() }}
                     <input type="email" name="email" placeholder="Email" class="form-control me-2"/>
                     <input type="password" name="password" placeholder="Password" class="form-control me-2"/>
-                    <input type="submit" value="Login" class="btn btn-primary">
+                    <input type="submit" value="Login" class="btn btn-light">
                 </form>
             @endif
             </div>

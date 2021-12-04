@@ -29,7 +29,7 @@
             <input type="hidden" name="comment_id" value="{{ $comment->id }}" />
         </div>
         <div class="form-group">
-            <input type="submit" class="btn btn-xs btn-primary" value="Reply" style="float: right;"/>
+            <input type="submit" class="btn btn-xs btn-secondary" value="Reply" style="float: right;"/>
         </div>
     </form>
 
