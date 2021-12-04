@@ -61,7 +61,7 @@ class HomeController extends Controller
     {
         $purchased_courses = NULL;
         if (\Auth::check()) {
-            $purchased_courses = Course::whereHas('students', function($query) {
+            $purchased_courses = Course::where('published', 1)->whereHas('students', function($query) {
                 $query->where('id', \Auth::id());
             })
             ->with('lessons')
@@ -83,8 +83,13 @@ class HomeController extends Controller
             ->orderBy('id', 'desc')
             ->get();
         }
-        $evaluation = Lesson::where('published', 1)->where('title', 'evaluation')->orderBy('id', 'desc')->get();
-        return view('evaluation', compact('evaluation', 'purchased_courses'));
+        $courses = Course::where('published', 1)->orderBy('id', 'desc')->get();
+        $course = Course::with('publishedLessons')->firstOrFail();
+        // $course = Course::with('publishedLessons')->get();
+        $lesson = Lesson::where('published', 1)->where('title', 'evaluation')->get();
+
+        // $evaluation = Lesson::where('published', 1)->where('title', 'evaluation')->orderBy('id', 'desc')->get();
+        return view('evaluation2', compact('course', 'courses', 'lesson', 'purchased_courses'));
     }
 
     public function contact()

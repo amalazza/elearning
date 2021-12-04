@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('mylesson')
-<section class="py-1">
+<section class="py-4">
 <div class="container">
 
     @if (!is_null($purchased_courses))

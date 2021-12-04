@@ -29,12 +29,13 @@
 
         @if ($test_exists)
         <hr />
-            <h2 class="fw-bolder mb-3"  id="test">Test</h2>
+            <h2 class="fw-bolder mb-3"  id="test">{{ $lesson->test->title }}</h2>
+            <div class="text-muted fst-italic mb-2">{{ $lesson->test->description }}</div>
             <div class="accordion mb-5">
                 <div class="accordion-item">
                     <h3 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        {{ $lesson->test->title }}
+                        Start Test
                         </button>
                     </h3>
                     @if (!is_null($test_result))
@@ -98,7 +99,7 @@
                                 @foreach ($lesson->test->questions as $question)
                                     <b>{{ $loop->iteration }}. {{ $question->question }}</b>
                                     <br />
-                                    <td>@if($question->question_image)<a href="{{ asset('uploads/' . $question->question_image) }}" target="_blank"><img src="{{ asset('uploads/' . $question->question_image) }}" style="width: 100px; height: 100px;"/></a>@endif</td>
+                                    <td>@if($question->question_image)<a href="{{ asset('uploads/' . $question->question_image) }}" target="_blank"><img src="{{ asset('uploads/' . $question->question_image) }}" style="width: 300px;"/></a>@endif</td>
                                     <br />
                                     @foreach ($question->options as $option)
                                         <input type="radio" name="questions[{{ $question->id }}]" value="{{ $option->id }}" /> {{ $option->option_text }}<br />

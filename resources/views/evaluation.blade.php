@@ -12,11 +12,11 @@
     </div>
     <div class="row" style="margin-bottom: 25px;">
 
-        @foreach($evaluation as $course)
+        @foreach($course as $course)
             <div class="col-sm-12 col-lg-4 col-md-4" style="margin-bottom: 20px;">
                 <div class="card h-100 shadow border-0">
-                    @if ($course->lesson_image && File::exists(public_path("uploads/".$course->lesson_image)))
-                    <img class="card-img-top" src=" {{ asset('uploads/' . $course->lesson_image) }}" alt="..."  style="width: 100%; height: 200px;"/>
+                    @if ($course->course_image && File::exists(public_path("uploads/".$course->course_image)))
+                    <img class="card-img-top" src=" {{ asset('uploads/' . $course->course_image) }}" alt="..."  style="width: 100%; height: 200px;"/>
                     @else 
                     <img class="card-img-top" src=" {{ asset('uploads/no-image.png') }}" alt="..."  style="width: 100%; height: 200px;"/>
                     @endif
