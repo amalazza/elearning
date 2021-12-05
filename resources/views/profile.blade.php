@@ -8,7 +8,7 @@
                     <!-- Contact form-->
                 <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
                     <div class="text-center mb-5">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-person-circle"></i></div>
+                        <div class="feature bg-secondary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-person-circle"></i></div>
                         <h1 class="fw-bolder">Profile</h1>
                         <p class="lead fw-normal text-muted mb-0">Click submit if you want to change your data</p>
                     </div>
@@ -42,7 +42,7 @@
                                 <input class="form-control" id="password_confirmation" name="password_confirmation" type="password"/>
                                 <label for="password">Password Confirmation</label>
                             </div>
-                            <div class="d-grid"><button type="submit" class="btn btn-primary btn-lg" id="submitButton">Submit</button></div>
+                            <div class="d-grid"><button type="submit" class="btn btn-secondary btn-lg" id="submitButton">Submit</button></div>
 
                             
 
