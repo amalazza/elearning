@@ -3,9 +3,9 @@
 @section('mylesson')
 
             <header class="py-5 bg-light">
-                <div class="container px-5">
+                <div class="container">
                     <!-- Contact form-->
-                <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                <div class="bg-light rounded-3 py-5 px-md-5 mb-5">
                     <div class="text-center mb-5">
                         <div class="feature bg-secondary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-bar-chart-steps"></i></div>
                         <h1 class="fw-bolder">Intruction</h1>

@@ -2,6 +2,23 @@
 
 
 @section('mylesson')
+
+<style>
+    .embed-responsive .embed-responsive-item{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    iframe {
+      width: 100%;
+      height: 46.25vw; /*16:9*/
+    }
+</style>
+
 <section class="py-5">
     <div class="container">
 
@@ -21,7 +38,12 @@
         @foreach($lesson->getMedia('downloadable_files') as $media)
         <p class="form-group" style="margin: 10px;">
             <!-- <iframe src="{{$media->getUrl()}}" style="min-height:100vh;width:100%" frameborder="0"></iframe> -->
-            <embed type="application/pdf" src="{{$media->getUrl()}}" style="min-height:100vh;width:100%"></embed>
+            <!--<embed type="application/pdf" src="{{$media->getUrl()}}" style="min-height:100vh;width:100%"></embed>-->
+            <object data="{{$media->getUrl()}}" type="application/pdf" style="width:100%;height:100vh;">
+              <p style="color: red">Your web browser doesn't have a PDF plugin.
+              Instead you can <a href="{{$media->getUrl()}}">click here to
+              download the PDF file.</a></p>
+            </object>
         </p>
         @endforeach
     </div>
@@ -99,7 +121,7 @@
                                 @foreach ($lesson->test->questions as $question)
                                     <b>{{ $loop->iteration }}. {{ $question->question }}</b>
                                     <br />
-                                    <td>@if($question->question_image)<a href="{{ asset('uploads/' . $question->question_image) }}" target="_blank"><img src="{{ asset('uploads/' . $question->question_image) }}" style="width: 300px;"/></a>@endif</td>
+                                    <td>@if($question->question_image)<a href="{{ asset('uploads/' . $question->question_image) }}" target="_blank"><img src="{{ asset('uploads/' . $question->question_image) }}" class="img-fluid img-thumbnail"/></a>@endif</td>
                                     <br />
                                     @foreach ($question->options as $option)
                                         <input type="radio" name="questions[{{ $question->id }}]" value="{{ $option->id }}" /> {{ $option->option_text }}<br />
