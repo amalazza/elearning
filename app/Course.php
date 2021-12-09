@@ -84,6 +84,16 @@ class Course extends Model
         return $this->hasMany(Lesson::class)->orderBy('position')->where('published', 1);
     }
 
+    public function publishedLessonsCourses()
+    {
+        return $this->hasMany(Lesson::class)->orderBy('position')->where('published', 1)->where('title', '!=', 'evaluation');
+    }
+
+    public function publishedLessonsEvaluation()
+    {
+        return $this->hasMany(Lesson::class)->orderBy('position')->where('published', 1)->where('title', 'evaluation');
+    }
+
     public function scopeOfTeacher($query)
     {
         if (!Auth::user()->isAdmin()) {

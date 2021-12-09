@@ -43,7 +43,7 @@
                 <a class="nav-link" href="/intruction">Intruction</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/courses">Courses</a>
+                <a class="nav-link" href="/courses">Lessons</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="/evaluation">Evaluation</a>

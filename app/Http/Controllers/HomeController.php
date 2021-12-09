@@ -69,7 +69,7 @@ class HomeController extends Controller
             ->get();
         }
         $courses = Course::where('published', 1)->orderBy('id', 'desc')->get();
-        return view('courses', compact('courses', 'purchased_courses'));
+        return view('courses', compact('course', 'courses', 'purchased_courses'));
     }
 
     public function evaluation()
@@ -89,7 +89,7 @@ class HomeController extends Controller
         $lesson = Lesson::where('published', 1)->where('title', 'evaluation')->get();
 
         // $evaluation = Lesson::where('published', 1)->where('title', 'evaluation')->orderBy('id', 'desc')->get();
-        return view('evaluation2', compact('course', 'courses', 'lesson', 'purchased_courses'));
+        return view('evaluation', compact('course', 'courses', 'lesson', 'purchased_courses'));
     }
 
     public function contact()
