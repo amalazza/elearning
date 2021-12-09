@@ -16,7 +16,7 @@
                                 <p class="lead fw-normal text-muted mb-4">
                                 SMK Negeri 39 berlokasi di jalan Cempaka Putih Tengah VI No.2 Jakarta Pusat 10510, Kelurahan Cempaka Putih Timur, Kecamatan Cempaka Putih.
                                 </p>
-                                <a class="btn btn-secondary btn-lg" href="#scroll-target">Read our story</a>
+                                <!-- <a class="btn btn-secondary btn-lg" href="#scroll-target">Read our story</a> -->
                             </div>
                         </div>
                     </div>
