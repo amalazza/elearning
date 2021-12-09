@@ -4,6 +4,7 @@
 
 <section class="py-4">
     <div class="container">
+    @if (!is_null($purchased_courses))
             <div class="text-center mb-5" style="margin-top: 20px;">
                     <h1 class="fw-bolder">My Evaluation</h1>
             </div>
@@ -62,6 +63,9 @@
             </div>
             @endforeach
         @endforeach
+        @else
+        <span style="color: red;">Sorry, please login to read evaluation.</span>
+    @endif
 
     </div>
 </section>

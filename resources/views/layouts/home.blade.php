@@ -42,12 +42,14 @@
                 <li class="nav-item">
                 <a class="nav-link" href="/intruction">Intruction</a>
                 </li>
+                @if (Auth::check())
                 <li class="nav-item">
-                <a class="nav-link" href="/courses">Lessons</a>
+                <a class="nav-link" href="/lessons">Lessons</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="/evaluation">Evaluation</a>
                 </li>
+                @endif
                 <li class="nav-item">
                 <a class="nav-link" href="/contact">Contact</a>
                 </li>

@@ -65,7 +65,8 @@
             @endforeach
         @endforeach
         </div>
-
+    @else
+        <span style="color: red;">Sorry, please login to read lessons.</span>
     @endif
 
 </div>
