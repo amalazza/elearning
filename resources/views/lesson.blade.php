@@ -57,7 +57,11 @@
                 <div class="accordion-item">
                     <h3 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        @if (!is_null($test_result))
+                        Review Test
+                        @else
                         Start Test
+                        @endif
                         </button>
                     </h3>
                     @if (!is_null($test_result))
@@ -67,45 +71,38 @@
                                 Your test score: {{ $test_result->test_result }}
                             </p>
                             <hr>
-                            <p>
-                                Review test:
-                                <br>        
+                            <p>       
                                 <!-- Tab panes -->
                                 <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane active">
                                     <div style="overflow-x:auto;">
                                         <table class="table table-bordered table-striped">
-                                            <thead>
+                                            <tbody>
                                                 <tr>
                                                     <th>@lang('global.questions-options.fields.question') & @lang('global.questions-options.fields.option-text')</th>
-                                                    <th>Answer</th>
-                                                    <th>@lang('global.questions-options.fields.correct')</th>
-                                                    <!-- <th>Test Result</th> -->
                                                 </tr>
-                                            </thead>
-                                            <tbody>
                                                 <tr>
                                                     <td>
                                                         @foreach ($test->questions as $singleQuestions)
                                                                 {{ $loop->iteration }}. {{ $singleQuestions->question }} 
-                                                                {!! Form::select($singleQuestions->options->pluck('option_text'), $singleQuestions->options->pluck('option_text'), null, ['style' => 'height: 110px; overflow: auto;', 'class' => 'form-control', 'multiple' => 'multiple', 'disabled']) !!}
+                                                                <div style="padding-left: 15px;">
+                                                                    @foreach ($singleQuestions->options->pluck('option_text') as $array)
+                                                                        {{ $array }}<br>
+                                                                    @endforeach
+                                                                    <span style="color: green">Correct Answer:</span> {{ $singleQuestions->correct_answer()->pluck('option_text')->first() }}<br><br>
+                                                                </div>
                                                         @endforeach
                                                     </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Your Answer</th>
+                                                </tr>
+                                                <tr>
                                                     <td>
                                                         @foreach ($test_result->answers as $singleOptions)
                                                                 {{ $loop->iteration }}. {{ $singleOptions->option->option_text }} {{ Form::checkbox("correct", 1, $singleOptions->option->correct == 1 ? true : false, ["disabled"]) }} <br>
                                                         @endforeach
                                                     </td>
-                                                    <td>
-                                                        @foreach ($test->questions as $singleOptions)
-                                                        {{ $loop->iteration }}. {{ $singleOptions->correct_answer()->pluck('option_text')->first() }} <br>
-                                                        @endforeach
-                                                    </td>
-                                                    <!-- <td>
-                                                        @foreach ($test_result->answers as $singleOptions)
-                                                        {{ $loop->iteration }}. {{ Form::checkbox("correct", 1, $singleOptions->option->correct == 1 ? true : false, ["disabled"]) }} <br>
-                                                        @endforeach
-                                                    </td> -->
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -123,12 +120,14 @@
                                 @foreach ($lesson->test->questions as $question)
                                     <b>{{ $loop->iteration }}. {{ $question->question }}</b>
                                     <br />
-                                    <td>@if($question->question_image)<a href="{{ asset('uploads/' . $question->question_image) }}" target="_blank"><img src="{{ asset('uploads/' . $question->question_image) }}" class="img-fluid img-thumbnail"/></a>@endif</td>
-                                    <br />
+                                    <div style="padding-left: 15px;">
+                                    <td>@if($question->question_image)<a href="{{ asset('uploads/' . $question->question_image) }}" target="_blank"><img src="{{ asset('uploads/' . $question->question_image) }}" class="img-fluid img-thumbnail"/></a><br />@endif</td>
+                                    
                                     @foreach ($question->options as $option)
                                         <input type="radio" name="questions[{{ $question->id }}]" value="{{ $option->id }}" /> {{ $option->option_text }}<br />
                                     @endforeach
                                     <br />
+</div>
                                 @endforeach
                                 <input type="submit" value=" Submit results " />
                             </form>
