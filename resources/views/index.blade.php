@@ -25,7 +25,9 @@
                                     Bahan pembelajaran berbasis website pada mata pelajaran perencanaan dan instalasi sistem audio video (PSA) kelas XI SMKN 39 Jakarta
                                 </p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                    @if (Auth::check())
                                     <a class="btn btn-outline-light btn-lg px-4" href="/courses">Get Started</a>
+                                    @endif
                                     <a class="btn btn-outline-light btn-lg px-4" href="/intruction">Learn More</a>
                                 </div>
                             </div>
