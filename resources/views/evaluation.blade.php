@@ -3,7 +3,7 @@
 @section('mylesson')
 
 <section class="py-4">
-    <div class="container">
+    <div class="container" style="margin-bottom: 5px;">
     @if (!is_null($purchased_courses))
             <div class="text-center mb-5" style="margin-top: 20px;">
                     <h1 class="fw-bolder">My Evaluation</h1>
@@ -68,6 +68,7 @@
     @endif
 
     </div>
+    <br><br><br>
 </section>
 
 @endsection
