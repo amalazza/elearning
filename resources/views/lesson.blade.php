@@ -35,17 +35,45 @@
         {!! $lesson->full_text !!}
     </div>
     <div class="list-group">
-        @foreach($lesson->getMedia('downloadable_files') as $media)
-        <p class="form-group" style="margin: 10px;">
-            <!-- <iframe src="{{$media->getUrl()}}" style="min-height:100vh;width:100%" frameborder="0"></iframe> -->
-            <!--<embed type="application/pdf" src="{{$media->getUrl()}}" style="min-height:100vh;width:100%"></embed>-->
-            <object data="{{$media->getUrl()}}" type="application/pdf" style="width:100%;height:100vh;">
-              <p style="color: red">Your web browser doesn't have a PDF plugin.
-              Instead you can <a href="{{$media->getUrl()}}">click here to
-              download the PDF file.</a></p>
-            </object>
-        </p>
-        @endforeach
+        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                @foreach($lesson->getMedia('downloadable_files') as $media)
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{ $loop->index }}" class="{{ $loop->first ? 'active' : '' }}"></li>
+                @endforeach
+            </ol>
+            <div class="carousel-inner">
+                @foreach($lesson->getMedia('downloadable_files') as $media)
+                    <div class="carousel-item {{ $loop->first ? ' active' : '' }}" >
+                        <img class="d-block w-100" src="{{$media->getUrl()}}" style="height: 400px; width: 100%;">
+                    </div>
+                @endforeach
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+        <!--@foreach($lesson->getMedia('downloadable_files') as $media)-->
+        <!--<p class="form-group" style="margin: 10px;">-->
+        <!--    <object data="{{$media->getUrl()}}" type="application/pdf" style="width:100%;height:100vh;">-->
+        <!--      <p style="color: red">Your web browser doesn't have a PDF plugin.-->
+        <!--      Instead you can <a href="{{$media->getUrl()}}">click here to-->
+        <!--      download the PDF file.</a></p>-->
+        <!--    </object>-->
+        <!--</p>-->
+        <!--@endforeach-->
+
     </div>
     
 
