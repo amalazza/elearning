@@ -4126,8 +4126,10 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    /* padding-right: 0.5rem;
+    padding-left: 0.5rem; */
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
   }
   .navbar-expand-sm .navbar-nav-scroll {
     overflow: visible;
@@ -4179,8 +4181,10 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    /* padding-right: 0.5rem;
+    padding-left: 0.5rem; */
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
   }
   .navbar-expand-md .navbar-nav-scroll {
     overflow: visible;
@@ -4232,8 +4236,10 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    /* padding-right: 0.5rem;
+    padding-left: 0.5rem; */
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
   }
   .navbar-expand-lg .navbar-nav-scroll {
     overflow: visible;
@@ -4285,8 +4291,10 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-xl .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    /* padding-right: 0.5rem;
+    padding-left: 0.5rem; */
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
   }
   .navbar-expand-xl .navbar-nav-scroll {
     overflow: visible;
@@ -4338,8 +4346,10 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-xxl .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    /* padding-right: 0.5rem;
+    padding-left: 0.5rem; */
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
   }
   .navbar-expand-xxl .navbar-nav-scroll {
     overflow: visible;

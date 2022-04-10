@@ -13,42 +13,63 @@
                 right:0;
                 background:rgba(0,0,0,0.5);
                 }
+
+
             </style>
             <!-- Header-->
-            <header class="bg-dark py-5">
+            <header style=" padding-top: 8rem !important;
+                            padding-bottom: 3rem !important;">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder text-white mb-2">Website Pembelajaran SMKN 39 Jakarta</h1>
-                                <p class="lead fw-normal text-white-50 mb-4">
+                                <h1 class="display-5 fw-bolder mb-2" style="font-family: 'Poppins', sans-serif !important;
+                                                                            font-style: normal !important;
+                                                                            font-weight: 700 !important;
+                                                                            font-size: 48px !important;
+                                                                            line-height: 72px !important;
+                                                                            letter-spacing: 0.01em !important;
+                                                                            color: #000000 !important;">
+                                    Website Pembelajaran SMKN 39 Jakarta
+                                </h1>
+                                <p class="lead fw-normal text-50 mb-4" style="  font-family: 'Poppins'!important;
+                                                                                font-style: normal !important;
+                                                                                font-weight: 400 !important;
+                                                                                font-size: 20px !important;
+                                                                                line-height: 30px !important;
+                                                                                letter-spacing: 0.01em !important;
+
+                                                                                /* Grey */
+
+                                                                                color: #AEAEAE;">
                                     Bahan pembelajaran berbasis website pada mata pelajaran perencanaan dan instalasi sistem audio video (PSA) kelas XI SMKN 39 Jakarta
                                 </p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    @if (Auth::check())
-                                    <a class="btn btn-outline-light btn-lg px-4" href="/lessons">Get Started</a>
+                                    <a class="btn btn-outline-light btn-lg px-4" href="/lessons" style="color: #74927A; border: 2px solid; border-color: #74927A; border-radius: 27px;">Learn More </a>
+                                    <!-- @if (Auth::check())
+                                    <a class="btn btn-outline-light btn-lg px-4" href="/lessons" style="color: black">Get Started</a>
                                     @endif
-                                    <a class="btn btn-outline-light btn-lg px-4" href="/intruction">Learn More</a>
+                                    <a class="btn btn-outline-light btn-lg px-4" href="/intruction">Learn More</a> -->
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
-                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                            <img class="d-block" src="{{ asset('img/Home/Pict-1.svg') }}" alt="..." style=" width: 400px;
+                                                                                                            height: 390px;
+                                                                                                            float: right"/>
+                            <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                     <img class="d-block w-100" src="{{ asset('uploads/img/1.jpg') }}" alt="..." style="width:600; height: 400; background-size: cover;"/>
-                                    <!-- <img class="d-block w-100" src="..." alt="First slide"> -->
                                     </div>
                                     <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('uploads/img/2.jpg') }}" alt="..." style="width:600; height: 400; background-size: cover;"/>
-                                    <!-- <img class="d-block w-100" src="..." alt="Second slide"> -->
                                     </div>
                                     <div class="carousel-item">
                                     <img class="d-block w-100" src="{{ asset('uploads/img/3.jpg') }}" alt="..." style="width:600; height: 400; background-size: cover;"/>
-                                    <!-- <img class="d-block w-100" src="..." alt="Third slide"> -->
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                            
                         </div>
                     </div>
@@ -57,12 +78,31 @@
 
             <!-- Testimonial section-->
             <div class="py-5">
-                <div class="container px-5 my-5">
+                <div class="container px-5" style=" margin-top: 3rem !important;
+                                                    margin-bottom: 18rem !important;">
                     <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-10 col-xl-7">
+                        <div class="col-lg-10 col-xl-10">
                             <div class="text-center">
-                                <div class="fs-4 mb-4 fst-italic">
-                                Bahan Pembelajaran Berbasis Website ini merupakan salah satu produk yang dihasilkan guna memenuhi tugas akhir atau skripsi mengenai penelitian pengembangan dengan judul Pengembangan Bahan Pembelajaran Berbasis Website Pada Mata Pelajaran Perencanaan dan Instalasi Sistem Audio Video (PSA) Kelas XI SMK Negeri 39 Jakarta.                                </div>
+                            <h1 class="display-5 fw-bolder mb-2" style="font-family: 'Poppins' !important;
+                                                                        font-style: normal !important;
+                                                                        font-weight: 700 !important;
+                                                                        font-size: 40px !important;
+                                                                        line-height: 60px !important;
+                                                                        text-align: center !important;
+                                                                        letter-spacing: 0.01em !important;
+                                                                        color: #000000 !important;">
+                                    About Project
+                                </h1>
+                                <br>
+                                <div class="" style="font-family: 'Poppins' !important;
+                                                                        font-style: italic !important;
+                                                                        font-weight: 300 !important;
+                                                                        font-size: 20px !important;
+                                                                        line-height: 30px !important;
+                                                                        text-align: center !important;
+                                                                        letter-spacing: 0.01em !important;
+                                                                        color: #595959 !important;">
+                                    Bahan Pembelajaran Berbasis Website ini merupakan salah satu produk yang dihasilkan guna memenuhi tugas akhir atau skripsi mengenai penelitian pengembangan dengan judul Pengembangan Bahan Pembelajaran Berbasis Website Pada Mata Pelajaran Perencanaan dan Instalasi Sistem Audio Video (PSA) Kelas XI SMK Negeri 39 Jakarta.                                
                                 <div class="d-flex align-items-center justify-content-center">
                                     <!-- <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." /> -->
                                     <!-- <div class="fw-bold">
@@ -78,44 +118,80 @@
             <!-- Team members section-->
             <section class="py-5 bg-light">
                 <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="fw-bolder">Our team</h2>
-                        <p class="lead fw-normal text-muted mb-5">Tim yang terlibat dalam penelitian</p>
-                    </div>
-                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
-                        <div class="col mb-5 mb-5 mb-xl-0">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-3 col-xl-3 col-xxl-3 d-none d-xl-block text-center">
+                            <img class="d-block" src="{{ asset('img/Home/Pict-2.svg') }}" alt="..." style=" width: 400px;
+                                                                                                            height: 390px;
+                                                                                                            float: left"/>
+                        </div>
+                        <div class="col-lg-9 col-xl-9 col-xxl-9">
                             <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="{{ asset('uploads/img/nola-febrina.jpg') }}" alt="..." />
-                                <h5 class="fw-bolder">Nola Febrina</h5>
-                                <div class="fst-italic text-muted">
-                                    Pendidikan Teknik Elektronika
-                                    <br>
-                                    1513617015
+                                <h2 class="fw-bolder">Our team</h2>
+                                <p class="lead fw-normal text-muted mb-5">Tim yang terlibat dalam penelitian</p>
+                            </div>
+                            <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                                <div class="col mb-5 mb-5 mb-xl-0">
+                                    <div class="text-center">
+                                        <img class="img-fluid rounded-circle mb-4 px-4" src="{{ asset('uploads/img/nola-febrina.jpg') }}" alt="..." />
+                                        <h5 class="fw-bolder">Nola Febrina</h5>
+                                        <div class="fst-italic text-muted" style="  font-family: 'Poppins' !important;
+                                                                                    font-style: normal !important;
+                                                                                    font-weight: 300 !important;
+                                                                                    font-size: 13px !important;
+                                                                                    line-height: 21px !important;
+                                                                                    text-align: center !important;
+                                                                                    letter-spacing: 0.01em !important;
+                                                                                    color: #595959 !important;
+                                                                                    ">
+                                            Pendidikan Teknik Elektronika
+                                            <br>
+                                            1513617015
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-5 mb-5 mb-xl-0">
+                                    <div class="text-center">
+                                        <img class="img-fluid rounded-circle mb-4 px-4" src="{{ asset('uploads/img/dospem-1.jpg') }}" alt="..." />
+                                        <h5 class="fw-bolder">Dr. Ir. Rusmono, M.Pd</h5>
+                                        <div class="fst-italic text-muted" style="  font-family: 'Poppins' !important;
+                                                                                    font-style: normal !important;
+                                                                                    font-weight: 300 !important;
+                                                                                    font-size: 13px !important;
+                                                                                    line-height: 21px !important;
+                                                                                    text-align: center !important;
+                                                                                    letter-spacing: 0.01em !important;
+                                                                                    color: #595959 !important;
+                                                                                    ">
+                                            Pembimbing 1
+                                            <br>
+                                            Nip: 195905061985031002
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-5 mb-5 mb-xl-0">
+                                    <div class="text-center">
+                                        <img class="img-fluid rounded-circle mb-4 px-4" src="{{ asset('uploads/img/dospem-2.jpeg') }}" alt="..." />
+                                        <h5 class="fw-bolder">Dr. Wisnu Djatmiko, M.T</h5>
+                                        <div class="fst-italic text-muted" style="  font-family: 'Poppins' !important;
+                                                                                    font-style: normal !important;
+                                                                                    font-weight: 300 !important;
+                                                                                    font-size: 13px !important;
+                                                                                    line-height: 21px !important;
+                                                                                    text-align: center !important;
+                                                                                    letter-spacing: 0.01em !important;
+                                                                                    color: #595959 !important;
+                                                                                    ">
+                                            Pembimbing 2
+                                            <br>
+                                            Nip: 196702141992031001
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col mb-5 mb-5 mb-xl-0">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="{{ asset('uploads/img/dospem-1.jpg') }}" alt="..." />
-                                <h5 class="fw-bolder">Dr. Ir. Rusmono, M.Pd</h5>
-                                <div class="fst-italic text-muted">
-                                    Pembimbing 1
-                                    <br>
-                                    Nip: 195905061985031002
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-5 mb-5 mb-xl-0">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="{{ asset('uploads/img/dospem-2.jpeg') }}" alt="..." />
-                                <h5 class="fw-bolder">Dr. Wisnu Djatmiko, M.T</h5>
-                                <div class="fst-italic text-muted">
-                                    Pembimbing 2
-                                    <br>
-                                    Nip: 196702141992031001
-                                </div>
-                            </div>
-                        </div>
+
+
+
                     </div>
                 </div>
             </section>
