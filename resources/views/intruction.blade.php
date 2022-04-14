@@ -7,7 +7,7 @@
                     <!-- Contact form-->
                 <div class="bg-light rounded-3 py-5 px-md-5 mb-5">
                     <div class="text-center">
-                        <h1 class="fw-bolder">Intruction</h1>
+                        <h1 class="fw-bolder">Instruction</h1>
                         <img src="{{ asset('img/Page 4_Instruction/Gambar/Pict 1.svg') }}" alt="..."/>
                         <br>
                         <br>

@@ -102,7 +102,7 @@
                 <a class="nav-link" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/intruction">Intruction</a>
+                <a class="nav-link" href="/intruction">Instruction</a>
                 </li>
                 @if (Auth::check())
                 <li class="nav-item">

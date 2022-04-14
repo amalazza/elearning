@@ -81,8 +81,7 @@
 
             <!-- Testimonial section-->
             <div class="py-5" style=" padding-top: 8rem !important;">
-                <div class="container px-5" style=" margin-top: 3rem !important;
-                                                    margin-bottom: 18rem !important;">
+                <div class="container px-5 py-5" style=" margin-top: 3rem !important;">
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-10 col-xl-10">
                             <div class="text-center">
@@ -135,7 +134,7 @@
                             <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
                                 <div class="col mb-5 mb-5 mb-xl-0">
                                     <div class="text-center">
-                                        <img class="img-fluid rounded-circle mb-4 px-4" src="{{ asset('uploads/img/nola-febrina.jpg') }}" alt="..." />
+                                        <img class="img-fluid rounded-circle mb-4 px-4" src="{{ asset('uploads/img/nola-febrina.jpg') }}" alt="..." style="width: 150%; height: auto;"/>
                                         <h5 class="fw-bolder">Nola Febrina</h5>
                                         <div class="fst-italic text-muted" style="  font-family: 'Poppins' !important;
                                                                                     font-style: normal !important;
@@ -165,7 +164,7 @@
                                                                                     letter-spacing: 0.01em !important;
                                                                                     color: #595959 !important;
                                                                                     ">
-                                            Pembimbing 1
+                                            Dosen Pembimbing 1
                                             <br>
                                             Nip: 195905061985031002
                                         </div>
@@ -184,7 +183,7 @@
                                                                                     letter-spacing: 0.01em !important;
                                                                                     color: #595959 !important;
                                                                                     ">
-                                            Pembimbing 2
+                                            Dosen Pembimbing 2
                                             <br>
                                             Nip: 196702141992031001
                                         </div>
