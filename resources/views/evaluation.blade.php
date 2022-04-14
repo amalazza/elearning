@@ -2,73 +2,62 @@
 
 @section('mylesson')
 
-<section class="py-4">
-    <div class="container" style="margin-bottom: 5px;">
-    @if (!is_null($purchased_courses))
-            <div class="text-center mb-5" style="margin-top: 20px;">
-                    <h1 class="fw-bolder">My Evaluation</h1>
-            </div>
-            <div class="row" style="margin-bottom: 25px;">
-            @foreach($purchased_courses as $courses)
-            @foreach($courses->publishedLessonsEvaluation as $lesson)
-            <div class="col-sm-12 col-lg-4 col-md-4" style="margin-bottom: 20px;">
-                <div class="card h-100 shadow border-0">
-                    @if ($lesson->lesson_image && File::exists(public_path("uploads/".$lesson->lesson_image)))
-                    <img class="card-img-top" src=" {{ asset('uploads/' . $lesson->lesson_image) }}" alt="..."  style="width: 100%; height: 200px;"/>
-                    @else 
-                    <img class="card-img-top" src=" {{ asset('uploads/no-image.png') }}" alt="..."  style="width: 100%; height: 200px;"/>
-                    @endif
-                    <div class="card-body p-4 caption" style="margin-bottom: 15px;">
-                        <!-- <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div> -->
-                        <a class="text-decoration-none link-dark stretched-link" href="{{ route('lessons.show', [$lesson->course_id, $lesson->slug]) }}">
-                            <h5 class="card-title mb-3">
-                            @if (!is_null($lesson->test['title']) and $lesson->test['published']==1)
-                                {{  $lesson->test['title'] }}
-                            @else
-                                <span style="color: red;">Evaluation not yet available</span>
-                            @endif
-                            </h5>
-                        </a>
-                        <p class="card-text mb-0">
-                            {{ $lesson->short_text }}                                    
-                        </p>
-                    </div>
-                    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                        <div class="d-flex align-items-end justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <!-- <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." /> -->
-                                <div class="small">
-                                    <table class="table table-sm" style="border: none;">
-                                        <tr style="border: none;">
-                                            <td style="border: none;"><div class="fw-bold">Course: </div></td>
-                                            <td style="border: none;"><div class="text-muted right"> {{ $lesson->course->title }} </div></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border: none;"><div class="fw-bold">Teacher: </div></td>
-                                            <td style="border: none;"><div class="text-muted right"> {{ $lesson->course->teachers()->pluck('name')->first() }} </div></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border: none;"><div class="fw-bold">All Students: </div></td>
-                                            <td style="border: none;"><div class="text-muted right"> {{ $lesson->course->students()->count() }} </div></td>
-                                        </tr>
-                                    </table>
-                                    <!-- <div class="fw-bold">Course: {{ $lesson->course->pluck('title')->first() }}</div>
-                                    <div class="fw-bold">Teacher: {{ $lesson->course->teachers()->pluck('name')->first() }}</div>
-                                    <div class="text-muted right">All Students: {{ $lesson->course->students()->count() }}</div> -->
-                                </div>
-                            </div>
-                        </div>
+<header style=" padding-top: 0rem !important;
+                            padding-bottom: 3rem !important;">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+                <div class="my-5 text-center text-xl-start">
+                    <h1 class="display-5 fw-bolder mb-2" style="font-family: 'Poppins', sans-serif !important;
+                                                                font-style: normal !important;
+                                                                font-weight: 700 !important;
+                                                                font-size: 48px !important;
+                                                                line-height: 72px !important;
+                                                                letter-spacing: 0.01em !important;
+                                                                color: #000000 !important;">
+                        Evaluation
+                    </h1>
+                    <p class="lead fw-normal text-50 mb-4" style="  font-family: 'Poppins'!important;
+                                                                    font-style: normal !important;
+                                                                    font-weight: 400 !important;
+                                                                    font-size: 20px !important;
+                                                                    line-height: 30px !important;
+                                                                    letter-spacing: 0.01em !important;
+
+                                                                    /* Grey */
+
+                                                                    color: #AEAEAE;">
+                        Silahkan isi kuis berikut untuk mengetahui berapa persen pemahaman anda dari belajar di website pembelajaran ini. 
+                    </p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                        <a class="btn btn-outline-light btn-lg px-4" href="/lessons" style="
+                                                                                            color: #FFFFFF;
+                                                                                            background: #74927A;
+                                                                                            border-radius: 27px;"><b>Get Started!</b></a>
                     </div>
                 </div>
             </div>
-            @endforeach
-        @endforeach
-        @else
-        <span style="color: red;">Sorry, please login to read evaluation.</span>
-    @endif
-
+            <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+                <img class="d-block" src="{{ asset('img/Page 11_Evaluation/Pict.svg') }}" alt="..." style="width: 615px;
+height: 628.06px;
+                                                                                                float: right"/>
+                <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{ asset('uploads/img/1.jpg') }}" alt="..." style="width:600; height: 400; background-size: cover;"/>
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('uploads/img/2.jpg') }}" alt="..." style="width:600; height: 400; background-size: cover;"/>
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('uploads/img/3.jpg') }}" alt="..." style="width:600; height: 400; background-size: cover;"/>
+                        </div>
+                    </div>
+                </div> -->
+                
+            </div>
+        </div>
     </div>
-    <br><br><br>
-</section>
+</header>
 
 @endsection

@@ -3204,13 +3204,15 @@ textarea.form-control-lg {
 
 .btn-light {
   color: #000;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
+  background: #74927A;
+  border-color: #74927A;
+  color: #fff;
 }
 .btn-light:hover {
-  color: #000;
-  background-color: #f9fafb;
-  border-color: #f9fafb;
+  color: #fff;
+  background-color: #436049;
+  border-color: #436049;
 }
 .btn-check:focus + .btn-light, .btn-light:focus {
   color: #000;
@@ -7768,7 +7770,15 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  /* color: #6c757d !important; */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+
+  color: #000000;
 }
 
 .text-black-50 {
@@ -7834,7 +7844,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #fff !important;
 }
 
 .bg-dark {
