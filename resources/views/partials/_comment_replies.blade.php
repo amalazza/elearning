@@ -24,12 +24,12 @@
         {{ csrf_field() }}
         <div class="form-group mb-1">
             <!-- <input type="text" name="comment_body" class="form-control" /> -->
-            <textarea class="form-control" name="comment_body" rows="1" placeholder="Join the discussion"></textarea>
+            <textarea class="form-control" name="comment_body" rows="1" placeholder="Join the discussion" required></textarea>
             <input type="hidden" name="lesson_id" value="{{ $lesson_id }}" />
             <input type="hidden" name="comment_id" value="{{ $comment->id }}" />
         </div>
         <div class="form-group">
-            <input type="submit" class="btn btn-xs btn-secondary" value="Reply" style="float: right;"/>
+            <input type="submit" class="btn btn-xs btn-secondary" value="Reply" style="float: right; background: #74927A !important;"/>
         </div>
     </form>
 

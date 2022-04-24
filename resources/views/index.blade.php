@@ -118,7 +118,7 @@
             </div>
 
             <!-- Team members section-->
-            <section class="py-5 bg-light">
+            <section class="py-5 bg-light" style="background: #F1F1F1 !important;">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-3 col-xl-3 col-xxl-3 d-none d-xl-block text-center">
