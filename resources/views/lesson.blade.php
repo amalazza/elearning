@@ -403,7 +403,7 @@
                                         </p>
                                     </div>
                                     <div class="col-12 col-md-12 col-lg-7">
-                                    <img class="" src="{{ asset('img/Page 6_Gelombang Suara/Gambar/gif.gif') }}" alt="..." style="  max-width: 100%; border-radius: 97px;
+                                    <img class="" src="http://bahanpembelajaranpsa.xyz/photos/1/Gif.gif" alt="..." style="  max-width: 100%; border-radius: 97px;
                                                                                                                                     width: 80%;
                                                                                                                                     height: 380px;"/>
                                     </div>
@@ -759,7 +759,7 @@
                     </p>
 
                     <p style="text-align: center !important;">
-                        <img class="" src="{{ asset('img/Page 7_Psikoakustik Anatomi/Rumus/Dengung.png') }}" alt="..." style="max-width: 100%;
+                        <img class="" src="http://bahanpembelajaranpsa.xyz/photos/1/Dengung.PNG" alt="..." style="max-width: 100%;
                                                                                                                                     width: 438px; 
                                                                                                                                     height: 100px; 
                                                                                                                                     max-height: auto;
@@ -1022,13 +1022,701 @@
                 </div>
 
             </div>
+        </div>
+        <br>
+        <br>
+        @elseif ($lesson->slug == 'instalasi-mikrofon')
+        <div>
+            <!-- Instalasi Mikrofon Pada Sistem Akustik -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
 
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
 
+                                                        color: #ECC46F;">
+                        Instalasi Mikrofon Pada Sistem Akustik
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>Mikrofon adalah alat yang biasa digunakan untuk berpidato atau menyanyi, karena mikrofon berfungsi sebagai transducer yaitu dapat mengubah gelombang suara manusia menjadi sinyal listrik agar dengan mudah untuk diperkuat.
+                    </p>
+
+                    <p>Mikrofon selalu dihubungkan dengan alat pengeras suara (amplifier), agar keluaran mikrofon dalam bentuk sinyal listrik yang masih lemah tersebut dapat diperkuat semaksimal mungkin sesuai kebutuhan dan hasilnya dapat didengar melalui loud speaker. </p>
+
+                </div>
+            </div>
+
+            <br>
+            
+            <!-- Sejarah Mikrofon -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #ECC46F;">
+                        Sejarah Mikrofon
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>Mikrofon (dalam bahasa Inggris bernama microphone), yaitu suatu jenis transduser yang mengubah energi-energi akustik (gelombang suara) menjadi sinyal listrik. Mikrofon merupakan salah satu alat untuk membantu komunikasi manusia. Mikrofon dipakai pada banyak alat, seperti telepon, alat perekam, alat bantu dengar, dan pengudaraan radio serta televisi. 
+                    </p>
+
+                    <p>Istilah mikrofon berasal dari bahasa Yunani mikros yang berarti "kecil' dan fon yang berarti "suara atau bunyi'. Istilah ini awalnya mengacu pada alat bantu dengar untuk suara berintensitas rendah. Penemuan mikrofon sangat penting pada masa awal perkembangan telepon. Pada awal penemuannya, mikrofon digunakan pada telepon. Seiring berkembangnya waktu, mikrofon digunakan dalam pemancar radio hingga ke berbagai penggunaan lainnya. Penemuan mikrofon praktis sangat penting pada masa awal perkembangan telepon. Beberapa penemu telah membuat mikrofon primitif sebelum Alexander Graham Bell.  </p>
+
+                    <p>Pada tahun 1827, Sir Charles Wheatstone telah mengembangkan mikrofon. la merupakan orang pertama yang membuat "mikrofon frasa" Selanjutnya pada tahun 1876, Emile Berliner menciptakan mikrofon pertama yang digunakan sebagai pemancar suara telepon. Mikrofon praktis komersial pertama adalah mikrofon karbon yang ditemukan pada bulan Oktober 1876 oleh Thomas Alfa Edison. Pada tahun 1878, David Edward Hughes juga mengambil andil dalam perkembangan mikrofon karbon. Mikrofon karbon tersebut mengalami perkembangan hingga tahun 1920-an. James West and Gerhard Sessler juga memainkan peranan yang besar dalam perkembangan mikrofon. Mereka mematenkan temuan mereka, yaitu mikrofon elektrik pada tahun 1964. Pada waktu itu, mikrofon tersebut menawarkan sesuatu yang tidak dimiliki oleh mikrofon sebelumnya, yaitu harga rendah sehingga dapat dijangkau oleh seluruh konsumen. Bagian lain dalam sejarah perkembangan mikrofon ialah merevolusi mikrofon dalam industri di mana memungkinkan masyarakat mum untuk mendapatkannya. Hampir satu juta mikrofon diproduksi tiap tahunnya. Pada tahun 1970-an, mikrofon dinamik dan mikrofon kondenser mulai dikembangkan. Mikrofon ini memiliki tingkat sensitivitas yang tinggi. Oleh karena itu, mikrofon tersebut digunakan dalam dunia penyiaran hingga sat ini.
+                    </p>
+
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Fungsi Mikrofon -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #ECC46F;">
+                        Fungsi Mikrofon
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>Fungsi mikrofon adalah sebagai alat atau komponen audio yang digunakan untuk merekam sinyal audio, baik vokal, akustik instrumen, atau apa pun yang menjadi sumber suara. Komponen dasar dari semua mikrofon adalah sama, yaitu sebuah sensor yang mendeteksi getaran dari molekul-molekul udara dan mengubah getaran tersebut menjadi energi listrik. Pemilihan mikrofon harus dilakukan dengan lebih hati-hati. Hal in dilakukan untuk mencegah berkurangnya kemampuan mikrofon dari performa yang optimal. 
+
+                    </p>
+
+                    <p>Agar lebih efektif, mikrofon yang digunakan harus sesuai dengan kebutuhan dan seimbang antara sumber suara yang ingin diambil, misalnya suara manusia, alat musik, atau yang lainnya, dengan sistem tata suara yang digunakan seperti sound system untuk live music, alat perekaman, dan sebagainya.  </p>
+
+                </div>
+            </div>
+
+            <br>
+            
+            <!-- Karakteristik Mikrofon -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #ECC46F;">
+                        Karakteristik Mikrofon
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>
+                    Karakteristik mikrofon dapat diklasifikasikan menjadi beberapa hal berikut.
+                        <ul>
+                            <li><b>Kepekaan</b>
+                                <p>
+                                Kepekaan sebuah mikrofon adalah besar tegangan bolak-balik keluaran mikrofon pada keadaan bunyi bebas dengan tekanan 1 ubar. Sebagai satuan diberikan mV/ubar (mili volt per mikro bar). Kepekaan mikrofon bergantung frekuensi sehingga besarnya frekuensi harus diberikan. Secara umum diambil frekuensi sebesar 1.000 Hz.                                
+                                </p>
+                                <p>
+                                Kepekaan juga disebut "faktor pemindahan medan beban kosong" faktor in diukur dalam medan bunyi bebas dan tapa beban. Menurut sistem SI, faktor pemindahan medan beban kosong tidak lagi berdasarkan atas 1 ubar, tetapi 1 N/m (newton 1 mV/ubar = 10 mV/Pa.
+                                </p>
+                            </li>
+                            <li><b>Daerah Frekuensi</b>
+                                <p>
+                                Daerah frekuensi atau daerah pemindahan adalah daerah di mana mikrofon tanpa kerugian kepekaan dan tapa cacat dapat mengubah gelombang bunyi ke dalam sinyal listrik. Untuk perekaman musik, mikrofon scharusnya mempunyai daerah frekuensi dari 40 Hz sampai 15 kHz dan tapa perubahan kepekaan yang besar. Sementara itu, untuk percakapan cukup dari 200 Hz sampai 5.000 Hz.
+                                </p>
+                            </li>
+                            <li><b>Tanggapan Frekuensi </b>
+                                <p>
+                                Tanggapan frekuensi atau kurva frekuensi menandakan pengaruh frekuensi dari kepekaan. Pada pengukuran ini, gelombang bunyi dengan frekuensi berlainan dijatuhkan tegak lurus di muka mikrofon dan tegangan keluarannya diukur. Faktor pemindahan a dalam dB yang sebelumnya mV/bar  karena kurva frekuensi dengan level yang diambil berlainan. Di mana: 
+                                </p>
+                                <p>
+                                B = kepekaan dalam V/ubar
+                                </p>
+                                <p>
+                                Bo = kepekaan patokan dari 1 V/ubar
+                                </p>
+                            </li>
+                            <li><b>Ketergantungan Arah</b>
+                                <p>
+                                Sebuah mikrofon tidak dapat mengambil bunyi dari semua sisi sama kuat. Jadi, tegangan keluaran bergantung arah dari mana bunyi datang. Ketergantungan in digambarkan melalui sifat arah, ketergantungan arah menentukan penggunaan mikrofon.
+                                </p>
+                            </li>
+                            <li><b>Impedansi</b>
+                                <p>
+                                Hubungan sebuah mikrofon pada sebuah perangkat penguat atau pada sebuah peralatan pita suara adalah penting untuk mengenal impedansi listrik. Impedansi bergantung pada frekuensi, pada umumnya dinyatakan pada frekuensi 1.000 Hz dalam satuan    (ohm).
+                                </p>
+                            </li>
+                            <li><b>Tahanan</b>
+                                <p>
+                                Tahanan hubungan adalah hubungan semu, dengannya mikrofon seharusnya dihubungkan. Tahanan hubungan yang kecil akan memperburuk sifat-sifat mikrofon.
+                                </p>
+                                <p>
+                            </li>
+                            <li><b>Batas Pengendalian Lebih</b>
+                                <p>
+                                Batas pengendalian lebih adalah batas tekanan di mana mikrofon masih bekerja dengan baik, maksudnya masih tapa cacat. Mikrofon dinamis dapat bekerja pada tekanan bunyi yang tinggi dan batas pengendalian lebih belum tercapai. Pada mikrofon kondenser, pernyataan ini diperlukan, pada pelanggaran batas yang disyaratkan akan mendatangkan cacat tidak liner dan dengan demikian faktor cacat akan naik. Batas pengendalian lebih ini diberikan dalam bar atau pascal (Pa).                                </p>
+                                <p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <br>
+            
+            <!-- Jenis Mikrofon -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #ECC46F;">
+                        Jenis Mikrofon
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>
+                    Mikrofon memiliki berbagai jenis dan prinsip kerja sendiri-sendiri. Berikut ini penjelasan berbagai jenis mikrofon.
+                        <ul>
+                            <li><b>Mikrofon Karbon </b>
+                                <p>
+                                Mikrofon karbon adalah mikrofon yang terbuat dari sebuah diafragma logam yang terletak pada salah satu ujung kotak logam yang berbentuk silinder. Cara kerja mikrofon ini berdasarkan resistansi variabel dimana terdapat sebuah penghubung yang menghubungkan diafragma dengan butir-butir karbon di dalam mikrofon. Perubahan getaran suara yang ada akan menyebabkan nilai resistansi juga berubah sehingga mengakibatkan perubahan pada sinyal output mikrofon. 
+                                </p>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: center;">
+                                            <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Microphone Carbon.jpg') }}" alt="..." style="   max-width: 100%;
+                                                                                                                                                    width: 364px; 
+                                                                                                                                                    height: 226px;"/>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: center;">
+                                            <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Karbon.png') }}" alt="..." style="   max-width: 100%;
+                                                                                                                                                    width: 397px;
+                                                                                                                                                    height: 397px;"/>
+                                        </div>
+                                    </div>
+                                </p>
+                            </li>
+                            <li><b>Mikrofon Reluktansi Variabel  </b>
+                                <p>
+                                Mikrofon Reluktansi Variabel adalah mikrofon yang terbuat dari sebuah diafragma berbahan magnetik. Cara kerjanya berdasarkan gerakan diafragma magnetik tersebut. Jika tekanan udara dalam diafragma meningkat karena adanya getaran suara, maka celah udara dalam rangkaian magnetik tersebut akan berkurang, akibatnya reluktansi semakin berkurang dan menimbulkan perubahan-perubahan magnetik yang terpusat di dalam struktur magnetik. Perubahan-perubahan tersebut menyebabkan perubahan sinyal yang keluar dari mikrofon. 
+                                </p>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: center;">
+                                            <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Reluktansi Variabel.png') }}" alt="..." style=" max-width: 100%;
+                                                                                                                                                    width: 364px;
+                                                                                                                                                    height: 283.52px;"/>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: center;">
+                                            <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Reluktansi Variabel.png') }}" alt="..." style=" max-width: 100%;
+                                                                                                                                                    width: 364px;
+                                                                                                                                                    height: 283.52px;"/>
+                                        </div>
+                                    </div>
+                                </p>
+                            </li>
+                            <li><b>Mikrofon Kumparan yang Bergerak  </b>
+                                <p>
+                                Mikrofon Kumparan yang Bergerak adalah mikrofon yang terbuat dari kumparan induksi yang digulungkan pada silinder yang berbahan non magnetik dan dilekatkan pada diafragma, kemudian dipasang ke dalam celah udara suatu magnet permanen. Sedangkan kawat-kawat penghubung listrik direkatkan pada diafragma yang terbuat dari bahan non logam. Jika diafragma bergerak karena adanya gelombang suara yang ditangkap, maka kumparan akan bergerak maju mundur di dalam medan magnet, sehingga muncullah perubahan magnetik yang melewati kumparan dan menghasilkan sinyal listrik. 
+                                </p>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: center;">
+                                            <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Kumparan yang Bergerak.jpg') }}" alt="..." style="   max-width: 100%;
+                                                                                                                                                    width: 364px;
+                                                                                                                                                    height: 310.88px;"/>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: center;">
+                                            <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Kumparan yang Bergerak.png') }}" alt="..." style="   max-width: 100%;
+                                                                                                                                                    width: 397px;
+                                                                                                                                                    height: 397px;"/>
+                                        </div>
+                                    </div>
+                                </p>
+                            </li>
+                            <li><b>Mikrofon Kapasitor  </b>
+                                <p>
+                                Mikrofon Kapasitor adalah mikrofon yang terbuat dari sebuah diafragma berbahan logam, digantungkan pada sebuah pelat logam statis dengan jarak sangat dekat, sehingga keduanya terisolasi dan menyerupai bentuk sebuah kapasitor. Adanya getaran suara mengakibatkan diafragma bergerak-gerak. Diafragma yang bergerak menimbulkan adanya perubahan jarak pemisah antara diafragma dengan pelat statis sehingga mengakibatkan berubahnya nilai kapasitansi. Mikrofon kapasitor ini memerlukan tegangan DC konstan yang dihubungkan ke sebuah diafragma dan pelat statis melewati sebuah resistor beban, sehingga tegangan mikrofon dapat berubah-ubah seiring perubahan tekanan udara yang terjadi akibat getaran suara.
+                                </p>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: center;">
+                                            <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Kapasitor.jpg') }}" alt="..." style="   max-width: 100%;
+                                                                                                                                                    width: 364px; 
+                                                                                                                                                    height: 301.48px;"/>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: center;">
+                                            <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Kapasitor.png') }}" alt="..." style="   max-width: 100%;
+                                                                                                                                                    width: 397px;
+                                                                                                                                                    height: 362.64px;"/>
+                                        </div>
+                                    </div>
+                                </p>
+                            </li>
+                            <li><b>Mikrofon Elektret  </b>
+                                <p>
+                                Mikrofon Elektret adalah jenis khusus mikrofon kapasitor yang telah memiliki sumber muatan tersendiri sehingga tidak membutuhkan pencatu daya dari luar. Sumber muatan berasal dari suatu alat penyimpan muatan yang terbuat dari bahan teflon. Bahan teflon tersebut diproses sedemikian rupa sehingga mampu menangkap muatan-muatan tetap dalam jumlah besar, kemudian mempertahankannya untuk waktu yang tak terbatas. Lapisan tipis teflon dilekatkan pada pelat logam statis dan mengandung muatan-muatan negatif dalam jumlah besar. Muatan-muatan tersebut terperangkap pada satu sisi yang kemudian menimbulkan medan listrik pada celah yang berbentuk kapasitor. Getaran suara yang ada mengubah tekanan udara di dalamnya sehingga membuat jarak antara diafragma dan pelat logam statis juga berubah-ubah. Akibatnya, nilai kapasitansi berubah dan tegangan terminal mikrofon pun juga berubah. 
+                                </p>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-12" style="  display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: center;">
+                                            <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Elektret.png') }}" alt="..." style="   max-width: 100%;
+                                                                                                                                                    width: 397px;
+                                                                                                                                                    height: 397px;"/>
+                                        </div>
+                                    </div>
+                                </p>
+                            </li>
+                            <li><b>Mikrofon Piezoelektris   </b>
+                                <p>
+                                Mikrofon Piezoelektris adalah mikrofon yang terbuat dari bahan kristal aktif. Bahan ini dapat menimbulkan tegangan sendiri saat menangkap adanya getaran dari luar jadi tidak membutuhkan pencatu daya. Cara kerjanya ialah kristal dipotong membentuk suatu irisan pada bidang-bidang tertentu, kemudian dilekatkan pada elektroda atau lempengan sehingga akan menunjukkan sifat-sifat piezoelektris. Kristal akan berubah bentuk bila mendapatkan suatu tekanan sehingga akan terjadi perpindahan muatan sesaat di dalam susunan kristal tersebut. Perpindahan muatan mengakibatkan adanya perbedaan potensial di antara kedua pelat-pelat lempengan. Uniknya, kristal tersebut dapat langsung menerima getaran suara tanpa harus dibentuk menjadi sebuah diafragma, sehingga respon frekuensi yang diterima akan lebih baik dari mikrofon lainnya walaupun tingkat keluarannya jauh lebih rendah, yaitu kurang dari 1 mV.                                 </p>
+                                <p>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: center;">
+                                            <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Piezoelektris 1.jpg') }}" alt="..." style="   max-width: 100%;
+                                                                                                                                                    width: 364px; 
+                                                                                                                                                    height: 301px;"/>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: center;">
+                                            <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Piezoelektris.png') }}" alt="..." style="   max-width: 100%;
+                                                                                                                                                    width: 397px;
+                                                                                                                                                    height:  397px;"/>
+                                        </div>
+                                    </div>
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <br>
 
 
 
 
         </div>
+        <br>
+        <br>
+        @elseif ($lesson->slug == 'rangkaian-universal-pre-amplifier')
+        <div>
+            <!-- Rangkaian Universal Pre-Amplifier -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #555B41;">
+                        Rangkaian Universal Pre-Amplifier
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>Penguat depan atau yang disebut pre-amplifier adalah sebuah penyangga dan penyesuai level masing-masing sinyal input sebelum dimasukkan ke pengatur nada. Hal ini bertujuan agar saat proses pengaturan nada tidak terjadi kesalahan dikarenakan pembebanan/loading. Penguat depan harus mempunyai karakteristik penyangga/buffer dan berdesah rendah.</p>
+                </div>
+            </div>
+            
+            <!-- Mengenal Pre-Amplifier -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #555B41;">
+                        Mengenal Pre-Amplifier
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p style="text-align: center !important;">
+                        <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/1.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                    max-height: 100%;
+                                                                                                                                    width: 1040px;
+                                                                                                                                    height: 518px;
+                                                                                                                                    border-radius: 52px;"/>
+                    </p>
+                    <br>
+                    <p>
+                    Sebuah pre-amplifier merupakan serangkaian blok di mana terdapat pada penguat suara yang memiliki komponen berupa sumber sinyal yang diaplikasikan pada mikrofon, pemungut piringan hitam ataupun lainnya, dan diakhiri dengan sebuah loudspeaker. Inti dari pre-amplifier ini ialah sebuah penguat depan untuk menguatkan sumber sinyal. Selain itu, diperlukan penyesuaian terhadap sumber sinyal apabila memiliki tanggapan frekuensi yang tidak linear.                    </p>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Fungi Pre-Amplifier -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #555B41;">
+                        Fungi Pre-Amplifier
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>
+                    Penguat depan berfungsi sebagai penyangga dan penyesuai level dari masing-masing sinyal input sebelum dimasukkan ke pengatur nada. Hal ini bertujuan agar saat proses pengaturan nada tidak terjadi kesalahan karena pembebanan/loading. Penguat depan harus mempunyai karakteristik penyangga/buffer dan berdesah rendah. Sebuah penguat daya audio adalah penguat elektronik yang memperkuat sinyal audio berdaya rendah (sinyal terutama terdiri atas frekuensi antara 20-20.000 Hz (kisaran pendengaran manusia) ke level cocok untuk menggiring ke pengeras suara. Ini adalah tahap akhir dalam alur pemutaran khas audio. 
+                    </p>
+                    <p>
+                    Tahap sebelumnya dalam alur tersebut ialah audio amplifier daya rendah melakukan tugas seperti pra-amplifikasi (ini khususnya yang berkaitan dengan sinyal catatan turntable), pemerataan, kontrol nada, pencampuran/ efek, atau sumber audio seperti catatan pemain, pemutar CD, dan pemutar kaset. Kebanyakan power amplifier audio yang membutuhkan input tingkat rendah ini untuk mematuhi tingkat baris. Sementara itu, sinyal input ke penguat daya audio dapat mengukur hanya beberapa ratus microwatts, Output-nya mungkin puluhan atau ratusan watt untuk sistem rumah atau ribuan hingga puluhan ribu watt untuk konser sistem penguatan suara. Amplifier dijelaskan sesuai dengan imput dan output mereka properti. Mereka menunjukkan milik gain atau faktor multiplikasi yang berhubungan besarnya sinyal keluaran dengan sinyal imput. Keuntungan tersebut dapat ditentukan sebagai rasio tegangan output ke input tegangan (gain tegangan), daya output daya input (gain power), atau beberapa kombinasi dari arus, tegangan, dan daya. Dalam banyak kasus, dengan input dan output dalam satuan yang sama, gain unitless (meskipun sering dinyatakan dalam desibel (dB)).                    </p>
+                </div>
+            </div>
+
+            <br>
+            
+            <!-- Jenis Penguat Depan -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #555B41;">
+                        Jenis Penguat Depan
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>
+                    Penguat depan atau pre-amplifier disebut universal dengan maksud untur  menguatkan sumber sinyal dengan tanggapan frekuensi yang datar (misalnya mikrofon) dan yang tidak datar (misalnya sinyal dari pemungut suara magnetik).
+                    </p>
+                    <p>
+                    Pada prinsipnya, arsitektur sebuah penguat terdiri atas penguat dengan penguatan terbuka V   (open loop) yang besar dan jaringan umpan balik negatif. Penguat harus memiliki penguatan terbuka yang besar. Berikut ini jenis penggunaan pre-amplifier.                    
+                    </p>
+                    <p>
+                        <ol style="list-style-type: none;">
+                            <li><b style="color: #555B41; font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            font-size: 25px;
+                                            line-height: 48px;
+                                            letter-spacing: 0.01em;">A. Penguat Mikrofon</b>
+                                <p>
+                                Mikrofon dinamik menghasilkan tegangan kira-kira hanya 0,5 mV pada tanggapan frekuensi yang datar. Di sini, penguat mempunyai tugas hanya menaikkan level sinyal karena tanggapan frekuensinya sudah datar. Pada rangkaian in tidak dijumpai komponen yang memengaruhi tanggapan frekuensi. Dengan demikian, akan diperoleh daerah transfer dari 4 Hz 40 kHz. Penguatan sedemikian besarnya sehingga diperoleh tegangan keluaran sebesar maksimum 1,4 V.                                 
+                                </p>
+                                <p>
+                                Jaringan umpan balik harus merupakan komponen yang tidak terpengaruh oleh frekuensi untuk penguat mikrofon karena diperlukan penguatan yang konstan dalam daerah frekuensi. Untuk itu, digunakan komponen tahanan, di mana besar resistansinya tidak berubah dengan berubahnya frekuensi sinyal.
+                                </p>
+                            </li>
+                            <li><b style="color: #555B41; font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            font-size: 25px;
+                                            line-height: 48px;
+                                            letter-spacing: 0.01em;">B. Penguat Pemungut Suara</b>
+                                <p>
+                                Pemungut suara magnetik atau juga disebut Pick Up (PU) ada beberapa jenisnya, tergantung pengubah (transducer) yang digunakan. Pemungut suara yang banyak digunakan berdasar induksi, secara konstruksi terdiri atas kumparan, magnet, serta jarum. Pemungut dengan magnet yang terhubung dengan jarum disebut dengan moving magnet (MM) dan kumparan yang terhubung jarum disebut dengan moving coil (MC). 
+                                </p>
+                                <p>
+                                Dalam konstruksi pemungut suara magnetik, prinsip kerjanya berdasarkan hukum induksi. Tegangan induksi akan bangkit jika penghantar berada dalam medan magnet yang berubah. Artinya, jika jarum bergetar, magnet akan ikut bergetar (pada MM) dan akan terbangkit tegangan induksi. Pada MC, jarum bergetar dan akan mengakibatkan kumparan bergetar sehingga medan magnet yang mengenainya akan berubah-ubah yang akan menimbulkan tegangan induksi. Bear tegangan induksi yang bangkit akan sebanding dengan frekuensi getaran jarum. Getaran jarum tergantung pada frekuensi sinyal yang tercetak pada piringan hitam. Jadi, tegangan keluaran pemungut suara magnetic akan naik dengan naiknya frekuensi suara. Selain itu, pada nada rendah (bass) memiliki tegangan yang besar sehingga akan menimbulkan alur yang bear pada piringan hitam. Hal ini akan menghabiskan space pada piringan hitam, juga ketidakmampuan jarum untuk mengikuti alur tersebut.
+                                </p>
+                                <p>
+                                Pada sistem perekaman piringan hitam, frekuensi rendah juga ditekan. Penekanan amplitudo ini secara internasional ditetapkan oleh RIAA (Record Industry Association of America). Penguat depan ini disebut penyama (equalizer amplifier). Untuk itu, penguat harus memiliki umpan balik negatif yang besarannya terpengaruh oleh frekuensi sinyal. Oleh sebab itu, digunakan komponen kapasitor yang nilai reaktansinya (tahanan secara arus bolak-balik) berubah dengan berubahnya frekuensi sinyal.                                
+                            </p>
+                            </li>
+                            <li><b style="color: #555B41; font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            font-size: 25px;
+                                            line-height: 48px;
+                                            letter-spacing: 0.01em;">C. Penguat Depan Universal</b>
+                                <br>
+                                <br>
+                                <p style="text-align: center !important;">
+                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/Rangakain Pre Amp Universal.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                max-height: 100%;
+                                                                                                                                                width: 998px;
+                                                                                                                                                height: 528px;
+                                                                                                                                                border-radius: 52px;"/>
+                                </p>
+                                <br>
+                                <p>
+                                Penguat depan universal ini merupakan sebuah penguat depan yang dapat digunakan sebagai penguat mikrofon dan dapat sebagai penguat penyama. Dengan mensakelarkan jaringan umpan balik S1 dari "1" ke "2', tanggapan frekuensi dari penguat depan ini akan berubah, dari linear ke tidak linear. Dengan kata lain, dari penguat depan mikrofon menjadi penguat depan pemungut suara magnetik.                                 
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Rangkaian Pre-Amplifier Universal -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #555B41;">
+                        Rangkaian Pre-Amplifier Universal
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>
+                    Pre-amplifier atau penguat depan yang dapat menguatkan tegangan 1-20 mVef menjadi 1-1,4 Vef dapat dibangun dengan satu atau dua buah transistor. Pada bahasan berikut dipilih penguat depan universal dua tingkat yang hubung secara DC (arus searah).                    
+                    </p>
+                    <p>
+                        <ol style="list-style-type: none;">
+                            <li><b style="color: #555B41; font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            font-size: 25px;
+                                            line-height: 48px;
+                                            letter-spacing: 0.01em;">1. Mendimensikan Komponen DC</b>
+                                <br>
+                                <br>
+                                <p style="text-align: center !important;">
+                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/2.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                max-height: 100%;
+                                                                                                                                                width: 998px;
+                                                                                                                                                height: 496.83px;
+                                                                                                                                                border-radius: 52px;"/>
+                                </p>
+                                <br>
+                                <p>
+                                Rangkaian terdiri atas dua tingkat yang dibangun oleh transistor TRI dan TR2. Antara keluaran penguat pertama dan kedua disambung secara DC. Umpan balik negatif yang menentukan tanggapan frekuensi, dari keluaran dihubungkan ke daerah masukan dengan penghubung S1, yang bisa dipilih sesuai yang dinginkan. Dengan <b>S1 pada 0, ini berarti penguat tanpa umpan balik atau open loop/terbuka</b>. Jika <b>S1 pada 1, umpan balik berupa jaringan R10-R11 dan C7-C8</b>; penguat memiliki penguatan vang tidak liner berfungsi sebagai <b>penguat pick-up/pemungut suara</b>. Jika <b>S1 pada 2 umpan balik berupa R12, penguatan penguat linier berfungsi sebagai penguat mikrofon</b>. Rangkaian penguat depan universal memuat komponen-komponen berikut ini.                                
+                                </p>
+                                <p style="text-align: center !important;">
+                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/3.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                max-height: 100%;
+                                                                                                                                                width: 1017px;
+                                                                                                                                                height: 642px;"/>
+                                </p>
+                                <p>
+                                Rangkaian arus searah sebuah penguat audio terlihat sangat sederhan karena semua komponen yang berpengaruh pada frekuensi sinyal audio dapat ditiadakan. Jadi, semua kapasitor dapat ditiadakan. Setelah proses pensakelaran berlalu, yang tertinggal adalah keadaan statis. Keadaan statis ini membangun titik kerja. Dalam keadaan ini, semua kapasitor mempunyai potensial konstan karena terisi penuh. 
+                                </p>
+                                <p>
+                                Kapasitor yang terisi penuh untuk arus searah seakan terputus, tidak ada arus searah yang mengalir. Akibatnya, kapasitor tidak berpenganuh lagi pada rangkaian arus searah. Untuk penyederhanaan dalam kondisi ini, semua kapasitor dihapus. Hal yang dimaksud dengan UCE tegangan antara kaki kolektor dan emitor sebuah transistor, jika UCE2 artinya tegangan antara kaki kolektor dan emitor untuk transistor 2. Jika ditulis UC1, berarti tegangan kolektor transistor 1 diukur terhadap 0V (massa). Untuk IC2, berarti arus kolektor transistor 2, demikian seterusnya.                                </p>
+                            </li>
+                            <li><b style="color: #555B41; font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            font-size: 25px;
+                                            line-height: 48px;
+                                            letter-spacing: 0.01em;">2. Mendimensikan Komponen AC</b>
+                                <br>
+                                <br>
+                                <p style="text-align: center !important;">
+                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/4.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                max-height: 100%;
+                                                                                                                                                width: 998px;
+                                                                                                                                                height: 496.83px;
+                                                                                                                                                border-radius: 52px;"/>
+                                </p>
+                                <br>
+                                <p>
+                                Dalam sebuah rangkaian penguat audio, jalannya aliran sinval untuk AC dan DC tidak sama. Sumber tegangan DC untuk sinyal AC membentuk sebuah hubung singkat. Tahanan dalam sumber tegangan idealnya sama dengan 0 ohm. Dengan demikian, elemen-elemen yang terletak antara potensial positif dan negatif untuk sinyal AC terletak paralel. Untuk IDC, RI dan R2 terhubung seri schingga Rt = R1 + R2. Untuk IAC, R1 dan R2 terhubung paralel sehingga Rt = R1 // R2. Masukan diperuntukkan dalam UAC pembagi tegangan R1, R2 terletak paralel sehingga: RIB=R1//R2. Sementara itu, keluaran untuk sinyal AC RI terletak paralel ke RC. Dengan demikian, RIC dikolektor untuk sinyal AC: RtC=RC//RL.                                 
+                                </p>
+                                <p>
+                                Rangkaian dalam penguat depan universal yang dibahas dapat dipilah dalam:
+                                </p>
+                                <p>
+                                a) Jaringan Penguat                            
+                                </p>
+                                <p>
+                                b) Jaringan Umpan Balik Negatif                                
+                                </p>
+                                <br>
+                                <p style="text-align: center !important;">
+                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/5.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                max-height: 100%;
+                                                                                                                                                width: 1008px;
+                                                                                                                                                height: 499px;
+                                                                                                                                                border-radius: 52px;"/>
+                                </p>
+                                <br>
+                                <p>
+                                Umpan balik negatif maksudnya mengembalikan sebagian tegangan keluaran ke rangkaian masukan dengan efek memperkecil, jika memperbesar disebut dengan umpan balik positif. Cara untuk memperoleh umpan balik negatif, fasa tegangan keluaran yang dikembalikan ke masukan harus berbalikan fasa dengan fasa tegangan masukan sehingga akan berakibat sebuah pengurangan.                                
+                                </p>
+                                <p>
+                                Umpan balik negatif akan memengaruhi penampilan keseluruhan rangkaian. Berikut ini beberapa hal yang dipengaruhi.                          
+                                </p>
+                                <p>
+                                a) Penguatan VU (penguatan tegangan), Vi (penguatan arus)                           
+                                </p>
+                                <p>
+                                b) Lebar band                            
+                                </p>
+                                <p>
+                                c) Tahanan masukan re                            
+                                </p>
+                                <p>
+                                d) Tahanan keluaran rA                         
+                                </p>
+                                <p>
+                                e) Faktor cacat                       
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+                <br>
+                <div style="text-align: justify;">  
+                    <p>
+                        <ol style="list-style-type: none;">
+                            <li><b style="color: #455A64; font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            font-size: 25px;
+                                            line-height: 48px;
+                                            letter-spacing: 0.01em;">Jaringan Penguat dengan Umpan Balik “dalam”</b>
+                                <br>
+                                <br>
+                                <p style="text-align: center !important;">
+                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/6.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                max-height: 100%;
+                                                                                                                                                width: 1008px;
+                                                                                                                                                height: 497px;
+                                                                                                                                                border-radius: 52px;"/>
+                                </p>
+                                <br>
+                                <p>
+                                Dalam pembahasan sebelumnya telah dihitung dan diterangkan berakibat apa tahanan-tahanan emitor R9, R4, R5. Semua itu mengakibatkan penstabilan arus kolektor supaya titik kerja tidak bergeser. Di mana yang disebut umpan balik negatif arus, yang mana tegangan umpan balik U9 (UE2), U4, 5 (UE1) sebanding dengan arus IE1, IE2. Umpan balik negatif ini bekerja atas setiap perubahan sinyal.                                 
+                                </p>
+                                <p>
+                                Apabila meletakkan tegangan sinyal pada masukan A, menyimpanglah arus basis dalam irama sinyal masukan. Umpan balik negatif akan menstabilkan "penyimpangan" ini sehingga sinyal dari masukan tidak dikuatkan. Padahal penguatan sinyal diperlukan. Oleh karena itu, umpan balik negatif untuk tegangan sinyal harus diperkecil. 
+                                </p>
+                                <p>
+                                Dalam rangkaian yang dibahas, umpan balik negatif melalui R9 untuk tegangan sinyal akan diperkecil dengan cara R9 dihubung- singkat dengan C6. Dengan demikian, arus bolak-balik sinyal tidak membangkitkan tegangan AC umpan balik melalui R9. Kapasitor C6 membuat suatu hubung singkat untuk sinyal AC. Dengan kata lain, C6 berfungsi sebagai peniada umpan balik untuk sinyal AC. Sementara itu, R4 (trimpot) untuk sinyal AC akan dihubung-singkat tergantung posisinya. Umpan balik negatif maksimum apabila penggeser trimpot berada paling atas sehingga tahanan yang berada di emitor sebesar 5,220 . Tahanan atur R4 digunakan untuk mengatur besarnya umpan balik negatif, tetapi hal ini hanya berlaku untuk sinyal AC. Untuk DC, semua kapasitor membentuk rangkaian terputus atau  schingga pada tahanan atur R4 besarya tidak akan berubah walaupun penggeser tahanan atur diubah-ubah. Dengan demikian, R4 bertugas sebagai pengatur penguatan sinyal. 
+                                </p>
+                                <p>
+                                Rangkaian R6, C2 bertugas untuk menyaring (memfilter) tegangan catu TR1 karena tingkat penguat keseluruhan mempunyai penguatan yang besar. Jika tidak disaring (difilter), tegangan dengung akan sangat terdengar di keluaran A. Kapasitor C1, C5 adalah kapasitor penggandeng dan bertugas untuk memisahkan tegangan DC. Tahanan R1 mempunyai pengaruh paling bear dalam menentukan besarnya tahanan masukan rangkaian. Kapasitor C3 adalah umpan balik negatif yang lain dan bekerja pada frekuensi tinggi. Sinyal frekuensi tinggi akan dikembalikan ke basis TR2 maka penguatan pun menurun. Kapasitor C3 bekerja pada frekuensi di atas 20 kHz. Kapasitansi seluruhnya C3' =           ,  jadi dengan penguatan arus yang lebih besar nilai C3' akan sangat besar.                                 
+                                </p>
+                            </li>
+                            <li><b style="color: #455A64; font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            font-size: 25px;
+                                            line-height: 48px;
+                                            letter-spacing: 0.01em;">Jaringan Umpan Balik Negatif “luar”</b>
+                                <p>
+                                Pengertian jaringan umpan balik "luar" adalah jaringan antara keluaran penguat (C10) ke masukan penguat (emitor TR1 untuk memperoleh umpan balik negatif). Komponen umpan balik dapat diganti dengan memindahkan sakelar penghubung umpan balik S1. Jika sakelar S1 pada 2 sinyal keluaran diumpan-balikkan melalui tahanan R12, di mana komponen ini tidak terpengaruh oleh frekuensi, melalui C10 (C10 nilainya terlalu besar untuk sinyal audio). Jika sakelar S1 pada 1, umpan balik negatif akan bergantung frekuensi dan sesuai dengan penyama (ekualisasi = equalization) untuk piringan hitam RIAA (Recording Industry Association of America = Asosiasi Industri Rekaman Amerika), komponen itu terdiri atas jaringan R10, R11 dan C7 serta C8.                                
+                                </p>
+                            </li>
+                            <li><b style="color: #455A64; font-family: 'Poppins';
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            font-size: 25px;
+                                            line-height: 48px;
+                                            letter-spacing: 0.01em;">Penguatan dengan Umpan Balik Negatif “luar”</b>
+                                <br>
+                                <br>
+                                <p style="text-align: center !important;">
+                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/7.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                max-height: 100%;
+                                                                                                                                                width: 1008px;
+                                                                                                                                                height: 501.81px;
+                                                                                                                                                border-radius: 52px;"/>
+                                </p>
+                                <br>
+                                <p>
+                                Basis dipisah menjadi masukan (+) dan emitor menjadi masukan (-). Tegangan kendali keseluruhan terletak antara basis (+) dan emitor (-) dari TR1 dan dinyatakan sebagai Ul.                                
+                                </p>
+                                <br>
+                                <p style="text-align: center !important;">
+                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/8.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                max-height: 100%;
+                                                                                                                                                width: 1008px;
+                                                                                                                                                height: 501.81px;
+                                                                                                                                                border-radius: 52px;"/>
+                                </p>
+                                <br>
+                                <p>
+                                Setelah itu, disederhanakan menjadi seperti gambar di atas di mana impedansi Z2 merupakan sebuah umpan balik negatif antara keluaran dan emitor TR1. Impedansi Z1 adalah umpan balik antara emitor TRI dan massa (0V). Elemen R4 dan R5 telah dijelaskan pada umpan balik 9  negatif arus dalam "jaringan penguat"                                
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
         @else
         <div>
             <!-- Apa itu gelombang bunyi? -->
