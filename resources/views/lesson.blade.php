@@ -1217,14 +1217,14 @@
                                     <div class="row">
                                         <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
                                                                     align-items: center;
-                                                                    justify-content: center;">
+                                                                    justify-content: right;">
                                             <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Microphone Carbon.jpg') }}" alt="..." style="   max-width: 100%;
                                                                                                                                                     width: 364px; 
                                                                                                                                                     height: 226px;"/>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
                                                                     align-items: center;
-                                                                    justify-content: center;">
+                                                                    justify-content: left;">
                                             <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Karbon.png') }}" alt="..." style="   max-width: 100%;
                                                                                                                                                     width: 397px;
                                                                                                                                                     height: 397px;"/>
@@ -1240,14 +1240,14 @@
                                     <div class="row">
                                         <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
                                                                     align-items: center;
-                                                                    justify-content: center;">
-                                            <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Reluktansi Variabel.png') }}" alt="..." style=" max-width: 100%;
+                                                                    justify-content: right;">
+                                            <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Reluktansi Variabel 1.svg') }}" alt="..." style=" max-width: 100%;
                                                                                                                                                     width: 364px;
                                                                                                                                                     height: 283.52px;"/>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
                                                                     align-items: center;
-                                                                    justify-content: center;">
+                                                                    justify-content: left;">
                                             <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Reluktansi Variabel.png') }}" alt="..." style=" max-width: 100%;
                                                                                                                                                     width: 364px;
                                                                                                                                                     height: 283.52px;"/>
@@ -1263,14 +1263,14 @@
                                     <div class="row">
                                         <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
                                                                     align-items: center;
-                                                                    justify-content: center;">
+                                                                    justify-content: right;">
                                             <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Kumparan yang Bergerak.jpg') }}" alt="..." style="   max-width: 100%;
                                                                                                                                                     width: 364px;
                                                                                                                                                     height: 310.88px;"/>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
                                                                     align-items: center;
-                                                                    justify-content: center;">
+                                                                    justify-content: left;">
                                             <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Kumparan yang Bergerak.png') }}" alt="..." style="   max-width: 100%;
                                                                                                                                                     width: 397px;
                                                                                                                                                     height: 397px;"/>
@@ -1286,14 +1286,14 @@
                                     <div class="row">
                                         <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
                                                                     align-items: center;
-                                                                    justify-content: center;">
+                                                                    justify-content: right;">
                                             <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Kapasitor.jpg') }}" alt="..." style="   max-width: 100%;
                                                                                                                                                     width: 364px; 
                                                                                                                                                     height: 301.48px;"/>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
                                                                     align-items: center;
-                                                                    justify-content: center;">
+                                                                    justify-content: left;">
                                             <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Kapasitor.png') }}" alt="..." style="   max-width: 100%;
                                                                                                                                                     width: 397px;
                                                                                                                                                     height: 362.64px;"/>
@@ -1324,14 +1324,14 @@
                                     <div class="row">
                                         <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
                                                                     align-items: center;
-                                                                    justify-content: center;">
+                                                                    justify-content: right;">
                                             <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Piezoelektris 1.jpg') }}" alt="..." style="   max-width: 100%;
                                                                                                                                                     width: 364px; 
                                                                                                                                                     height: 301px;"/>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6" style="  display: flex;
                                                                     align-items: center;
-                                                                    justify-content: center;">
+                                                                    justify-content: left;">
                                             <img class="" src="{{ asset('img/Page 8_Mikrofon/Gambar/Mikrofon Piezoelektris.png') }}" alt="..." style="   max-width: 100%;
                                                                                                                                                     width: 397px;
                                                                                                                                                     height:  397px;"/>
@@ -1714,6 +1714,423 @@
                     </p>
                 </div>
             </div>
+        </div>
+        <br>
+        <br>
+        @elseif ($lesson->slug == 'rangkaian-tone-control')
+        <div>
+            <!-- Rangkaian Tone Control -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #D1877D;">
+                        Rangkaian Tone Control
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>
+                    Sebuah rangkaian tone control merupakan salah satu jenis pengatur suara atau nada aktif pada system audio. Tone control atau pengatur nada berfungsi untuk mengatur penguatan level nada bass dan level nada treble. Nada bass adalah sinyal audio pada frekuensi rendah, sedangkan nada treble merupakan sinyal audio pada frekuensi tinggi.                    
+                </p>
+                </div>
+            </div>
+            
+            <!-- Definisi Rangkaian Tone Control -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #D1877D;">
+                        Definisi Rangkaian Tone Control
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>
+                    Rangkaian tone control sederhana memiliki output yang bisa dikatakan cukup bagus dan bersih. Sinyal suara yang dihasilkan dari input sebelumnya sudah diatur oleh potensiometer dan kemudian dikuatkan oleh bagian op amp menggunakan transistor yang kemudian dikopling oleh kapasitor yang outputnya akan diatur lagi pada bagian control.                     
+                    </p>
+                    <br>
+                    <p style="text-align: center !important;">
+                        <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture1.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                    max-height: 100%;
+                                                                                                                                    width: 1040px;
+                                                                                                                                    height: 517.74px;
+                                                                                                                                    border-radius: 52px;"/>
+                    </p>  
+                    <br>
+                    <p>
+                    Prinsip kerja dari rangkaian tone control ialah pada frekuensi rendah atau bass dan frekuensi tinggi atau treble. Dari pengaturan di atas kemudian dikuatkan lagi pada bagian pengatur akhir menggunakan transistor yang sama. Tegangan yang dihasilkan dari tone control ini adalah mulai dari 9 volt DC sampai dengan 18 volt DC. Tone control yang memiliki 4 transistor terbagi dalam 3 bagian utama, yaitu bagian penguat depan, bagian pengatur nada (tone control), dan bagian penguat akhir. Pada bagian depan dapat dibangun menggunakan 2 transistor yang disusun dalam penguat 2 tingkat. Selanjutnya, bagian pengatur nada dibangun menggunakan sistem pengatur nada baxandall yang dapat mengontrol nada rendah atau nada tinggi. Setelah itu, bagian akhir digunakan penguat 2 tingkat yang dibangun menggunakan transistor. 
+                    </p>  
+                    <p>
+                    Rangkaian tone control baxandall merupakan rangkaian penguat dengan jaringan umpan balik (feedback) dan rangkaian filter aktif. Rangkaian baxandall hanya tergantung dari pengaturan potensiometer bass. Batas pengaturan maksimum potensiometer bass merupakan maksimum boost (penguatan maksimal bass) dan batas pengaturan minimum potensiometer bass merupakan maksimum cut (pelemahan maksimum). Pada saat frekuensi nada bass meningkat maka akan memberikan efek pada resistor sampai kapasitor sehingga tidak lagi memberikan efek atau respons pada rangkaian. Oleh sebab itu, frekuensi di atas tidak dipengaruhi oleh posisi potensiometer bass pada maksimum boos dan cut atau dibiarkan flat. Untuk nada treble, pada akhir frekuensi tinggi audio kapasitor bertindak seakan short circuit sehingga penguatan akan diatur oleh potensiometer treble. 
+                    </p>  
+                    <p>
+                    Dalam sistem audio, bagian pengatur nada terletak di antara bagian pre- amplifier (penguat depan) dan final amplifier (penguat akhir). Pada bagian pengatur nada bass menguatkan sinyal frekuensi rendah, sedangkan pada bagian nada treble menguatkan sinyal frekuensi tinggi. Kurva penguatan (AV) terhadap besarnya frekuensi yang dikuatkan dapat digambarkan menggunakan kurva berikut.                    
+                    </p>
+                    <br>
+                    <p style="text-align: center !important;">
+                        <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture2.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                    max-height: 100%;
+                                                                                                                                    width: 1040px;
+                                                                                                                                    height: 517.74px;
+                                                                                                                                    border-radius: 52px;"/>
+                    </p> 
+                    <br> 
+                </div>
+            </div>
+
+            <br>
+            
+            <!-- Jenis Tone Control -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #D1877D;">
+                        Jenis Tone Control
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>
+                        <ul>
+                            <li><b>Tone Control Pasif</b>
+                                <p>
+                                Tone control yang paling sederhana adalah tone control pasif yang hanya terdiri atas potentiometer, resistor, dan kondensator. Pengaturan nada hanya sebatas cut terhadap nada nada tinggi. Pada tone control yang seperti in tidak terjadi boost dan tidak terjadi penguatan sinyal. Jika posisi pengaturan VR minimum, nilai resistansinya adalah maksimal sehingga kondensator C praktis dikatakan tidak berpengaruh terhadap sinyal audio yang melintas di antara input dan output. Apabila posisi VR maksimum, resistansinya minimal (atau nol) sehingga C menghubung-singkat ke ground sebagian sinyal pada frekuensi-frekuensi tertentu. Frekuensi- frekuensi yang dihubung-singkat oleh C adalah frekuensi-frekuensi tinggi dalam spektrum audio di mana reaktansi kapasitansi C adalah kecil terhadapnya. Reaktansi kapasitansi C (disimbolkan dengan Xc) adalah: XC 2. Untuk frekuensi-frekuensi tinggi audio, lazimnya nilai C adalah dalam besaran puluhan hingga ratusan nanoFarad. Semakin besar nilai C. semakin lebar jalur frekuensi tinggi audio yang akan di-cut.
+                                </p>
+                            </li>
+                            <li><b>Tone Control Aktif</b>
+                                <p>
+                                Tone control yang lengkap adalah tone control aktif yang menerapkan fungsi komponen aktif seperti transistor atau IC. Di dalam tone control aktif terjadi boost dan cut. selain itu terjadi pula penguatan level sinyal Sebuah tone control aktif umumnya mempunyai dua penyetelan nada, yaitu penyetelan boost dan cut untuk nada-nada rendah (bass) serta penyetelan boost dan cut untuk nada-nada tinggi (treble). Nada-nada rendah adalah range frekuensi audio pada kisaran 250 Hz ke bawah dengan frekuensi senter antara 60 atau 80 Hz. Sementara itu, nada-nada tinggi berada pada kisaran 3 kHz ke atas dengan frekuensi senter antara 5 atau 10 kHz. Kadang-kadang tone control dilengkapi pula dengan pengaturan untuk nada-nada tengah (midrange) dengan frekuensi senter 1kHz. 
+                                </p>
+                                <p>
+                                Dengan adanya pengaturan-pengaturan nada ini, sinyal audio dari pre- amp diperbaiki. Jika ada kekurangan pada range frekuensi tertentu yang mungkin kurang menonjol maka dilakukan boost. Jika ada yang terlampau menoniol maka dilakukan cut. Hal in dilakukan karena adanya kemungkinan pick-up sumber yang berbeda-beda tanggapan frekuensinya. Selain itu, juga karena adanya "'selera" pendengaran bagi setiap orang yang mungkin berbeda-beda pula. 
+                                </p>
+                                <p>
+                                Selain memiliki fungsi utama sebagai pengatur nada, sebuah unit tone control secara keseluruhan juga berfungsi sebagai penguat tegangan sinyal audio agar mencapai level yang cukup untuk diberikan kepada power-amplifier (penguat daya). Apabila level tegangan sinyal maksimal yang disyaratkan oleh power-amplifier tidak tercapai, power-amplifier pun tidak akan maksimal mengeluarkan daya-nya kepada speaker. 
+                                </p>
+                                <p>
+                                Sebagai contoh, pada sebuah unit rangkaian power-amplifier tertera di dalam data spesifikasinya: Power-output maks. 45 W dengan kepekaan input 1 V. Ini berarti level sinyal audio yang dikeluarkan oleh rangkaian tone control harus mencapai maks. 1 V agar power-amplifier mengeluarkan daya maksimal 45 W. Rangkaian tone control yang hanya mengeluarkan tegangan sinyal 500 mV tidak akan cocok dengan unit rangkaian power amplifier yang seperti ini. Oleh karena itu, tidak sembarang rangkaian tone control yang dibuat orang selalu cocok dengan suatu rangkaian power-amplifier. Level keluaran/output tone control harus sesuai dengan kepekaan input power-amplifier. Pengaturan boost dan cut untuk bass dan treble dilakukan melalui dua potentiometer. Dalam rangkaian seperti ini, transistor membentuk filter untuk frekuensi- frekuensi tinggi dan rendah dalam spektrum audio. 
+                                </p>
+                                <p>
+                                Apabila VR2 berada pada posisi minimum, kondensator 332 akan berderet dengan resistor 1k dari jalur keluaran T2 sehingga terbentuklah peredaman bagi frekuensi senter. Pada pengaturan bass, apabila VR3 berada pada posisi maksimum maka kondensator 473, resistor 4k7 dan 8k2 membentuk low pass filter bagi jalur masukan T2. Ketika VR3 berada pada posisi minimum maka kondensator 473, resistor 4k7 dan 8k2 menjadikan transistor sebagai peredam aktif bagi frekuensi-frekuensi rendah audio. Output tone control ini mempunyai level tegangan sinyal hingga beberapa ratus milivolt yang cukup untuk mengemudikan sebuah power-amplifier 20 W.                                 
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Rangkaian Tapis Lolos (Pass Filter) -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #D1877D;">
+                        Rangkaian Tapis Lolos (Pass Filter)
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>
+                    Pass filter atau rangkaian tapis merupakan rangkaian yang didesain untuk meloloskan isyarat ada rentang frekuensi tertentu. Hasil dari frekuensi yang diloloskan oleh pass filter atau rangkaian tapis itu sendiri disebut pass band, sedangkan daerah yang tidak diloloskan disebut dengan stop band. 
+                    </p>
+                    <p>
+                    Rangkaian pass filter atau rangkaian tapis terdiri atas dua rangkaian, yaitu rangkaian low pass filter (tapis lolos rendah) dan high pass filter (tapis lolos tinggi).                    
+                    </p>
+                    <p>
+                        <ul>
+                            <li>Low Pass Filter
+                                <p>
+                                Low pass filter atau tapis lolos rendah merupakan rangkaian RC yang meloloskan frekuensi rendah, akan tetapi pada frekuensi tinggi isyarat keluarannya diperkecil.
+                                </p>
+                            </li>
+                            <li>High Pass Filter
+                                <p>
+                                Filter high pass (HPF) adalah jenis filter yang melewatkan frekuensi tinggi serta meredam atau menahan frekuensi rendah. Bentuk respons HPF seperti memperlemah tegangan keluaran untuk semua frekuensi di bawah frekuensi cut off FC. Di atas FC, besarnya tegangan keluaran tetap.                               
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Pemasangan Pengatur Nada -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #D1877D;">
+                        Pemasangan Pengatur Nada
+                    </p>
+                </div>
+                <div style="text-align: justify;">  
+                    <p>
+                    Pengatur nada (tone control) dapat dibuat menggunakan dua cara. Cara yang pertama, yaitu dengan memasang penguat terletak di depan dan penguat terletak di akhir. Bagian pengatur nada berfungsi untuk mengatur nada rendah (bass) dan nada tinggi (treble) secara terpisah. Pada bagian pengatur nada bass, menguatkan sinyal frekuensi rendah, sedangkan pada bagian nada treble menguatkan sinyal frekuensi tinggi.
+                    </p>
+                    <p>
+                        <ul>
+                            <li><b>Pengatur nada dipasang sebelum penguat</b>
+                                <p>
+                                Pengatur nada dipasang sebelum penguat. Secara garis besar, bagian pengatur nada mempunyai prinsip kerja berikut.                                
+                                </p>
+                                <br>
+                                <p style="text-align: center !important;">
+                                    <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture3.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                max-height: 100%;
+                                                                                                                                                width: 1040px;
+                                                                                                                                                height: 517.74px;
+                                                                                                                                                border-radius: 52px;"/>
+                                </p>  
+                                <br>
+                                <p>
+                                Rangkaian pengatur nada dipasang sebelum rangkaian penguat Penguatan rangkaian ditentukan olch impedansi umpan balk (Z2), dibagi dengan impedansi input (Z1), dan dapat dihitung dengan rumus:
+                                </p>
+                                <p style="text-align: center !important;">
+                                    <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/Rumus 1.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                width: 292px;
+                                                                                                                                                height: 159px;
+                                                                                                                                                max-height: auto;
+                                                                                                                                                background: #D1877D;     
+                                                                                                                                                box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
+                                                                                                                                                padding: 10px;"/>
+                                </p>
+
+                                <br>
+
+                                <div style="display: flex;
+                                            align-items: center;
+                                            justify-content: center;">
+                                    <p style="  text-align: left !important;
+                                                background: rgba(209, 135, 125, 0.5);
+                                                border-radius: 46px;
+                                                padding: 30px">
+                                        <b>Keterangan : </b>
+                                        <br>
+                                        <b>Av</b> = faktor penguatan
+                                        <br>
+                                        <b>Z1</b>= impedansi input
+                                        <br>
+                                        <b>Z2</b>= impedansi output
+
+                                    </p>
+                                </div>
+                                <br>
+                                <p>
+                                Pada pengaturan nada baik bass atau treble pada posisi maksimum maka impedansi input (Z1) menjadi minimum schingga penguatan pada posisi tersebut menjadi bear. Perhitungan penguatannya dijelaskan sebagai berikut.
+                                </p>
+                                <br>
+                                <p style="text-align: center !important;">
+                                    <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture4.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                max-height: 100%;
+                                                                                                                                                width: 1040px;
+                                                                                                                                                height: 517.74px;
+                                                                                                                                                border-radius: 52px;"/>
+                                </p>  
+                                <br>
+                                <p>
+                                    <ol style="list-style-type: none;">
+                                        <li><b>A.  Penguatan Bass</b>
+                                            <p>
+                                            Pada posisi maksimum kondensator C1 dihubung-singkat potensiometer p1 rumus perhitungannya sebagai berikut.                                            
+                                            </p>
+                                            <p style="text-align: center !important;">
+                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 2.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                            width: 292px;
+                                                                                                                                                            height: 159px;
+                                                                                                                                                            max-height: auto;
+                                                                                                                                                            background: #D1877D;     
+                                                                                                                                                            box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
+                                                                                                                                                            padding: 10px;"/>
+                                            </p>
+                                            <p>
+                                            Pada posisi minimum kondensator C2 dihubung-singkat potensiometer p1 rumus perhitungannya sebagai berikut.                                            
+                                            </p>
+                                            <p style="text-align: center !important;">
+                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 3.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                            width: 292px;
+                                                                                                                                                            height: 159px;
+                                                                                                                                                            max-height: auto;
+                                                                                                                                                            background: #D1877D;     
+                                                                                                                                                            box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
+                                                                                                                                                            padding: 10px;"/>
+                                            </p>
+                                        </li>
+                                        <li><b>B.  Pengaturan Nada Treble</b>
+                                            <p>
+                                            Pada posisi maksimum, perhitungan penguatan dapat dihitung dengan rumus berikut.                                            
+                                            </p>
+                                            <p style="text-align: center !important;">
+                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 4.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                            width: 292px;
+                                                                                                                                                            height: 159px;
+                                                                                                                                                            max-height: auto;
+                                                                                                                                                            background: #D1877D;     
+                                                                                                                                                            box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
+                                                                                                                                                            padding: 10px;"/>
+                                            </p>
+                                            <p>
+                                            Pada posisi minimum, perhitungan penguatan dapat dihitung dengan rumus berikut.                                            
+                                            </p>
+                                            <p style="text-align: center !important;">
+                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 5.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                            width: 292px;
+                                                                                                                                                            height: 159px;
+                                                                                                                                                            max-height: auto;
+                                                                                                                                                            background: #D1877D;     
+                                                                                                                                                            box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
+                                                                                                                                                            padding: 10px;"/>
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </p>
+                            </li>
+                            <li><b>Rangkaian pengatur nada dipasang setelah penguat input</b>
+                                <br>
+                                <br>
+                                <p style="text-align: center !important;">
+                                    <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture5.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                max-height: 100%;
+                                                                                                                                                width: 1040px;
+                                                                                                                                                height: 517.74px;
+                                                                                                                                                border-radius: 52px;"/>
+                                </p>  
+                                <br>
+                                <p>
+                                Rangkaian pengatur nada ini dipasang setelah rangkaian penguat. Pada saat posisi pengatur nada treble maksimum, frekuensi sinyal input dilimpihkan ke output melewati kondensator C1. Pada saat posisi pengatur nada bass maksimum, frekuensi sinyal input input rendah dihambat C2. Rangkaian pengatur nada ada yang dilengkapi dengan rangkaian pengatur loudness,high filter, dan low filter.                                
+                                </p>
+                                
+                                <p>
+                                    <ol style="list-style-type: none;">
+                                        <li><b>A.  Pengatur Loudness</b>
+                                            <p>
+                                            Rangkaian loudness dipasang pada pengatur volume, loudness (kedalaman) akan mempunyai efek pada posisi lebih dari setengah pengaturan volume minimum sinyal dihambat oleh resistansi dari potensiometer pengatur volume.                                            
+                                            </p>
+                                            <p style="text-align: center !important;">
+                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture6.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                            width: 760px;
+                                                                                                                                                            height: 391.42px;
+                                                                                                                                                            border-radius: 52px;"/>
+                                            </p>
+                                        </li>
+                                        <li><b>B.  Pengatur High Filter</b>
+                                            <p>
+                                            Rangkaian high filter bekerja jika sakelar ditekan. Pada posisi tersebut, kondensator c1 terhubung singkat. Frekuensi sinyal input yang tinggi langsung dihubungkan ke output.                                            
+                                            </p>
+                                            <p style="text-align: center !important;">
+                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture7.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                            width: 760px;
+                                                                                                                                                            height: 391.42px;
+                                                                                                                                                            border-radius: 52px;"/>
+                                            </p>
+                                            <p>
+                                            Pada posisi minimum, perhitungan penguatan dapat dihitung dengan rumus berikut.                                            
+                                            </p>
+                                            <p style="text-align: center !important;">
+                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 5.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                            width: 292px;
+                                                                                                                                                            height: 159px;
+                                                                                                                                                            max-height: auto;
+                                                                                                                                                            background: #D1877D;     
+                                                                                                                                                            box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
+                                                                                                                                                            padding: 10px;"/>
+                                            </p>
+                                        </li>
+                                        <li><b>C.  Pengatur Low Filter</b>
+                                            <p>
+                                            Rangkaian low filter bekerja jika sakelar ditekan. Pada posisi tersebut, kondensator c1 terhubung singkat dan frekuensi sinyal input yang rendah langsung di hubungkan singkat dan frekuensi sinyal input yang rendah langsung dihubungkan ke output.                                            
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </p>
+                            </li>
+                            <li><b>Rangkaian pengatur nada dipasang setelah penguat input</b>                                
+                                <p>
+                                Secara keseluruhan sistem pengatur nada (tone control) dengan penguat amplifier dapat digambarkan dengan skema berikut.                                
+                                </p>
+                                <br>
+                                <p style="text-align: center !important;">
+                                    <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture8.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                max-height: 100%;
+                                                                                                                                                width: 1040px;
+                                                                                                                                                height: 517.74px;
+                                                                                                                                                border-radius: 52px;"/>
+                                </p>  
+                                <br>
+                                <p>Diagram audio amplifier terdiri atas bagian-bagian berikut ini.
+                                    <ol>
+                                        <li>
+                                        Input Sinyal
+                                        </li>
+                                        <li>
+                                        Penguat Awal
+                                        </li>
+                                        <li>
+                                        Pengatur Nada
+                                        </li>
+                                        <li>
+                                        Penguat Akhir
+                                        </li>
+                                        <li>
+                                        Speaker
+                                        </li>
+                                        <li>
+                                        Power Supply   
+                                        </li>
+                                    </ol>
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <br>
+
+
+
+
         </div>
         <br>
         <br>
