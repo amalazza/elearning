@@ -3,7 +3,8 @@
 @section('mylesson')
 
 <header style=" padding-top: 0rem !important;
-                            padding-bottom: 3rem !important;">
+                padding-bottom: 3rem !important;
+                margin-bottom: 400px;">
     <div class="container px-5">
         <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -30,7 +31,7 @@
                         Silahkan isi kuis berikut untuk mengetahui berapa persen pemahaman anda dari belajar di website pembelajaran ini. 
                     </p>
                     <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                        <a class="btn btn-outline-light btn-lg px-4" href="/lessons" style="
+                        <a class="btn btn-outline-light btn-lg px-4" href="https://forms.gle/GH2hooVsJeG77oMC7" style="
                                                                                             color: #FFFFFF;
                                                                                             background: #74927A;
                                                                                             border-radius: 27px;"><b>Get Started!</b></a>
@@ -39,7 +40,7 @@
             </div>
             <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
                 <img class="d-block" src="{{ asset('img/Page 11_Evaluation/Pict.svg') }}" alt="..." style="width: 615px;
-height: 628.06px;
+                                                                                                height: 628.06px;
                                                                                                 float: right"/>
                 <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
