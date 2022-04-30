@@ -52,8 +52,10 @@
                     <p>Ada dua macam gelombang mekanik berdasarkan arah rambatnya, yaitu gelombang longitudinal dan transversal. Dalam gelombang longitudinal satu gelombang diwakili oleh satu rapatan dan satu renggangan. Pada gelombang transversal satu gelombang diwakili oleh satu bukit dan satu lembah.</p>
 
                     <p>
-                        <img class="" src="{{ asset('img/Page 6_Gelombang Suara/Gambar/Rapatan Renggangan.png') }}" alt="..." style="    width: 100%;
-                                                                                                                                                height: 400px;"/>
+                        <img class="" src="{{ asset('img/Page 6_Gelombang Suara/Gambar/Rapatan Renggangan.png') }}" alt="..." style="   width: 100%;
+                                                                                                                                        height: auto;
+                                                                                                                                        margin-top: -10%;
+                                                                                                                                        margin-bottom: -10%"/>
                     </p>
                 </div>
             </div>
@@ -239,8 +241,7 @@
 
                     <p style="text-align: center !important;">
                         <img class="" src="{{ asset('img/Page 6_Gelombang Suara/Rumus/Frekuensi Gelombang.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                    width: 438px; 
-                                                                                                                                    height: 85px; 
+                                                                                                                                    max-height: auto;
                                                                                                                                     background: #9EBBA4;       
                                                                                                                                     box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
                                                                                                                                     padding: 10px;"/>
@@ -276,8 +277,7 @@
 
                     <p style="text-align: center !important;">
                         <img class="" src="{{ asset('img/Page 6_Gelombang Suara/Rumus/Cepat Rambat Gelombang.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                    width: 438px; 
-                                                                                                                                    height: 85px; 
+                                                                                                                                    max-height: auto; 
                                                                                                                                     background: #9EBBA4;       
                                                                                                                                     box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
                                                                                                                                     padding: 10px;"/>
@@ -311,8 +311,8 @@
                     </p>
 
                     <p style="text-align: center !important;">
-                        <img class="" src="{{ asset('img/Page 6_Gelombang Suara/Rumus/Efek Doppler.png') }}" alt="..." style="max-width: 100%; width: 438px; 
-                                                                                                                                    height: 85px; 
+                        <img class="" src="{{ asset('img/Page 6_Gelombang Suara/Rumus/Efek Doppler.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                    height: auto; 
                                                                                                                                     background: #9EBBA4;       
                                                                                                                                     box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
                                                                                                                                     padding: 10px;"/>
@@ -380,7 +380,7 @@
                                 <div class="row">
                                     <div class="col-12 col-md-12 col-lg-5">
                                         <img class="" src="{{ asset('img/Page 6_Gelombang Suara/Rumus/Kedalaman Laut.png') }}" alt="..." style="max-width: 100%; width: 70%;
-                                                                                                                                        height: 100px;
+                                                                                                                                        height: auto;
                                                                                                                                         background: #9EBBA4;       
                                                                                                                                         box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
                                                                                                                                         padding: 10px;"/>
@@ -761,7 +761,6 @@
                     <p style="text-align: center !important;">
                         <img class="" src="http://bahanpembelajaranpsa.xyz/photos/1/Dengung.PNG" alt="..." style="max-width: 100%;
                                                                                                                                     width: 438px; 
-                                                                                                                                    height: 100px; 
                                                                                                                                     max-height: auto;
                                                                                                                                     background: #D1877D;     
                                                                                                                                     box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
@@ -1005,8 +1004,6 @@
                                 </p>
                                 <p style="text-align: center;">
                                     <img class="" src="{{ asset('img/Page 7_Psikoakustik Anatomi/Tabel.png') }}" alt="..." style="      max-width: 100%;
-                                                                                                                                        width: 800px;
-                                                                                                                                        height: 600.29px;
                                                                                                                                         max-height: auto;
                                                                                                                                         margin-top: -150px;
                                                                                                                                         margin-bottom: -150px;"/> 
