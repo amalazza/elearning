@@ -58,9 +58,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
-                            <img class="d-block" src="{{ asset('img/Page 3_About/Pict 3.svg') }}" alt="..." style="float: right"/>
-                           
+                        <div class="col-xl-5 col-xxl-6 d-none d-sm-block text-center">
+                            <img class="d-block" src="{{ asset('img/Page 3_About/Pict 3.svg') }}" alt="..." style=""/>
                         </div>
                     </div>
                 </div>
