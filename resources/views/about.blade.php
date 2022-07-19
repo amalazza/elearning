@@ -17,6 +17,9 @@
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xxl-6">
                             <div class="text-center my-5">
+                                <div>
+                                    <img class="small-device-img text-center" src="{{ asset('img/Page 3_About/Pict 3.svg') }}" alt="..." style="margin-left: -50px; margin-bottom: 20px"/>
+                                </div>
                                 <h1 class="fw-bolder mb-3" style="  font-family: 'Poppins';
                                                                     font-style: normal;
                                                                     font-weight: 700;
@@ -297,7 +300,7 @@
 
                                             color: #595959;"><strong>Profil Kompetensi Lulusan Teknik Audio Video</strong>
                                 </p>
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6" style="border-right: 1px solid grey">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 border-right-about">
                                     
                                     <ul style=" font-family: 'Poppins';
                                                 font-style: normal;

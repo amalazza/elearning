@@ -77,6 +77,20 @@
             padding: auto;
             flex-shrink: 0;
         } */
+        .small-device-img {
+            display: none;
+        }
+        @media only screen and (min-width: 569px) { 
+            .border-right-about {
+                border-right: 1px solid grey
+            }
+        }
+        @media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) { 
+            .small-device-img { 
+                display: inline; 
+                width: 300px
+            } 
+        }
         </style>
 
 
