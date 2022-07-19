@@ -84,12 +84,31 @@
             .border-right-about {
                 border-right: 1px solid grey
             }
+            .mb-revisi {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
         @media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) { 
             .small-device-img { 
                 display: inline; 
                 width: 300px
             } 
+            .custom-revisi {
+                margin-left: -30%;
+                padding-right: 20%;
+            }
+            .mb-revisi {
+                margin-bottom: 20px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+            }
+            .custom-revisi-text {
+                margin-top: 20px;
+            }
+            
         }
         </style>
 
