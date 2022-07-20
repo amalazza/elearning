@@ -10,7 +10,7 @@
                     <div class="text-center mb-5">
                         <h1 class="fw-bolder">Get in touch</h1>
                         <p class="lead fw-normal text-muted mb-5">We'd love to hear from you</p>
-                        <img class="mb-5" src="{{ asset('img/Page 12_Get In Touch/Pict.svg') }}" alt="..."/>
+                        <img class="mb-5 img-fluid" src="{{ asset('img/Page 12_Get In Touch/Pict.svg') }}" alt="..."/>
                     </div>
                     @if(session()->has('message'))
                     <div class="alert alert-success alert-dismissible">
