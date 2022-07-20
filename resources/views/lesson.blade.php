@@ -1708,11 +1708,7 @@
                     </p>
                     <br>
                     <p style="text-align: center !important;">
-                        <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture1.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                    max-height: 100%;
-                                                                                                                                    width: 1040px;
-                                                                                                                                    height: 517.74px;
-                                                                                                                                    border-radius: 52px;"/>
+                        <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture1.png') }}" alt="..."/>
                     </p>  
                     <br>
                     <p>
@@ -1726,11 +1722,7 @@
                     </p>
                     <br>
                     <p style="text-align: center !important;">
-                        <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture2.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                    max-height: 100%;
-                                                                                                                                    width: 1040px;
-                                                                                                                                    height: 517.74px;
-                                                                                                                                    border-radius: 52px;"/>
+                        <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture2.png') }}" alt="..." />
                     </p> 
                     <br> 
                 </div>
@@ -1859,18 +1851,15 @@
                                 </p>
                                 <br>
                                 <p style="text-align: center !important;">
-                                    <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture3.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                max-height: 100%;
-                                                                                                                                                width: 1040px;
-                                                                                                                                                height: 517.74px;
-                                                                                                                                                border-radius: 52px;"/>
+                                    <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture3.png') }}" alt="..."/>
                                 </p>  
                                 <br>
                                 <p>
                                 Rangkaian pengatur nada dipasang sebelum rangkaian penguat Penguatan rangkaian ditentukan olch impedansi umpan balk (Z2), dibagi dengan impedansi input (Z1), dan dapat dihitung dengan rumus:
                                 </p>
                                 <p style="text-align: center !important;">
-                                    <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/Rumus 1.png') }}" alt="..." style="max-width: 100%;
+                                    <img class="img-fluid" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/Rumus 1.png') }}" alt="..." style="
+                                    max-width: 100%;
                                                                                                                                                 width: 292px;
                                                                                                                                                 height: 159px;
                                                                                                                                                 max-height: auto;
@@ -1904,11 +1893,7 @@
                                 </p>
                                 <br>
                                 <p style="text-align: center !important;">
-                                    <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture4.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                max-height: 100%;
-                                                                                                                                                width: 1040px;
-                                                                                                                                                height: 517.74px;
-                                                                                                                                                border-radius: 52px;"/>
+                                    <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture4.png') }}" alt="..."/>
                                 </p>  
                                 <br>
                                 <p>
@@ -1918,10 +1903,10 @@
                                             Pada posisi maksimum kondensator C1 dihubung-singkat potensiometer p1 rumus perhitungannya sebagai berikut.                                            
                                             </p>
                                             <p style="text-align: center !important;">
-                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 2.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                            width: 292px;
-                                                                                                                                                            height: 159px;
-                                                                                                                                                            max-height: auto;
+                                                <img class="img-fluid" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 2.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                width: 292px;
+                                                                                                                                                height: 159px;
+                                                                                                                                                max-height: auto;
                                                                                                                                                             background: #D1877D;     
                                                                                                                                                             box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
                                                                                                                                                             padding: 10px;"/>
@@ -1930,10 +1915,10 @@
                                             Pada posisi minimum kondensator C2 dihubung-singkat potensiometer p1 rumus perhitungannya sebagai berikut.                                            
                                             </p>
                                             <p style="text-align: center !important;">
-                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 3.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                            width: 292px;
-                                                                                                                                                            height: 159px;
-                                                                                                                                                            max-height: auto;
+                                                <img class="img-fluid" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 3.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                width: 292px;
+                                                                                                                                                height: 159px;
+                                                                                                                                                max-height: auto;
                                                                                                                                                             background: #D1877D;     
                                                                                                                                                             box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
                                                                                                                                                             padding: 10px;"/>
@@ -1944,10 +1929,10 @@
                                             Pada posisi maksimum, perhitungan penguatan dapat dihitung dengan rumus berikut.                                            
                                             </p>
                                             <p style="text-align: center !important;">
-                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 4.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                            width: 292px;
-                                                                                                                                                            height: 159px;
-                                                                                                                                                            max-height: auto;
+                                                <img class="img-fluid" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 4.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                width: 292px;
+                                                                                                                                                height: 159px;
+                                                                                                                                                max-height: auto;
                                                                                                                                                             background: #D1877D;     
                                                                                                                                                             box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
                                                                                                                                                             padding: 10px;"/>
@@ -1956,10 +1941,10 @@
                                             Pada posisi minimum, perhitungan penguatan dapat dihitung dengan rumus berikut.                                            
                                             </p>
                                             <p style="text-align: center !important;">
-                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 5.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                            width: 292px;
-                                                                                                                                                            height: 159px;
-                                                                                                                                                            max-height: auto;
+                                                <img class="img-fluid" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 5.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                width: 292px;
+                                                                                                                                                height: 159px;
+                                                                                                                                                max-height: auto;
                                                                                                                                                             background: #D1877D;     
                                                                                                                                                             box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
                                                                                                                                                             padding: 10px;"/>
@@ -1972,11 +1957,7 @@
                                 <br>
                                 <br>
                                 <p style="text-align: center !important;">
-                                    <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture5.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                max-height: 100%;
-                                                                                                                                                width: 1040px;
-                                                                                                                                                height: 517.74px;
-                                                                                                                                                border-radius: 52px;"/>
+                                    <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture5.png') }}" alt="..."/>
                                 </p>  
                                 <br>
                                 <p>
@@ -1990,10 +1971,7 @@
                                             Rangkaian loudness dipasang pada pengatur volume, loudness (kedalaman) akan mempunyai efek pada posisi lebih dari setengah pengaturan volume minimum sinyal dihambat oleh resistansi dari potensiometer pengatur volume.                                            
                                             </p>
                                             <p style="text-align: center !important;">
-                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture6.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                            width: 760px;
-                                                                                                                                                            height: 391.42px;
-                                                                                                                                                            border-radius: 52px;"/>
+                                                <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture6.png') }}" alt="..."/>
                                             </p>
                                         </li>
                                         <li><b>B.  Pengatur High Filter</b>
@@ -2001,19 +1979,16 @@
                                             Rangkaian high filter bekerja jika sakelar ditekan. Pada posisi tersebut, kondensator c1 terhubung singkat. Frekuensi sinyal input yang tinggi langsung dihubungkan ke output.                                            
                                             </p>
                                             <p style="text-align: center !important;">
-                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture7.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                            width: 760px;
-                                                                                                                                                            height: 391.42px;
-                                                                                                                                                            border-radius: 52px;"/>
+                                                <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture7.png') }}" alt="..." />
                                             </p>
                                             <p>
                                             Pada posisi minimum, perhitungan penguatan dapat dihitung dengan rumus berikut.                                            
                                             </p>
                                             <p style="text-align: center !important;">
-                                                <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 5.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                            width: 292px;
-                                                                                                                                                            height: 159px;
-                                                                                                                                                            max-height: auto;
+                                                <img class="img-fluid" src="{{ asset('img/Page 10_Rangkaian Tone Control/Rumus/rumus 5.png') }}" alt="..." style="max-width: 100%;
+                                                                                                                                                width: 292px;
+                                                                                                                                                height: 159px;
+                                                                                                                                                max-height: auto;
                                                                                                                                                             background: #D1877D;     
                                                                                                                                                             box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
                                                                                                                                                             padding: 10px;"/>
@@ -2033,11 +2008,7 @@
                                 </p>
                                 <br>
                                 <p style="text-align: center !important;">
-                                    <img class="" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture8.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                max-height: 100%;
-                                                                                                                                                width: 1040px;
-                                                                                                                                                height: 517.74px;
-                                                                                                                                                border-radius: 52px;"/>
+                                    <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Picture8.png') }}" alt="..."/>
                                 </p>  
                                 <br>
                                 <p>Diagram audio amplifier terdiri atas bagian-bagian berikut ini.
