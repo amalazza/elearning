@@ -108,6 +108,9 @@
             .custom-revisi-m2-1 {
                 border-radius: 56px;
             }
+            .custom-revisi-m2-3 {
+                width: 50%;
+            }
         }
         @media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) { 
             .small-device-img { 
