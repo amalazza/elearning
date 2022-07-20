@@ -89,6 +89,25 @@
                 align-items: center;
                 justify-content: center;
             }
+            .custom-revisi-m1-right {
+                border-radius: 97px;
+                height: 380px !important;
+                width: 80%;
+            }
+            .custom-revisi-m1-left {
+                max-width: 100%; 
+                width: 80%;
+                height: auto;
+            }
+            .custom-revisi-m2-1 {
+                max-width: 100%;
+                width: 230px;
+                height: 60px;
+                max-width: 100%;
+            }
+            .custom-revisi-m2-1 {
+                border-radius: 56px;
+            }
         }
         @media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) { 
             .small-device-img { 
@@ -107,6 +126,29 @@
             }
             .custom-revisi-text {
                 margin-top: 20px;
+            }
+            .custom-revisi-m1-left {
+                max-width: 100%; 
+                width: auto;
+                height: auto;
+            }
+            .custom-revisi-m1-right {
+                border-radius: 30px;
+                max-width: 100%;
+                height: auto;
+            }
+            .custom-revisi-m2-1 {
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                font-size: 9px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 25px;
+            }
+            .custom-revisi-m2-1b {
+                white-space: nowrap;
             }
             
         }

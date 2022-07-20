@@ -379,18 +379,16 @@
                                 Dapat digunakan untuk mengukur kedalaman laut serta lokasi dan jarak objek dalam air
                                 <div class="row">
                                     <div class="col-12 col-md-12 col-lg-5">
-                                        <img class="" src="{{ asset('img/Page 6_Gelombang Suara/Rumus/Kedalaman Laut.png') }}" alt="..." style="max-width: 100%; width: 70%;
-                                                                                                                                        height: auto;
+                                        <img class="custom-revisi-m1-left" src="{{ asset('img/Page 6_Gelombang Suara/Rumus/Kedalaman Laut.png') }}" alt="..." style="
                                                                                                                                         background: #9EBBA4;       
                                                                                                                                         box-shadow: 18px 20px 4px rgba(0, 0, 0, 0.1);
                                                                                                                                         padding: 10px;"/>
                                         <br>
                                         <br>
                                         <br>
-                                        <p style="  text-align: left !important;
+                                        <p class="custom-revisi-m1-left" style="  text-align: left !important;
                                                     background: rgba(158, 187, 164, 0.4);
-                                                    padding: 30px;
-                                                    width: 70%;">
+                                                    padding: 30px;">
                                             <b>Keterangan:</b>
                                             <br>
                                             <b>f    </b>: frekuensi gelombang (Hz)
@@ -403,9 +401,7 @@
                                         </p>
                                     </div>
                                     <div class="col-12 col-md-12 col-lg-7">
-                                    <img class="" src="http://bahanpembelajaranpsa.xyz/photos/1/Gif.gif" alt="..." style="  max-width: 100%; border-radius: 97px;
-                                                                                                                                    width: 80%;
-                                                                                                                                    height: 380px;"/>
+                                    <img class="custom-revisi-m1-right" src="http://bahanpembelajaranpsa.xyz/photos/1/Gif.gif" alt="..." style=""/>
                                     </div>
                                 </div>
                                 </p>
@@ -505,43 +501,37 @@
 
                     <p>
                         <div class="row">
-                            <div class="col-4" style="display: flex;
+                            <div class="col-4 p-1" style="display: flex;
                                                     align-items: center;
                                                     justify-content: right;">
-                                <button style="max-width: 100%;
-                                                width: 230px;
-                                                height: 60px;
+                                <button class="custom-revisi-m2-1" style="
                                                 background: #D1877D;
-                                                border-radius: 56px;
+                                                
                                                 color: white;
                                                 border: none">   
-                                            <b>Sumber suara</b>
+                                            <b class="custom-revisi-m2-1b">Sumber suara</b>
                                 </button>
                             </div>
-                            <div class="col-4" style="display: flex;
+                            <div class="col-4 p-1" style="display: flex;
                                                     align-items: center;
                                                     justify-content: center;">
-                                <button style="max-width: 100%;
-                                                width: 230px;
-                                                height: 60px;
+                                <button class="custom-revisi-m2-1" style="
                                                 background: #D1877D;
-                                                border-radius: 56px;
+                                                
                                                 color: white;
                                                 border: none">   
-                                            <b>Intensitas Suara</b>
+                                            <b class="custom-revisi-m2-1b">Intensitas Suara</b>
                                 </button>
                             </div>
-                            <div class="col-4" style="display: flex;
+                            <div class="col-4 p-1" style="display: flex;
                                                     align-items: center;
                                                     justify-content: left;">
-                                <button style="max-width: 100%;
-                                                width: 230px;
-                                                height: 60px;
+                                <button class="custom-revisi-m2-1" style="
                                                 background: #D1877D;
-                                                border-radius: 56px;
+                                                
                                                 color: white;
                                                 border: none">   
-                                            <b>Perambatan Suara</b>
+                                            <b class="custom-revisi-m2-1b">Perambatan Suara</b>
                                 </button>
                             </div>
                         </div>
@@ -550,27 +540,23 @@
                             <div class="col-6" style="display: flex;
                                                     align-items: center;
                                                     justify-content: right;">
-                                <button style="max-width: 100%;
-                                                width: 230px;
-                                                height: 60px;
+                                <button class="custom-revisi-m2-1" style="
                                                 background: #D1877D;
-                                                border-radius: 56px;
+                                                
                                                 color: white;
                                                 border: none">   
-                                            <b>Penerimaan Suara</b>
+                                            <b class="custom-revisi-m2-1b">Penerimaan Suara</b>
                                 </button>
                             </div>
                             <div class="col-6" style="display: flex;
                                                     align-items: center;
                                                     justify-content: left;">
-                                <button style="max-width: 100%;
-                                                width: 230px;
-                                                height: 60px;
+                                <button class="custom-revisi-m2-1" style="
                                                 background: #D1877D;
-                                                border-radius: 56px;
+                                                
                                                 color: white;
                                                 border: none">   
-                                            <b>Frekuensi Suara</b>
+                                            <b class="custom-revisi-m2-1b">Frekuensi Suara</b>
                                 </button>
                             </div>
                         </div>
