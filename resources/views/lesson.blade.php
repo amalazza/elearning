@@ -680,7 +680,7 @@
             <!-- Mengukur Dimensi Akustik Ruang -->
             <div>
                 <div class="row">  
-                    <div class="col-7">  
+                    <div class="col-12 col-lg-7">  
                         <div class="text-left">
                             <p style="font-family: 'Poppins';
                                                                 font-style: normal;
@@ -711,7 +711,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-5"> 
+                    <div class="col-lg-5 d-none d-sm-block"> 
                         <img class="" src="{{ asset('img/Page 7_Psikoakustik Anatomi/Kartu (34).svg') }}" alt="..." style="max-width: 100%;
                                                                                                                                 width: 448px;
                                                                                                                                 height: 645px;
