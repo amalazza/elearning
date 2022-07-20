@@ -937,10 +937,7 @@
                 </div>
                 <div style="text-align: justify;"> 
                     <p style="text-align: center;">
-                        <img class="" src="{{ asset('img/Page 7_Psikoakustik Anatomi/Gambar/Kurva Isofonik.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                            width: 800px;
-                                                                                                                            height: 600.29px;
-                                                                                                                            max-height: auto;"/> 
+                        <img class="img-fluid custom-revisi-m2-4" src="{{ asset('img/Page 7_Psikoakustik Anatomi/Gambar/Kurva Isofonik.png') }}" alt="..."/> 
                     </p>
 
                     <p>
