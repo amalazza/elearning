@@ -114,6 +114,10 @@
             .custom-revisi-m2-4 {
                 width: 50%;
             }
+            .custom-revisi-w-img-lg {
+                width: 50%;
+                border-radius: 52px;
+            }
         }
         @media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) { 
             .small-device-img { 
@@ -155,6 +159,9 @@
             }
             .custom-revisi-m2-1b {
                 white-space: nowrap;
+            }
+            .custom-revisi-w-img-lg {
+                border-radius: 10px;
             }
             
         }

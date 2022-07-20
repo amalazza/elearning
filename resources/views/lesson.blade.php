@@ -1372,11 +1372,7 @@
                 </div>
                 <div style="text-align: justify;">  
                     <p style="text-align: center !important;">
-                        <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/1.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                    max-height: 100%;
-                                                                                                                                    width: 1040px;
-                                                                                                                                    height: 518px;
-                                                                                                                                    border-radius: 52px;"/>
+                        <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/1.png') }}" alt="..."/>
                     </p>
                     <br>
                     <p>
@@ -1478,11 +1474,7 @@
                                 <br>
                                 <br>
                                 <p style="text-align: center !important;">
-                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/Rangakain Pre Amp Universal.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                max-height: 100%;
-                                                                                                                                                width: 998px;
-                                                                                                                                                height: 528px;
-                                                                                                                                                border-radius: 52px;"/>
+                                    <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/Rangakain Pre Amp Universal.png') }}" alt="..."/>
                                 </p>
                                 <br>
                                 <p>
@@ -1528,21 +1520,14 @@
                                 <br>
                                 <br>
                                 <p style="text-align: center !important;">
-                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/2.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                max-height: 100%;
-                                                                                                                                                width: 998px;
-                                                                                                                                                height: 496.83px;
-                                                                                                                                                border-radius: 52px;"/>
+                                    <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/2.png') }}" alt="..."/>
                                 </p>
                                 <br>
                                 <p>
                                 Rangkaian terdiri atas dua tingkat yang dibangun oleh transistor TRI dan TR2. Antara keluaran penguat pertama dan kedua disambung secara DC. Umpan balik negatif yang menentukan tanggapan frekuensi, dari keluaran dihubungkan ke daerah masukan dengan penghubung S1, yang bisa dipilih sesuai yang dinginkan. Dengan <b>S1 pada 0, ini berarti penguat tanpa umpan balik atau open loop/terbuka</b>. Jika <b>S1 pada 1, umpan balik berupa jaringan R10-R11 dan C7-C8</b>; penguat memiliki penguatan vang tidak liner berfungsi sebagai <b>penguat pick-up/pemungut suara</b>. Jika <b>S1 pada 2 umpan balik berupa R12, penguatan penguat linier berfungsi sebagai penguat mikrofon</b>. Rangkaian penguat depan universal memuat komponen-komponen berikut ini.                                
                                 </p>
                                 <p style="text-align: center !important;">
-                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/3.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                max-height: 100%;
-                                                                                                                                                width: 1017px;
-                                                                                                                                                height: 642px;"/>
+                                    <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/3.png') }}" alt="..."/>
                                 </p>
                                 <p>
                                 Rangkaian arus searah sebuah penguat audio terlihat sangat sederhan karena semua komponen yang berpengaruh pada frekuensi sinyal audio dapat ditiadakan. Jadi, semua kapasitor dapat ditiadakan. Setelah proses pensakelaran berlalu, yang tertinggal adalah keadaan statis. Keadaan statis ini membangun titik kerja. Dalam keadaan ini, semua kapasitor mempunyai potensial konstan karena terisi penuh. 
@@ -1559,11 +1544,7 @@
                                 <br>
                                 <br>
                                 <p style="text-align: center !important;">
-                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/4.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                max-height: 100%;
-                                                                                                                                                width: 998px;
-                                                                                                                                                height: 496.83px;
-                                                                                                                                                border-radius: 52px;"/>
+                                    <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/4.png') }}" alt="..."/>
                                 </p>
                                 <br>
                                 <p>
@@ -1580,11 +1561,7 @@
                                 </p>
                                 <br>
                                 <p style="text-align: center !important;">
-                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/5.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                max-height: 100%;
-                                                                                                                                                width: 1008px;
-                                                                                                                                                height: 499px;
-                                                                                                                                                border-radius: 52px;"/>
+                                    <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/5.png') }}" alt="..."/>
                                 </p>
                                 <br>
                                 <p>
@@ -1625,11 +1602,7 @@
                                 <br>
                                 <br>
                                 <p style="text-align: center !important;">
-                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/6.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                max-height: 100%;
-                                                                                                                                                width: 1008px;
-                                                                                                                                                height: 497px;
-                                                                                                                                                border-radius: 52px;"/>
+                                    <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/6.png') }}" alt="..."/>
                                 </p>
                                 <br>
                                 <p>
@@ -1664,11 +1637,7 @@
                                 <br>
                                 <br>
                                 <p style="text-align: center !important;">
-                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/7.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                max-height: 100%;
-                                                                                                                                                width: 1008px;
-                                                                                                                                                height: 501.81px;
-                                                                                                                                                border-radius: 52px;"/>
+                                    <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/7.png') }}" alt="..."/>
                                 </p>
                                 <br>
                                 <p>
@@ -1676,11 +1645,7 @@
                                 </p>
                                 <br>
                                 <p style="text-align: center !important;">
-                                    <img class="" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/8.png') }}" alt="..." style="max-width: 100%;
-                                                                                                                                                max-height: 100%;
-                                                                                                                                                width: 1008px;
-                                                                                                                                                height: 501.81px;
-                                                                                                                                                border-radius: 52px;"/>
+                                    <img class="img-fluid custom-revisi-w-img-lg" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/8.png') }}" alt="..."/>
                                 </p>
                                 <br>
                                 <p>
