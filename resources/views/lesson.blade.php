@@ -463,7 +463,7 @@
             </div>
 
 
-            <!-- REVISI -->
+            <!-- REVISI EKSPLORASI -->
             <div style="margin-top: 40px;">
                 <div style="background: #9EBBA4; border-radius: 10px; width: 200px; margin-bottom: -4vh; margin-left: -2%;">
                     <p style="font-family: 'Poppins';
@@ -511,7 +511,7 @@
                                                         letter-spacing: 0.01em;
 
                                                         color: #AF342D;">
-                        Pendahuluan
+                        Tahukah kamu?
                     </p>
                 </div>
                 <div style="text-align: justify;">  
@@ -1032,6 +1032,85 @@
                 </div>
 
             </div>
+            <!-- REVISI -->
+            <div>
+                <div class="text-left">
+                    <p style="font-family: 'Poppins';
+                                                        font-style: normal;
+                                                        font-weight: 700;
+                                                        font-size: 40px;
+                                                        line-height: 60px;
+                                                        /* identical to box height */
+
+                                                        text-align: left;
+                                                        letter-spacing: 0.01em;
+
+                                                        color: #AF342D;">
+                        Pendengaran Secara Ruangan
+                    </p>
+                </div>
+                <div style="text-align: justify;"> 
+
+                    <p>
+                    Daerah telinga kita tidak hanya mendengar kuat suara atau warna bunyi dari sebuah bunyi namun dapat menentukan arah dan jarak yang dinamakan sebagai kemampuan <b>melokalisir</b> dan berbicara tentang pendengaran secara ruangan.
+                    </p> 
+
+                    <p>
+                        <b>Melokalisir</b> sebuah sumber bunyi tanpa melakukan penglihatan dapat dibedakan menjadi 3 daerah utama, yaitu :
+                    </p>
+
+                    <p>
+                        <ul>
+                            <li>Jarak (dekat - jauh ) lokalisir kerendahan
+                            </li>
+                            <li>Arah dalam bidang tegak lurus (atas-bawah) lokalisir ketinggian
+                            </li>
+                            <li>Arah dalam bidang kesetimbangan (kanan-kiri) lokalisisir sisi
+                            </li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        Contoh melokalisir sisi : Jika ada bunyi berada agak disebelah kiri, maka telinga kiri akan  mendengar lebih kuat dibandingkan  telinga sebelah kanan.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- REVISI EKSPLORASI -->
+            <div style="margin-top: 40px;">
+                <div style="background: #D1877D; border-radius: 10px; width: 200px; margin-bottom: -4vh; margin-left: -2%;">
+                    <p style="font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: bold;
+                                color: #000000;
+                                text-align: left;
+                                padding-left: 30px;
+                                padding-right: 10px;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                ">
+                                Mengeksplorasi
+                    </p>
+                </div>
+                <div class="text-justify pt-2" style="background: rgba(209, 135, 125, 0.5);">
+                    <p class="p-4" style="font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 36px;
+                                text-align: justify;
+                                letter-spacing: 0.01em;
+
+                                color: #000000;">
+                        Carilah informasi tentang standar penggunaan akustik ruang pada bioskop!
+                        <br/>
+                        Gunakan referensi dari beberapa sumber
+                    </p>
+                </div>
+
+            </div>
+
+
         </div>
         <br>
         <br>
@@ -1051,7 +1130,7 @@
                                                         letter-spacing: 0.01em;
 
                                                         color: #ECC46F;">
-                        Instalasi Mikrofon Pada Sistem Akustik
+                        Mari Mengenal Mikrofon!
                     </p>
                 </div>
                 <div style="text-align: justify;">  
@@ -1352,6 +1431,39 @@
                         </ul>
                     </p>
                 </div>
+            </div>
+
+            <!-- REVISI EKSPLORASI -->
+            <div style="margin-top: 40px;">
+                <div style="background: #ECC46F; border-radius: 10px; width: 200px; margin-bottom: -4vh; margin-left: -2%;">
+                    <p style="font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: bold;
+                                color: #000000;
+                                text-align: left;
+                                padding-left: 30px;
+                                padding-right: 10px;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                ">
+                                Mengamati
+                    </p>
+                </div>
+                <div class="text-justify pt-2" style="background: rgba(236, 196, 111, 0.5);">
+                    <p class="p-4" style="font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 36px;
+                                text-align: justify;
+                                letter-spacing: 0.01em;
+
+                                color: #000000;">
+                        Lakukanlah pengamatan terhadap penggunaan mikrofon dalam penggunaan
+                        perekaman atau record musik di studio! Jenis mikrofon apa yang cocok
+                        digunakannya? Berikan penjelasannya!
+                    </p>
+                </div>
+
             </div>
 
             <br>
