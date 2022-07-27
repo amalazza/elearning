@@ -461,6 +461,39 @@
                 </div>
 
             </div>
+
+
+            <!-- REVISI -->
+            <div style="margin-top: 40px;">
+                <div style="background: #9EBBA4; border-radius: 10px; width: 200px; margin-bottom: -4vh; margin-left: -2%;">
+                    <p style="font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: bold;
+                                color: #000000;
+                                text-align: left;
+                                padding-left: 30px;
+                                padding-right: 10px;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                ">
+                                Mengeksplorasi
+                    </p>
+                </div>
+                <div class="text-justify pt-2" style="background: rgba(158, 187, 164, 0.4);">
+                    <p class="p-4" style="font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 36px;
+                                text-align: justify;
+                                letter-spacing: 0.01em;
+
+                                color: #000000;">
+                        Carilah informasi mengenai penggunaan gelombang suara dalam pencarian benda di bawah laut!
+                    </p>
+                </div>
+
+            </div>
+
         </div>
         @elseif ($lesson->slug == 'psikoakustik-anatomi-telinga')
         <div>
