@@ -23,15 +23,44 @@
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder mb-2" style="font-family: 'Poppins', sans-serif !important;
+                                @if (Auth::check())
+                                <h3 class="display-5 fw-bolder mb-2" style="font-family: 'Poppins', sans-serif !important;
                                                                             font-style: normal !important;
                                                                             font-weight: 700 !important;
-                                                                            font-size: 48px !important;
+                                                                            font-size: 40px !important;
+                                                                            line-height: 72px !important;
+                                                                            letter-spacing: 0.01em !important;
+                                                                            color: #000000 !important;">
+                                    Selamat Datang
+                                </h3>
+                                <h3 class="display-5 fw-bolder mb-2" style="font-family: 'Poppins', sans-serif !important;
+                                                                            font-style: normal !important;
+                                                                            font-weight: 700 !important;
+                                                                            font-size: 40px !important;
+                                                                            line-height: 72px !important;
+                                                                            letter-spacing: 0.01em !important;
+                                                                            color: #000000 !important;">
+                                    di Website Pembelajaran SMKN 39 Jakarta
+                                </h3>
+
+                                @else
+
+                                <h3 class="display-5 fw-bolder mb-2" style="font-family: 'Poppins', sans-serif !important;
+                                                                            font-style: normal !important;
+                                                                            font-weight: 700 !important;
                                                                             line-height: 72px !important;
                                                                             letter-spacing: 0.01em !important;
                                                                             color: #000000 !important;">
                                     Website Pembelajaran SMKN 39 Jakarta
-                                </h1>
+                                </h3>
+
+                                @endif
+
+
+
+
+
+
                                 <p class="lead fw-normal text-50 mb-4" style="  font-family: 'Poppins'!important;
                                                                                 font-style: normal !important;
                                                                                 font-weight: 400 !important;
@@ -239,6 +268,17 @@
                         </div>
                     </div>
                 </div>
+                <a href="https://wa.me/6282311471970" class="float">
+                    <div class="d-flex" style="display: flex;
+  align-items: center;
+  justify-content: center;">
+                    <img src="{{ asset('img/Page 2_Home/Logo Help.svg') }}" class="img-fluid" style="width: 6vh;"/>
+                    <span style="font-family: 'Poppins';
+                                    font-style: normal;
+                                    color: #74927A;
+                                    padding-right: 10px;">Help Me!</span>
+                    </div>
+                </a>
             </section>
 
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>

@@ -165,6 +165,19 @@
             }
             
         }
+
+        .float{
+            position:fixed;
+            max-width: 100%;
+            width:auto;
+            height:auto;
+            bottom:40px;
+            right:40px;
+            background-color:white;
+            color:#FFF;
+            border-radius:10px;
+            text-align:center;
+        }
         </style>
 
 
