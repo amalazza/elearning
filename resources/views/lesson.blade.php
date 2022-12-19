@@ -470,8 +470,8 @@
                                 font-style: normal;
                                 font-weight: bold;
                                 color: #000000;
-                                text-align: left;
-                                padding-left: 30px;
+                                text-align: center;
+                                /* padding-left: 30px; */
                                 padding-right: 10px;
                                 padding-top: 10px;
                                 padding-bottom: 10px;
@@ -1084,8 +1084,8 @@
                                 font-style: normal;
                                 font-weight: bold;
                                 color: #000000;
-                                text-align: left;
-                                padding-left: 30px;
+                                text-align: center;
+                                /* padding-left: 30px; */
                                 padding-right: 10px;
                                 padding-top: 10px;
                                 padding-bottom: 10px;
@@ -1440,8 +1440,8 @@
                                 font-style: normal;
                                 font-weight: bold;
                                 color: #000000;
-                                text-align: left;
-                                padding-left: 30px;
+                                text-align: center;
+                                /* padding-left: 30px; */
                                 padding-right: 10px;
                                 padding-top: 10px;
                                 padding-bottom: 10px;
@@ -1490,7 +1490,7 @@
                                                         letter-spacing: 0.01em;
 
                                                         color: #555B41;">
-                        Rangkaian Universal Pre-Amplifier
+                        Pentingnya Rangkaian Universal Pre-Amplifier!
                     </p>
                 </div>
                 <div style="text-align: justify;">  
@@ -1801,6 +1801,63 @@
                     </p>
                 </div>
             </div>
+
+            <!-- REVISI EKSPLORASI -->
+            <div style="margin-top: 40px;">
+                <div style="background: #9EBBA4; border-radius: 10px; width: 200px; margin-bottom: -4vh; margin-left: -2%;">
+                    <p style="font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: bold;
+                                color: #000000;
+                                text-align: center;
+                                /* padding-left: 30px; */
+                                padding-right: 10px;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                ">
+                                Aktivitas
+                    </p>
+                </div>
+                <div class="text-justify pt-2" style="background: rgba(158, 187, 164, 0.4);">
+                    <p class="p-4" style="font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 36px;
+                                text-align: justify;
+                                letter-spacing: 0.01em;
+
+                                color: #000000;">
+                        Lakukanlah analisis mengenai bahan atau komponen apa saja yang digunakan
+                        dalam rangkaian pre-amplifier! Setelah itu, buatlah menjadi sebuah makalah
+                        dan dikumpulkan kepada guru anda!
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Jobsheet -->
+            <br/>
+            <div class="row">
+                <div class="col-9 col-md-6 col-lg-4" >
+                    <a href="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Jobsheet.pdf') }}" download="Jobsheet_Materi_4" class="d-flex" style=" text-decoration: none; background: #E5E5E5; border-radius: 10px; marin-top: 0px; margin-bottom: 0px ;display: flex;
+  align-items: center; cursor: pointer" >
+                    <img style="width: 80px;" class="img-fluid" src="{{ asset('img/Page 9_Rangkaian Universal Pre-Amplifier/Gambar dan Tabel/unduh.PNG') }}" alt="..."/>
+                        <h4 class="" style="display: flex;
+  align-items: center;
+  justify-content: center; margin:0px;
+  font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 36px;
+                                text-align: justify;
+                                letter-spacing: 0.01em;
+
+                                color: #000000;">Unduh Jobsheet</h4>
+                    </a>
+                </div>
+            </div>
+
+            
         </div>
         <br>
         <br>
@@ -1820,7 +1877,7 @@
                                                         letter-spacing: 0.01em;
 
                                                         color: #D1877D;">
-                        Rangkaian Tone Control
+                        Apa Itu Rangkaian Tone Control?
                     </p>
                 </div>
                 <div style="text-align: justify;">  
@@ -2186,6 +2243,27 @@
 
             <br>
 
+            <!-- Jobsheet -->
+            <div class="row">
+                <div class="col-9 col-md-6 col-lg-4" >
+                    <a href="{{ asset('img/Page 10_Rangkaian Tone Control/Jobsheet.pdf') }}" download="Jobsheet_Materi_5" class="d-flex" style=" text-decoration: none; background: #E5E5E5; border-radius: 10px; marin-top: 0px; margin-bottom: 0px ;display: flex;
+  align-items: center; cursor: pointer" >
+                    <img style="width: 80px;" class="img-fluid" src="{{ asset('img/Page 10_Rangkaian Tone Control/Gambar/Unduh.PNG') }}" alt="..."/>
+                        <h4 class="" style="display: flex;
+  align-items: center;
+  justify-content: center; margin:0px;
+  font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 36px;
+                                text-align: justify;
+                                letter-spacing: 0.01em;
+
+                                color: #000000;">Unduh Jobsheet</h4>
+                    </a>
+                </div>
+            </div>
+
 
 
 
@@ -2355,7 +2433,11 @@
         <p><a href="{{ route('lessons.show', [$previous_lesson->course_id, $previous_lesson->slug]) }}" style="margin: 10px;"><< {{ $previous_lesson->title }}</a></p>
     @endif
     @if ($next_lesson)
+        @if ($next_lesson->slug == 'evaluation')
+        <p><a href="/evaluation" style="margin: 10px;">{{ $next_lesson->title }} >></a></p>
+        @else
         <p><a href="{{ route('lessons.show', [$next_lesson->course_id, $next_lesson->slug]) }}" style="margin: 10px;">{{ $next_lesson->title }} >></a></p>
+        @endif
     @endif
     </center>
     </div>
